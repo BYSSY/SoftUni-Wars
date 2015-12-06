@@ -19,6 +19,7 @@ namespace SoftUniWarz
 
             graphics.PreferredBackBufferHeight = 768;
             graphics.PreferredBackBufferWidth = 1366;
+            //TEST
         }
 
         /// <summary>
