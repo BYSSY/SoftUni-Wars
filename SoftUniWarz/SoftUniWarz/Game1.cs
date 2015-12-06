@@ -16,6 +16,9 @@ namespace SoftUniWarz
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferHeight = 768;
+            graphics.PreferredBackBufferWidth = 1366;
         }
 
         /// <summary>
