@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SoftUniWarz
 {
-    class BackgroundEffects : Background
+    class BackgroundEffects 
     {
     }
 }

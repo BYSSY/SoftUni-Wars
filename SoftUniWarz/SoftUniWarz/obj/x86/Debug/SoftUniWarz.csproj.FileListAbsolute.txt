@@ -50,3 +50,4 @@ C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Deb
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\classroom.jpg

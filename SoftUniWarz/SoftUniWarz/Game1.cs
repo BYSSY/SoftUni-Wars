@@ -12,6 +12,8 @@ namespace SoftUniWarz
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private Background background;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -30,7 +32,7 @@ namespace SoftUniWarz
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            background=new Background(Content.Load<Texture2D>("classroom"),new Vector2(0,0));
 
             base.Initialize();
         }
@@ -79,7 +81,10 @@ namespace SoftUniWarz
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            background.Draw(spriteBatch);
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
