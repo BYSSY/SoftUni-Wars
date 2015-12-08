@@ -6,7 +6,7 @@ using SoftUniWarz.Background;
 
 namespace SoftUniWarz
 {
-   
+
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
@@ -14,12 +14,15 @@ namespace SoftUniWarz
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+
+        MainMenu menu = new MainMenu();
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 1366;
+            graphics.PreferredBackBufferHeight = 768;
 
             IsMouseVisible = true;
 
@@ -47,7 +50,7 @@ namespace SoftUniWarz
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             
-
+            menu.LoadContent(Content);
         }
 
         /// <summary>
@@ -68,8 +71,7 @@ namespace SoftUniWarz
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            
-
+          menu.Update();
             base.Update(gameTime);
         }
 
@@ -80,12 +82,9 @@ namespace SoftUniWarz
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-
             spriteBatch.Begin();
 
-           
-
+            menu.Draw(spriteBatch);
 
             spriteBatch.End();
 

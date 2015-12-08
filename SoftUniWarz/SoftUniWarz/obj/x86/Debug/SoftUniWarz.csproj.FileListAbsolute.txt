@@ -26,3 +26,6 @@ C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\S
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playButton.gif
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\play.png
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenu.png
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playBtn.png
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playlogo.jpg
