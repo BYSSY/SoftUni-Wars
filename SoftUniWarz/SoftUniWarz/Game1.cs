@@ -14,25 +14,15 @@ namespace SoftUniWarz
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private BackgroundSprite mainMenuBackground;
-        private MainMenuButtons btnPlay;
-        private enum GameState
-        {
-            MainMenu,
-            Playing
-        }
-
-        GameState currentState = GameState.MainMenu;
+        
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            graphics.PreferredBackBufferHeight = 600;
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.ApplyChanges();
             IsMouseVisible = true;
+
             //TEST
         }
 
@@ -44,7 +34,6 @@ namespace SoftUniWarz
         /// </summary>
         protected override void Initialize()
         {
-            mainMenuBackground=new BackgroundSprite(Content.Load<Texture2D>("classroom"),new Vector2(0,0));
 
             base.Initialize();
         }
@@ -57,10 +46,7 @@ namespace SoftUniWarz
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-
-            btnPlay=new MainMenuButtons(Content.Load<Texture2D>("play"),graphics.GraphicsDevice);
-            btnPlay.SetPosition(new Vector2(350,300));
+            
 
         }
 
@@ -82,20 +68,7 @@ namespace SoftUniWarz
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            MouseState mouse = Mouse.GetState();
-
-            switch (currentState)
-            {
-                case GameState.MainMenu:
-                    if (btnPlay.isClicked==true)
-                    {
-                        currentState=GameState.Playing;
-                        btnPlay.Update(mouse);
-                    }
-                    break;
-                case GameState.Playing:
-                    break;
-            }
+            
 
             base.Update(gameTime);
         }
@@ -110,16 +83,8 @@ namespace SoftUniWarz
 
 
             spriteBatch.Begin();
-            switch (currentState)
-            {
-                case GameState.MainMenu:
-                    mainMenuBackground.Draw(spriteBatch);
 
-                    btnPlay.Draw(spriteBatch);
-                    break;
-                case GameState.Playing:
-                    break;
-            }
+           
 
 
             spriteBatch.End();

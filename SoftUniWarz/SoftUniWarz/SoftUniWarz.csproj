@@ -38,7 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Background\MainMenuButtons.cs" />
+    <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Characters\Player\AdvancedPlayer.cs" />
     <Compile Include="Attack\Attack.cs" />
     <Compile Include="Background\BackgroundSprite.cs" />
