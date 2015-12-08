@@ -8,12 +8,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz
 {
-    public class Background : GameObject
+    public class BackgroundSprite : GameObject
     {
         private Texture2D texture;
         private Vector2 position;
 
-        public Background(Texture2D texture, Vector2 position)
+        public BackgroundSprite(Texture2D texture, Vector2 position)
         {
             this.Texture = texture;
             this.Position = position;

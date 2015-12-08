@@ -1,9 +1,12 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Runtime.InteropServices;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using SoftUniWarz.Background;
 
 namespace SoftUniWarz
 {
+   
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
@@ -11,16 +14,25 @@ namespace SoftUniWarz
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        private BackgroundSprite mainMenuBackground;
+        private MainMenuButtons btnPlay;
+        private enum GameState
+        {
+            MainMenu,
+            Playing
+        }
 
-        private Background background;
+        GameState currentState = GameState.MainMenu;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            graphics.PreferredBackBufferHeight = 768;
-            graphics.PreferredBackBufferWidth = 1366;
+            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.ApplyChanges();
+            IsMouseVisible = true;
             //TEST
         }
 
@@ -32,7 +44,7 @@ namespace SoftUniWarz
         /// </summary>
         protected override void Initialize()
         {
-            background=new Background(Content.Load<Texture2D>("classroom"),new Vector2(0,0));
+            mainMenuBackground=new BackgroundSprite(Content.Load<Texture2D>("classroom"),new Vector2(0,0));
 
             base.Initialize();
         }
@@ -46,7 +58,10 @@ namespace SoftUniWarz
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+
+            btnPlay=new MainMenuButtons(Content.Load<Texture2D>("play"),graphics.GraphicsDevice);
+            btnPlay.SetPosition(new Vector2(350,300));
+
         }
 
         /// <summary>
@@ -67,8 +82,20 @@ namespace SoftUniWarz
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            MouseState mouse = Mouse.GetState();
 
-            // TODO: Add your update logic here
+            switch (currentState)
+            {
+                case GameState.MainMenu:
+                    if (btnPlay.isClicked==true)
+                    {
+                        currentState=GameState.Playing;
+                        btnPlay.Update(mouse);
+                    }
+                    break;
+                case GameState.Playing:
+                    break;
+            }
 
             base.Update(gameTime);
         }
@@ -81,8 +108,19 @@ namespace SoftUniWarz
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+
             spriteBatch.Begin();
-            background.Draw(spriteBatch);
+            switch (currentState)
+            {
+                case GameState.MainMenu:
+                    mainMenuBackground.Draw(spriteBatch);
+
+                    btnPlay.Draw(spriteBatch);
+                    break;
+                case GameState.Playing:
+                    break;
+            }
+
 
             spriteBatch.End();
 

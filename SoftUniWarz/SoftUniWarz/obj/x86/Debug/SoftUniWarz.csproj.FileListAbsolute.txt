@@ -1,32 +1,4 @@
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.exe
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.pdb
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\MonoGame.Framework.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.MediaFoundation.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XAudio2.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D11.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.DXGI.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct2D1.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.dll
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\MonoGame.Framework.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.MediaFoundation.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XAudio2.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D11.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.DXGI.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct2D1.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
-c:\users\hp\documents\visual studio 2015\Projects\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
-E:\bojo\Fundamentals\OOP\Teamwork\SoftUniWarz\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
-E:\bojo\Fundamentals\OOP\Teamwork\SoftUniWarz\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
-C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
-C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\classroom.jpg
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.exe
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.pdb
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\MonoGame.Framework.dll
@@ -49,10 +21,8 @@ C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Deb
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.xml
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
 C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
-C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\classroom.jpg
-=======
-C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
-C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
->>>>>>> 06405537aad492926d7e9fa494b3a7a403323048
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playButton.gif
+C:\Users\hp\Desktop\SoftUni\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\play.png
