@@ -11,13 +11,16 @@ namespace SoftUniWarz.Background
 {
     public class GUIelements
     {
+        public event ElementClickedEventHandler ClickEvent;
+        //Lambda instead of delegate !
+        public delegate void ElementClickedEventHandler(string element);
+
+
         private Texture2D GUItexture;
         private Rectangle GUIrect;
         private string elementName;
 
-        public delegate void ElementClicked(string element);
 
-        public event ElementClicked clickEvent;
 
         public GUIelements(string elementName)
         {
@@ -41,7 +44,7 @@ namespace SoftUniWarz.Background
         {
             if (GUIrect.Contains(new Point(Mouse.GetState().X,Mouse.GetState().Y))&&Mouse.GetState().LeftButton==ButtonState.Pressed)
             {
-                clickEvent(elementName);
+                ClickEvent(elementName);
             }
         }
 
