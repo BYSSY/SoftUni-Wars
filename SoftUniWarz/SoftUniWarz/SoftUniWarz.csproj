@@ -38,6 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Attack\SimpleEnemyAttack.cs" />
     <Compile Include="Background\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Background\MainMenu.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Characters\Player\Player.cs" />
     <Compile Include="Characters\Player\Players.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
+    <Compile Include="Interfaces\IAttackAppliable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bonus\Sandwich.cs" />

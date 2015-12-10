@@ -6,7 +6,7 @@ using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz
 {
-    class Player : Players,IAttackable
+    class Player : Character,IAttackable
     {
     }
 }
