@@ -15,18 +15,13 @@ namespace SoftUniWarz
         private Vector2 position;
         private int witdh;
         private int height;
-        private bool isActive;
-        private bool isVisible;
 
-
-        public GameObject(Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible)
+        public GameObject(Texture2D texture, Vector2 position, int witdh, int height)
         {
             this.Texture = texture;
             this.Position = position;
             this.Witdh = witdh;
             this.Height  = height;
-            this.IsActive = isActive;
-            this.IsVisible = isVisible;
         }
 
         public Texture2D Texture
@@ -51,7 +46,7 @@ namespace SoftUniWarz
 
             set
             {
-                if (value.X< 0&&value.Y<0&&value.X+this.Witdh>1366&&value.Y+this.Height>768)
+                if (value.X < 0 && value.Y < 0 && value.X + this.Witdh > 1366 && value.Y + this.Height > 768)
                 {
                     throw new ArgumentOutOfRangeException("Possition must be valid!");
                 }
@@ -93,30 +88,5 @@ namespace SoftUniWarz
             }
         }
 
-        public bool IsActive
-        {
-            get
-            {
-                return isActive;
-            }
-
-            set
-            {
-                isActive = value;
-            }
-        }
-
-        public bool IsVisible
-        {
-            get
-            {
-                return isVisible;
-            }
-
-            set
-            {
-                isVisible = value;
-            }
-        }
     }
 }

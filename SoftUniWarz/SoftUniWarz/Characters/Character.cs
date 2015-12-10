@@ -9,21 +9,24 @@ using SoftUniWarz.Attack;
 
 namespace SoftUniWarz
 {
-    public abstract class Character : GameObject, IAttackAppliable, IAttackable, IDestructable, IConsumable
+    public abstract class Character : GameObject, IAttackAppliable, IAttackable, IConsumable
     {
-        private  string name;
+        private string name;
         //private string nameValidation;
-        private  int healthPoints;
-        private  int manaPoints;
+        private int healthPoints;
+        private int manaPoints;
+        private string path;
 
-        public Character(string name, int healthPoints, int manaPoints,Texture2D texture,Vector2 position,int width,int height,bool isVisible , bool isActive)
+        public Character(string name, int healthPoints, int manaPoints,Texture2D texture,Vector2 position,int width,int height, string path)
             //TODO: implement the base ctor of the game object
             //:base()
-            : base(texture,position,width,height,isActive,isVisible)
+            : base(texture,position,width,height)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
             this.ManaPoints = manaPoints;
+            this.path = path;
+
         }
 
         //public string NameValidation
@@ -57,6 +60,12 @@ namespace SoftUniWarz
                 return name;
             }
             private set { this.name = value; }
+        }
+
+        public string Path
+        {
+            get { return this.path; }
+            set { this.path = value; }
         }
 
         public void ApplyAttack(Attack.Attack attack)
