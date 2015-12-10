@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -9,16 +10,12 @@ namespace SoftUniWarz
 {
     class Coffee : Bonus
     {
-<<<<<<< HEAD
-        public Coffee(int healthBoost,int manaBoost,Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
-=======
+        private static readonly int healthBoost = 0;
+        private static readonly int manaBoost = 100;
+
         public Coffee(string texturePath, Vector2 position, int witdh, int height) 
-            : base(texturePath, position, witdh, height)
->>>>>>> febc18d86f38e2d09970638aaef45910015a3c72
+            : base(texturePath, position, witdh, height, healthBoost, manaBoost)
         {
-            this.HealthBoost = 0;
-            this.ManaBoost = 100;
-            
         }
     }
 }

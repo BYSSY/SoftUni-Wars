@@ -9,29 +9,14 @@ namespace SoftUniWarz
 {
     class Beer : Bonus
     {
-<<<<<<< HEAD
+        private static readonly int healthBoost = 150;
+        private static readonly int manaBoostt = 0;
 
-        
-        public Beer(int healthBoost,int manaBoost,Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
-=======
-        public Beer(string texturePath, Vector2 position, int witdh, int height, bool isActive, bool isVisible) 
-            : base(texturePath, position, witdh, height)
->>>>>>> febc18d86f38e2d09970638aaef45910015a3c72
+        public Beer(string texturePath, Vector2 position, int witdh, int height)
+            : base(texturePath, position, witdh, height, healthBoost, manaBoostt)
         {
-            this.HealthBoost = 100;
-            this.ManaBoost = 0;
+            
         }
 
-        public int Health {
-            get { return this.HealthBoost; }
-            set
-            {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Health cannot be negative!");
-                }
-                this.health = value;
-            }
-        }
     }
 }
