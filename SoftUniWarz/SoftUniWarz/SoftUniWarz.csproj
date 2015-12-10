@@ -43,7 +43,9 @@
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
     <Compile Include="Background\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
-    <Compile Include="Background\MainMenu.cs" />
+    <Compile Include="Interfaces\IContentLoadable.cs" />
+    <Compile Include="States\InGameState.cs" />
+    <Compile Include="States\MainMenuState.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Player\AdvancedPlayer.cs" />
     <Compile Include="Attack\Attack.cs" />
@@ -62,9 +64,15 @@
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\IAttackAppliable.cs" />
     <Compile Include="Interfaces\IBonusAppliable.cs" />
+    <Compile Include="Interfaces\IDrawable.cs" />
+    <Compile Include="Interfaces\IUpdateable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Characters\Player\WizardPlayer.cs" />
+    <Compile Include="States\PickNameState.cs" />
+    <Compile Include="States\QuitState.cs" />
+    <Compile Include="States\State.cs" />
+    <Compile Include="States\StateManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -74,28 +82,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\classroom.jpg">
+    <Content Include="Content\Command_Home.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\ingameBackground.jpg">
+    <Content Include="Content\HighScore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\MainMenu.png">
+    <Content Include="Content\MainMenuBG.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\play.png">
+    <Content Include="Content\Play.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\playBtn.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\playButton.gif">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\playlogo.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\quit.png">
+    <Content Include="Content\Quit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Icon.ico" />

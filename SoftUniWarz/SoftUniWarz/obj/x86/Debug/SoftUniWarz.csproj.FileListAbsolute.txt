@@ -98,13 +98,7 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\classroom.jpg
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ingameBackground.jpg
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenu.png
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\play.png
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playBtn.png
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playButton.gif
-E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\playlogo.jpg
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\quit.png
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.exe
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.pdb
@@ -128,3 +122,11 @@ E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\S
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Play.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Quit.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.png
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.jpg

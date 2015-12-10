@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SoftUniWarz.Background;
+using SoftUniWarz.States;
 
 namespace SoftUniWarz
 {
@@ -15,8 +16,7 @@ namespace SoftUniWarz
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
-        MainMenu menu = new MainMenu();
+        
 
         public Game1()
         {
@@ -51,7 +51,7 @@ namespace SoftUniWarz
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             
-            menu.LoadContent(Content);
+            StateManager.CurrentState.LoadContent(Content);
         }
 
         /// <summary>
@@ -70,12 +70,10 @@ namespace SoftUniWarz
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-            menu.Update();
+
           //  if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
           //      Exit();
-          menu.Update();
+          StateManager.CurrentState.Update();
             base.Update(gameTime);
         }
 
@@ -88,7 +86,7 @@ namespace SoftUniWarz
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
 
-            menu.Draw(spriteBatch);
+            StateManager.CurrentState.Draw(spriteBatch);
 
             spriteBatch.End();
 
