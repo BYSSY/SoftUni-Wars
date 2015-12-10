@@ -42,6 +42,7 @@
     <Compile Include="Background\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Background\MainMenu.cs" />
+    <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Player\AdvancedPlayer.cs" />
     <Compile Include="Attack\Attack.cs" />
     <Compile Include="Background\BackgroundSprite.cs" />
@@ -56,7 +57,6 @@
     <Compile Include="Characters\Player\IntermediatePlayer.cs" />
     <Compile Include="Characters\Player\NovicePlayer.cs" />
     <Compile Include="Characters\Player\Player.cs" />
-    <Compile Include="Characters\Player\Players.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\IAttackAppliable.cs" />
     <Compile Include="Program.cs" />
