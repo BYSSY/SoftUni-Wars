@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -8,31 +9,24 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz
 {
-    public class BackgroundSprite : GameObject
+    public class BackgroundSprite:GameObject
     {
         private Texture2D texture;
-        private Vector2 position;
-
-        public BackgroundSprite(Texture2D texture, Vector2 position)
+        private static readonly  Vector2 Position=new Vector2(0,0);
+        private int width;
+        private int height;
+        private bool isVisible;
+        private bool isActive;
+        public BackgroundSprite(Texture2D texture, Vector2 position,int width,int height , bool isVisble,bool isActive)
+            :base(texture,position,width,height,isActive,isVisble)
         {
-            this.Texture = texture;
-            this.Position = position;
+            
         }
 
-        public Texture2D Texture
-        {
-            get { return this.texture; }
-            set { this.texture = value; }
-        }
-        public Vector2 Position
-        {
-            get { return this.position; }
-            protected set { this.position = value; }
-        }
 
-        public virtual void Draw(SpriteBatch spriteBatch)
+        public  void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, Color.White);
+            spriteBatch.Draw(texture, Position, Color.White);
         }
     }
 }

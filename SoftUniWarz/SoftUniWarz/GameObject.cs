@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -16,6 +17,17 @@ namespace SoftUniWarz
         private int height;
         private bool isActive;
         private bool isVisible;
+
+
+        public GameObject(Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible)
+        {
+            this.Texture = texture;
+            this.Position = position;
+            this.Witdh = witdh;
+            this.Height  = height;
+            this.IsActive = isActive;
+            this.IsVisible = isVisible;
+        }
 
         public Texture2D Texture
         {
@@ -39,6 +51,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value.X< 0&&value.Y<0&&value.X+this.Witdh>1366&&value.Y+this.Height>768)
+                {
+                    throw new ArgumentOutOfRangeException("Possition must be valid!");
+                }
                 position = value;
             }
         }
@@ -52,6 +68,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value>1366)
+                {
+                    throw new ArgumentOutOfRangeException("Width cannot be more thatn screen size");
+                }
                 witdh = value;
             }
         }
@@ -65,6 +85,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value>768)
+                {
+                    throw new ArgumentOutOfRangeException("Height cannot be more than screen height");
+                }
                 height = value;
             }
         }

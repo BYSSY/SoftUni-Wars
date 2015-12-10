@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz
 {
@@ -14,7 +17,8 @@ namespace SoftUniWarz
         private int sandwichTake;
         private bool isParalizable;
 
-        public Attack(int damageTake, int manaTake, int coffeeTake, int beerTake, int sandwichTake, bool isParalizable)
+        public Attack(int damageTake, int manaTake, int coffeeTake, int beerTake, int sandwichTake, bool isParalizable,Texture2D texture,Vector2 position , int width , int height,bool isActive,bool isVisible)
+            :base(texture,position,width,height,isActive,isVisible)
         {
             this.DamageTake = damageTake;
             this.ManaTake = manaTake;
@@ -45,6 +49,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException("Sandwich HP update cannot negative");
+                }
                 sandwichTake = value;
             }
         }
@@ -57,6 +65,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException("Beer cannot be negative");
+                }
                 beerTake = value;
             }
         }
@@ -69,6 +81,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException("Coffee cannot be negative!");
+                }
                 coffeeTake = value;
             }
         }
@@ -81,6 +97,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException("Mana cannot take less a negative number and over 150");
+                }
                 manaTake = value;
             }
         }
@@ -93,6 +113,10 @@ namespace SoftUniWarz
 
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException("Damage cannot be negative!");
+                }
                 damageTake = value;
             }
         }
