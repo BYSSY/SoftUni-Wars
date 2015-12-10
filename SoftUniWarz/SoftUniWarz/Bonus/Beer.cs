@@ -9,9 +9,14 @@ namespace SoftUniWarz
 {
     class Beer : Bonus
     {
+<<<<<<< HEAD
 
         
         public Beer(int healthBoost,int manaBoost,Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
+=======
+        public Beer(string texturePath, Vector2 position, int witdh, int height, bool isActive, bool isVisible) 
+            : base(texturePath, position, witdh, height)
+>>>>>>> febc18d86f38e2d09970638aaef45910015a3c72
         {
             this.HealthBoost = 100;
             this.ManaBoost = 0;

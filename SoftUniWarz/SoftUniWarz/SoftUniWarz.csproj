@@ -38,6 +38,8 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Attack\PlayerAttack.cs" />
+    <Compile Include="Attack\PlayerAttacks\BinaryAttack.cs" />
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
     <Compile Include="Background\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
@@ -59,7 +61,11 @@
     <Compile Include="Characters\Player\Player.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\IAttackAppliable.cs" />
+<<<<<<< HEAD
     <Compile Include="Interfaces\IBonusAppliable.cs" />
+=======
+    <Compile Include="Interfaces\IConsumable.cs" />
+>>>>>>> febc18d86f38e2d09970638aaef45910015a3c72
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Characters\Player\WizardPlayer.cs" />

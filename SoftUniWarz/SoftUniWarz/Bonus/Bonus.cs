@@ -9,9 +9,14 @@ namespace SoftUniWarz
 {
     public abstract class Bonus : GameObject
     {
+<<<<<<< HEAD
         private int healthBoost;
         private int manaBoost;
         public Bonus(int healthBoost,int manaBoost,Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
+=======
+        public Bonus(string texturePath, Vector2 position, int witdh, int height)
+            : base(texturePath, position, witdh, height)
+>>>>>>> febc18d86f38e2d09970638aaef45910015a3c72
         {
             this.HealthBoost = healthBoost;
             this.ManaBoost = manaBoost;
