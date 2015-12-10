@@ -8,5 +8,10 @@ namespace SoftUniWarz
 {
     class Player : Character,IAttackable
     {
+        public Player(string name, int healthPoints, int manaPoints) : base(name, healthPoints, manaPoints)
+        {
+        }
     }
+
+    
 }

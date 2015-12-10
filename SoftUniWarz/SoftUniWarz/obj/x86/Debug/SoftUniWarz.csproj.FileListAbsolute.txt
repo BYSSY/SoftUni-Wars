@@ -62,3 +62,4 @@ E:\bojo\Fundamentals\OOP\Teamwork\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\
 E:\bojo\Fundamentals\OOP\Teamwork\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
 E:\bojo\Fundamentals\OOP\Teamwork\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 E:\bojo\Fundamentals\OOP\Teamwork\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
+E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
