@@ -6,9 +6,9 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace SoftUniWarz
+namespace SoftUniWarz.Attack
 {
-    class Attack: GameObject
+    public class Attack: GameObject
     {
         private int damageTake;
         private int manaTake;

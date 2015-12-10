@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SoftUniWarz
 {
-    class Enemy : Players //, IProjectile(IMagic)
+    class Enemy : Character //, IProjectile(IMagic)
     {
         // Тези характеристики може да ги определим и при Players, както и интерфейса за магийки IProjectile(IMagic) and so on..
         // Можем да отделим проверките при сетърите в отделен клас (e.g. Validations) и да ги преизползваме.
