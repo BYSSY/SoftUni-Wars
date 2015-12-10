@@ -19,14 +19,14 @@ namespace SoftUniWarz
         private bool isVisible;
 
 
-        public GameObject(Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible)
+        public GameObject(string texturePath, Vector2 position, int witdh, int height)
         {
-            this.Texture = texture;
+            //TODO: LOAD textures from texture loader
+            //this.Texture = (path);
+
             this.Position = position;
             this.Witdh = witdh;
             this.Height  = height;
-            this.IsActive = isActive;
-            this.IsVisible = isVisible;
         }
 
         public Texture2D Texture

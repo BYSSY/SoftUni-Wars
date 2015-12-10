@@ -9,17 +9,18 @@ using SoftUniWarz.Attack;
 
 namespace SoftUniWarz
 {
-    public abstract class Character : GameObject, IAttackAppliable, IAttackable, IConsumable
+    public abstract class Character : GameObject, IAttackAppliable, IAttackable
     {
         private  string name;
         //private string nameValidation;
         private  int healthPoints;
         private  int manaPoints;
 
-        public Character(string name, int healthPoints, int manaPoints,Texture2D texture,Vector2 position,int width,int height,bool isVisible , bool isActive)
+        public Character(string name, int healthPoints, int manaPoints, string texturePath, Vector2 position, int width,
+            int height, bool isVisible, bool isActive)
             //TODO: implement the base ctor of the game object
             //:base()
-            : base(texture,position,width,height,isActive,isVisible)
+            : base(texturePath, position, width, height)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;

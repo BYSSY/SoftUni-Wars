@@ -17,6 +17,7 @@ namespace SoftUniWarz
         //private IList<Spells> spells;
 
         public Enemy(string name, int health, int damage)
+            
         {
             this.Name = name;
             this.Health = health;
