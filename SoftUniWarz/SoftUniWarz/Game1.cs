@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -71,7 +72,7 @@ namespace SoftUniWarz
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-          menu.Update();
+            menu.Update();
             base.Update(gameTime);
         }
 
@@ -90,5 +91,7 @@ namespace SoftUniWarz
 
             base.Draw(gameTime);
         }
+
+        
     }
 }

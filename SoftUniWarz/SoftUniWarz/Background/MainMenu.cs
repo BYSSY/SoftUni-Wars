@@ -8,9 +8,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz.Background
 {
-    public class MainMenu 
+    public class MainMenu
     {
-
 
         private List<GUIelements> main = new List<GUIelements>();
         private GameState gameState;
@@ -23,6 +22,8 @@ namespace SoftUniWarz.Background
 
         }
 
+
+
         public void LoadContent(ContentManager content)
         {
             foreach (var guiElements in main)
@@ -32,7 +33,7 @@ namespace SoftUniWarz.Background
                 guiElements.ClickEvent += OnClick;
             }
             main.Find(x => x.ElementName == "playlogo").MoveElement(-200, -150);
-            main.Find(y=>y.ElementName=="quit").MoveElement(200,-150);
+            main.Find(y => y.ElementName == "quit").MoveElement(200, -150);
         }
 
         public void Update()
@@ -47,11 +48,13 @@ namespace SoftUniWarz.Background
                     break;
                 case GameState.inGame:
                     break;
-                    case GameState.quit:
+                case GameState.quit:
                     break;
             }
 
         }
+
+
 
         public void Draw(SpriteBatch spriteBatch)
         {
@@ -79,9 +82,11 @@ namespace SoftUniWarz.Background
             }
             if (element == "quit")
             {
-                gameState=GameState.quit;
+                Environment.Exit(1);
 
             }
         }
+
+        
     }
 }

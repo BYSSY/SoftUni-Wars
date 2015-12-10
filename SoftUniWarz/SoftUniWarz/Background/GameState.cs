@@ -8,6 +8,7 @@ namespace SoftUniWarz.Background
     public enum GameState
     {
         mainMenu,
+        pickName,
         inGame,
         quit
     }
