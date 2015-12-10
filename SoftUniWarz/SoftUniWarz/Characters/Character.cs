@@ -9,7 +9,7 @@ using SoftUniWarz.Attack;
 
 namespace SoftUniWarz
 {
-    public abstract class Character : GameObject, IAttackAppliable, IAttackable
+    public abstract class Character : GameObject, IAttackAppliable, IAttackable, ICharacter
     {
         private string name;
         //private string nameValidation;
@@ -22,8 +22,15 @@ namespace SoftUniWarz
         //private IEnumarable<Bonus> inventory; 
         // May throw exception or not to compile.
 
-        public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
-            //TODO: implement the base ctor of the game object
+        public Character(string name,
+            int healthPoints,
+            int manaPoints,
+            string texturePath,
+            Vector2 position,
+            int width,
+            int height)
+
+            // TODO: implement the base ctor of the game object
             //:base()
             : base(texturePath,position,width,height)
         {
@@ -47,6 +54,7 @@ namespace SoftUniWarz
         //        this.nameValidation = value;
         //    }
         //}
+
         public int HealthPoints
         {
             get { return this.healthPoints; }
@@ -56,7 +64,7 @@ namespace SoftUniWarz
                 {
                     throw  new ArgumentOutOfRangeException("HP cannot be negative!");
                 }
-                if (value>maxHealth)
+                if (value > maxHealth)
                 {
                     this.healthPoints = maxHealth;
                 }
@@ -87,6 +95,7 @@ namespace SoftUniWarz
             {
                 return name;
             }
+
             private set { this.name = value; }
         }
 
