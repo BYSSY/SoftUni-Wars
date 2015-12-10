@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -69,9 +70,15 @@ namespace SoftUniWarz
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+<<<<<<< HEAD
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+            menu.Update();
+=======
           //  if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
           //      Exit();
           menu.Update();
+>>>>>>> 0016e526c77bdb1ce879b7e23774770d5bc1898d
             base.Update(gameTime);
         }
 
@@ -90,5 +97,7 @@ namespace SoftUniWarz
 
             base.Draw(gameTime);
         }
+
+        
     }
 }
