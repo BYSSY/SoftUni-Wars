@@ -38,6 +38,8 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Attack\PlayerAttack.cs" />
+    <Compile Include="Attack\PlayerAttacks\BinaryAttack.cs" />
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
     <Compile Include="Background\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />

@@ -17,8 +17,8 @@ namespace SoftUniWarz
         private int height;
         private bool isVisible;
         private bool isActive;
-        public BackgroundSprite(Texture2D texture, Vector2 position,int width,int height , bool isVisble,bool isActive)
-            :base(texture,position,width,height,isActive,isVisble)
+        public BackgroundSprite(string texturePath, Vector2 position,int width,int height , bool isVisble,bool isActive)
+            :base(texturePath, position,width,height)
         {
             
         }

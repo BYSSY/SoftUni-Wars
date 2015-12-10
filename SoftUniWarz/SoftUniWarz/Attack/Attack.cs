@@ -14,17 +14,15 @@ namespace SoftUniWarz.Attack
         private int manaTake;
         private int coffeeTake;
         private int beerTake;
-        private int sandwichTake;
         private bool isParalizable;
 
-        public Attack(int damageTake, int manaTake, int coffeeTake, int beerTake, int sandwichTake, bool isParalizable,Texture2D texture,Vector2 position , int width , int height,bool isActive,bool isVisible)
-            :base(texture,position,width,height,isActive,isVisible)
+        public Attack(int damageTake, int manaTake, int coffeeTake, int beerTake, bool isParalizable, string texturePath ,Vector2 position , int width , int height)
+            :base(texturePath,position,width,height)
         {
             this.DamageTake = damageTake;
             this.ManaTake = manaTake;
             this.CoffeeTake = coffeeTake;
             this.BeerTake = beerTake;
-            this.SandwichTake = sandwichTake;
             this.IsParalizable = isParalizable;
         }
 
@@ -40,22 +38,7 @@ namespace SoftUniWarz.Attack
                 isParalizable = value;
             }
         }
-        public int SandwichTake
-        {
-            get
-            {
-                return sandwichTake;
-            }
 
-            set
-            {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Sandwich HP update cannot negative");
-                }
-                sandwichTake = value;
-            }
-        }
         public int BeerTake
         {
             get

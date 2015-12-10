@@ -9,7 +9,8 @@ namespace SoftUniWarz
 {
     public class Bonus : GameObject
     {
-        public Bonus(Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
+        public Bonus(string texturePath, Vector2 position, int witdh, int height)
+            : base(texturePath, position, witdh, height)
         {
         }
     }

@@ -16,9 +16,11 @@ namespace SoftUniWarz
         private int witdh;
         private int height;
 
-        public GameObject(Texture2D texture, Vector2 position, int witdh, int height)
+        public GameObject(string texturePath, Vector2 position, int witdh, int height)
         {
-            this.Texture = texture;
+            //TODO: LOAD textures from texture loader
+            //this.Texture = (path);
+
             this.Position = position;
             this.Witdh = witdh;
             this.Height  = height;

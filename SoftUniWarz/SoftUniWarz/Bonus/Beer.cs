@@ -9,7 +9,8 @@ namespace SoftUniWarz
 {
     class Beer : Bonus
     {
-        public Beer(Texture2D texture, Vector2 position, int witdh, int height, bool isActive, bool isVisible) : base(texture, position, witdh, height, isActive, isVisible)
+        public Beer(string texturePath, Vector2 position, int witdh, int height, bool isActive, bool isVisible) 
+            : base(texturePath, position, witdh, height)
         {
         }
     }
