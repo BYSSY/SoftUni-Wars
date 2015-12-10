@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Attack;
 
 namespace SoftUniWarz
@@ -14,9 +16,10 @@ namespace SoftUniWarz
         private  int healthPoints;
         private  int manaPoints;
 
-        public Character(string name, int healthPoints, int manaPoints)
+        public Character(string name, int healthPoints, int manaPoints,Texture2D texture,Vector2 position,int width,int height,bool isVisible , bool isActive)
             //TODO: implement the base ctor of the game object
             //:base()
+            : base(texture,position,width,height,isActive,isVisible)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
@@ -61,4 +64,5 @@ namespace SoftUniWarz
             //TODO: Aplly effect of attack
         }
     }
+    
 }
