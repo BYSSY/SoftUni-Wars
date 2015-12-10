@@ -59,9 +59,9 @@
     <Compile Include="Characters\Player\Player.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\IAttackAppliable.cs" />
+    <Compile Include="Interfaces\IBonusAppliable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bonus\Sandwich.cs" />
     <Compile Include="Characters\Player\WizardPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
