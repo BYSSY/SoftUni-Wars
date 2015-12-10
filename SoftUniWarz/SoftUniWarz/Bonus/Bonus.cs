@@ -7,5 +7,6 @@ namespace SoftUniWarz
 {
     class Bonus : GameObject
     {
+
     }
 }
