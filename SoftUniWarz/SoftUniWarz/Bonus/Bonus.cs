@@ -11,6 +11,7 @@ namespace SoftUniWarz
     {
         private int healthBoost;
         private int manaBoost;
+
         public Bonus(string texturePath, Vector2 position, int witdh, int height, int healthBoost, int manaBoost)
             : base(texturePath, position, witdh, height)
         {
@@ -28,6 +29,7 @@ namespace SoftUniWarz
                 {
                     throw new ArgumentOutOfRangeException("Bonus cannot be negative!");
                 }
+
                 this.healthBoost = value;
             }
         }
@@ -41,6 +43,7 @@ namespace SoftUniWarz
                 {
                     throw new ArgumentOutOfRangeException("Mana cannot be negative!");
                 }
+
                 this.manaBoost = value;
             }
         }
