@@ -122,6 +122,7 @@ E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\S
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
+<<<<<<< HEAD
 C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
 C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\classroom.jpg
@@ -206,3 +207,5 @@ E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz
 E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+=======
+>>>>>>> parent of a3b81fd... Commit
