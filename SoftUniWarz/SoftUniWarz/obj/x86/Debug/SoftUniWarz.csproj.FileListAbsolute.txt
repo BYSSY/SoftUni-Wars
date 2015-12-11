@@ -166,3 +166,11 @@ E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\S
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.png
 E:\bojo\Fundamentals\OOP\Teamwork\Нова папка\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.jpg
 >>>>>>> 0a41d7818f99f1d46a6ac7a1741ca01a529c1c5d
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.png
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.jpg
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.xnb
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.xnb
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.xnb
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Play.xnb
+C:\Users\hp\Desktop\SUniWarz\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Quit.xnb
