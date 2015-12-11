@@ -24,7 +24,7 @@ namespace SoftUniWarz
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
-
+            StateManager.ChangeToState(GameState.MainMenu);
             IsMouseVisible = true;
 
             //TEST

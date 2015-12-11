@@ -37,51 +37,29 @@ namespace SoftUniWarz.Background
 
         public override void Update()
         {
-            switch (gameState)
+            foreach (var guiElement in main)
             {
-                case GameState.MainMenu:
-                    foreach (var guiElement in main)
-                    {
-                        guiElement.Update();
-                    }
-                    break;
-                case GameState.InGame:
-                    break;
-                case GameState.Quit:
-                    break;
+                guiElement.Update();
             }
-
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            switch (gameState)
+            foreach (var guiElements in main)
             {
-                case GameState.MainMenu:
-                    foreach (var guiElements in main)
-                    {
-                        guiElements.Draw(spriteBatch);
-                    }
-                    break;
-                case GameState.InGame:
-
-                    break;
-                case GameState.Quit:
-                    Environment.Exit(1);
-                    break;
+                guiElements.Draw(spriteBatch);
             }
-
         }
 
         public void OnClick(string element)
         {
             if (element == "Play")
             {
-                gameState = GameState.InGame;
+                StateManager.ChangeToState(GameState.PickName);
             }
             if (element == "Quit")
             {
-                gameState = GameState.Quit;
+                StateManager.ChangeToState(GameState.Quit);
             }
         }
 

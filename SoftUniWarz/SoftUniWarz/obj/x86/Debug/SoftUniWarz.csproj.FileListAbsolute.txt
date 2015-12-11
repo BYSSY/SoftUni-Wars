@@ -200,3 +200,38 @@ C:\Users\stil2_000\Desktop\SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff
 C:\Users\stil2_000\Desktop\SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\stil2_000\Desktop\SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\stil2_000\Desktop\SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.jpg
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Play.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Quit.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MainMenuBG.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Play.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Quit.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.exe
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SoftUniWarz.pdb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\MonoGame.Framework.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XAudio2.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D11.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.DXGI.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct2D1.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.dll
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\MonoGame.Framework.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XAudio2.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D11.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.DXGI.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct2D1.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.XInput.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache

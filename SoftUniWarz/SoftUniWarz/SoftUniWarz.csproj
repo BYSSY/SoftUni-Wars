@@ -41,7 +41,7 @@
     <Compile Include="Attack\PlayerAttack.cs" />
     <Compile Include="Attack\PlayerAttacks\BinaryAttack.cs" />
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
-    <Compile Include="Background\GameState.cs" />
+    <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
     <Compile Include="States\InGameState.cs" />

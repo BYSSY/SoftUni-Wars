@@ -4,10 +4,10 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/stil2_000/Desktop/SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
-    <File>C:/Users/stil2_000/Desktop/SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
-    <File>C:/Users/stil2_000/Desktop/SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
-    <File>C:/Users/stil2_000/Desktop/SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
-    <File>C:/Users/stil2_000/Desktop/SoftUni-Wars-60b83858372d385f1bbe833f3867a64b0981bfff/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
+    <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
+    <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
+    <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
+    <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
+    <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
   </SourceFiles>
 </SourceFileCollection>
