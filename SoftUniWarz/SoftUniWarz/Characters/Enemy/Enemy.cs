@@ -13,13 +13,13 @@ namespace SoftUniWarz
         private const int enemyHeight = 300;
         private const int enemyWidth = 150;
         private readonly string path;
-        private static Vector2 enemyPosition = new Vector2(700, 200);
 
 
         public Enemy(string name,
             int healthPoints,
             int manaPoints,
-            string enemyTexturePath)
+            string enemyTexturePath,
+            Vector2 enemyPosition)
 
             : base(name,
                   healthPoints,
@@ -29,7 +29,9 @@ namespace SoftUniWarz
                   enemyWidth,
                   enemyHeight)
         { }
-
+        // Тези характеристики може да ги определим и при Players, както и интерфейса за магийки IProjectile(IMagic) and so on..
+        // Можем да отделим проверките при сетърите в отделен клас (e.g. Validations) и да ги преизползваме.
+        // Относно двата метода: ProduceToAttack и RespondToAttack са предложение за логиката на играта за атакуване и т.н. 
       
 
        

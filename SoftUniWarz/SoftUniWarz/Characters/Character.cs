@@ -9,7 +9,7 @@ using SoftUniWarz.Attack;
 
 namespace SoftUniWarz
 {
-    public abstract class Character : GameObject, IAttackAppliable, IAttackable, ICharacter
+    public abstract class Character : GameObject, IAttackAppliable, IAttackable
     {
         private string name;
         //private string nameValidation;
@@ -17,29 +17,14 @@ namespace SoftUniWarz
         private  int manaPoints;
         private static readonly int maxHealth=500;
         private static readonly int maxMana = 500;
-
-        //private IEnumarable<Magic> spellPool; 
-        //private IEnumarable<Bonus> inventory; 
-        // May throw exception or not to compile.
-
-        public Character(string name,
-            int healthPoints,
-            int manaPoints,
-            string texturePath,
-            Vector2 position,
-            int width,
-            int height)
-
-            // TODO: implement the base ctor of the game object
+        public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
+            //TODO: implement the base ctor of the game object
             //:base()
             : base(texturePath,position,width,height)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
             this.ManaPoints = manaPoints;
-            //IEnumarable<Magic> spellPool = new List<Magic>(); 
-            //IEnumarable<Bonus> inventory = new List<Magic>(); 
-
         }
 
         //public string NameValidation
@@ -54,7 +39,6 @@ namespace SoftUniWarz
         //        this.nameValidation = value;
         //    }
         //}
-
         public int HealthPoints
         {
             get { return this.healthPoints; }
@@ -64,7 +48,7 @@ namespace SoftUniWarz
                 {
                     throw  new ArgumentOutOfRangeException("HP cannot be negative!");
                 }
-                if (value > maxHealth)
+                if (value>maxHealth)
                 {
                     this.healthPoints = maxHealth;
                 }
@@ -95,20 +79,7 @@ namespace SoftUniWarz
             {
                 return name;
             }
-
             private set { this.name = value; }
-        }
-
-        //public IEnumerable<Magic> SpellPool { get { return this.spellPool; } }
-        //public IEnumerable<Bonus> Inventory { get { return this.inventory; } }
-
-        public void AddBonusToInventory(Bonus bonus)
-        {
-            //this.inventory.Add(bonus)
-        }
-        public void AddSpellToSpellPool() // TODO: add Magic spell here.
-        {
-            //this.spellPool.Add(spell)
         }
 
         public void ApplyAttack(Attack.Attack attack)

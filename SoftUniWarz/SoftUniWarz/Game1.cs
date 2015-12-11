@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -26,7 +24,7 @@ namespace SoftUniWarz
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
-            Debug.WriteLine(Content.RootDirectory);
+
             IsMouseVisible = true;
 
             //TEST
