@@ -11,7 +11,7 @@ namespace SoftUniWarz.States
     {
         private static State currentState;
 
-        internal static State CurrentState
+        public static State CurrentState
         {
             get { return currentState; }
             private set { currentState = value; }
