@@ -12,33 +12,31 @@ namespace SoftUniWarz
     public abstract class Character : GameObject, IAttackAppliable, IAttackable
     {
         private string name;
-        //private string nameValidation;
+        private string nameValidation;
         private  int healthPoints;
         private  int manaPoints;
         private static readonly int maxHealth=500;
         private static readonly int maxMana = 500;
         public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
-            //TODO: implement the base ctor of the game object
-            //:base()
             : base(texturePath,position,width,height)
         {
             this.Name = name;
-            this.HealthPoints = healthPoints;
-            this.ManaPoints = manaPoints;
+            this.HealthPoints = maxHealth;
+            this.ManaPoints = maxMana;
         }
 
-        //public string NameValidation
-        //{
-        //    get { return this.nameValidation; }
-        //    set
-        //    {
-        //        if (string.IsNullOrWhiteSpace(value) || value.Length < 3)
-        //        {
-        //            throw new ArgumentException("Name must be more than 3 characters long!");
-        //        }
-        //        this.nameValidation = value;
-        //    }
-        //}
+        public string NameValidation
+        {
+            get { return this.nameValidation; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value) || value.Length < 3)
+                {
+                    throw new ArgumentException("Name must be more than 3 characters long!");
+                }
+                this.nameValidation = value;
+            }
+        }
         public int HealthPoints
         {
             get { return this.healthPoints; }
@@ -84,7 +82,8 @@ namespace SoftUniWarz
 
         public void ApplyAttack(Attack.Attack attack)
         {
-            //TODO: Aplly effect of attack
+            this.healthPoints -= attack.DamageTake;
+            this.manaPoints -= attack.ManaTake;
         }
 
         public void ApplyBonus(Bonus bonus)
