@@ -82,7 +82,7 @@ namespace SoftUniWarz.Attack
             {
                 if (value<0)
                 {
-                    throw new ArgumentOutOfRangeException("Mana cannot take less a negative number and over 150");
+                    throw new ArgumentOutOfRangeException("Cannot steal less than 1 or more than 150 mana!");
                 }
                 manaTake = value;
             }

@@ -16,13 +16,13 @@ namespace SoftUniWarz
         private int witdh;
         private int height;
 
-        public GameObject(string texturePath, Vector2 position, int witdh, int height)
+        public GameObject(string texturePath, Vector2 position, int width, int height)
         {
             //TODO: LOAD textures from texture loader
             //this.Texture = (path);
 
             this.Position = position;
-            this.Witdh = witdh;
+            this.Width = width;
             this.Height  = height;
         }
 
@@ -48,15 +48,15 @@ namespace SoftUniWarz
 
             set
             {
-                if (value.X < 0 && value.Y < 0 && value.X + this.Witdh > 1366 && value.Y + this.Height > 768)
+                if (value.X < 0 && value.Y < 0 && value.X + this.Width > 1366 && value.Y + this.Height > 768)
                 {
-                    throw new ArgumentOutOfRangeException("Possition must be valid!");
+                    throw new ArgumentOutOfRangeException("Position must be valid!");
                 }
                 position = value;
             }
         }
 
-        public int Witdh
+        public int Width
         {
             get
             {

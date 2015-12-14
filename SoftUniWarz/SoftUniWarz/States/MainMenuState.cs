@@ -13,7 +13,6 @@ namespace SoftUniWarz.Background
     {
 
         private List<GUIelements> main = new List<GUIelements>();
-        private GameState gameState;
 
         public MainMenuState()
         {
