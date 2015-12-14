@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using Microsoft.Xna.Framework.Content;
@@ -27,6 +28,7 @@ namespace SoftUniWarz.States
             {
                 element.LoadContent(content);
                 element.CenterElement(768,1366 );
+                element.ClickEvent += OnClick;
             }
         }
 
@@ -43,6 +45,11 @@ namespace SoftUniWarz.States
             {
                     element.Draw(spriteBatch);
             }
+        }
+
+        private void OnClick(string element)
+        {
+            Environment.Exit(1);
         }
 
 

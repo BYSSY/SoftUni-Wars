@@ -14,14 +14,17 @@ namespace SoftUniWarz
     /// </summary>
     public class Game1 : Game
     {
+        public static bool isInitialized = false;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         
 
         public Game1()
         {
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            StateManager.Content = Content;
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
             StateManager.ChangeToState(GameState.MainMenu);
@@ -38,7 +41,7 @@ namespace SoftUniWarz
         /// </summary>
         protected override void Initialize()
         {
-
+            isInitialized = true;
             base.Initialize();
         }
 
@@ -50,7 +53,6 @@ namespace SoftUniWarz
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            
             StateManager.CurrentState.LoadContent(Content);
         }
 

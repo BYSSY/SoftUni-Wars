@@ -28,6 +28,7 @@ namespace SoftUniWarz.States
 
         public PickNameState()
         {
+            pickName.Add(new GUIelements("NamePickBG"));
             pickName.Add(new GUIelements("name"));
             pickName.Add(new GUIelements("done"));
         }
