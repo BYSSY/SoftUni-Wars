@@ -12,41 +12,55 @@ namespace SoftUniWarz.Background
     public class MainMenuState : State
     {
 
-        private List<GUIelements> main = new List<GUIelements>();
+        private List<GUIelements> staticElements = new List<GUIelements>();
+        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
 
         public MainMenuState()
         {
-            main.Add(new GUIelements("MainMenuBG"));
-            main.Add(new GUIelements("Play"));
-            main.Add(new GUIelements("HighScore"));
-            main.Add(new GUIelements("Quit"));
+            staticElements.Add(new GUIelements("MainMenuBG"));
+            clickableElements.Add(new GUUClickableElement("Play"));
+            clickableElements.Add(new GUUClickableElement("HighScore"));
+            clickableElements.Add(new GUUClickableElement("Quit"));
         }
 
         public override void LoadContent(ContentManager content)
         {
-            foreach (var guiElements in main)
+            foreach (var guiElements in staticElements)
             {
                 guiElements.LoadContent(content);
                 guiElements.CenterElement(768, 1366);
-                guiElements.ClickEvent += OnClick;
             }
-            main.Find(x => x.ElementName == "Play").MoveElement(0, -27);
-            main.Find(y => y.ElementName == "Quit").MoveElement(0, 27);
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.LoadContent(content);
+                clickableElement.CenterElement(768, 1366);
+                clickableElement.ClickEvent += OnClick;
+            }
+            clickableElements.Find(x => x.ElementName == "Play").MoveElement(0, -27);
+            clickableElements.Find(y => y.ElementName == "Quit").MoveElement(0, 27);
         }
 
         public override void Update()
         {
-            foreach (var guiElement in main)
+            foreach (var guiElement in staticElements)
             {
                 guiElement.Update();
+            }
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.Update();
             }
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            foreach (var guiElements in main)
+            foreach (var guiElements in staticElements)
             {
                 guiElements.Draw(spriteBatch);
+            }
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.Draw(spriteBatch);
             }
         }
 

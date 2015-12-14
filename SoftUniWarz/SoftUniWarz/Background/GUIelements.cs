@@ -11,13 +11,8 @@ namespace SoftUniWarz.Background
 {
     public class GUIelements
     {
-        public event ElementClickedEventHandler ClickEvent;
-        //Lambda instead of delegate !
-        public delegate void ElementClickedEventHandler(string element);
-
-
         private Texture2D GUItexture;
-        private Rectangle GUIrect;
+        private Rectangle gUIrect;
         private string elementName;
 
 
@@ -33,6 +28,18 @@ namespace SoftUniWarz.Background
             set { this.elementName = value; }
         }
 
+        public Rectangle GUIrect
+        {
+            get
+            {
+                return gUIrect;
+            }
+
+            set
+            {
+                gUIrect = value;
+            }
+        }
 
         public void LoadContent(ContentManager content)
         {
@@ -40,12 +47,9 @@ namespace SoftUniWarz.Background
             GUIrect= new Rectangle(0,0,GUItexture.Width,GUItexture.Height);
         }
 
-        public void Update()
+        public virtual void Update()
         {
-            if (GUIrect.Contains(new Point(Mouse.GetState().X,Mouse.GetState().Y))&&Mouse.GetState().LeftButton==ButtonState.Pressed)
-            {
-                ClickEvent(elementName);
-            }
+          
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -60,7 +64,7 @@ namespace SoftUniWarz.Background
 
         public void MoveElement(int x , int y)
         {
-            GUIrect = new Rectangle(GUIrect.X+=x,GUIrect.Y+=y,GUIrect.Width,GUIrect.Height);
+            GUIrect = new Rectangle(gUIrect.X+=x, gUIrect.Y+=y,GUIrect.Width,GUIrect.Height);
         }
     }
 }

@@ -12,19 +12,17 @@ namespace SoftUniWarz.States
 {
     class QuitState : State
     {
-        private List<GUIelements> elements = new List<GUIelements>();
-
-
-
+        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
+        
         public QuitState()
 
         {
-            elements.Add(new GUIelements("matrix"));
+            clickableElements.Add(new GUUClickableElement("matrix"));
         }
 
         public override void LoadContent(ContentManager content)
         {
-            foreach (var element in elements)
+            foreach (var element in clickableElements)
             {
                 element.LoadContent(content);
                 element.CenterElement(768,1366 );
@@ -34,14 +32,14 @@ namespace SoftUniWarz.States
 
         public override void Update()
         {
-            foreach (var element in elements)
+            foreach (var element in clickableElements)
             {
                 element.Update();
             }
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-            foreach (var element in elements)
+            foreach (var element in clickableElements)
             {
                     element.Draw(spriteBatch);
             }

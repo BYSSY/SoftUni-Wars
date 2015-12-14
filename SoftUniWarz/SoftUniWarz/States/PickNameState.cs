@@ -14,7 +14,9 @@ namespace SoftUniWarz.States
     class PickNameState : State
     {
 
-        private  List<GUIelements> pickName = new List<GUIelements>();
+        private  List<GUIelements> staticElements = new List<GUIelements>();
+        private  List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
+
         private  Keys[] lastPressedKeys = new Keys[5];
         private string name = string.Empty;
         private SpriteFont spriteFont;
@@ -28,23 +30,31 @@ namespace SoftUniWarz.States
 
         public PickNameState()
         {
-            pickName.Add(new GUIelements("NamePickBG"));
-            pickName.Add(new GUIelements("name"));
-            pickName.Add(new GUIelements("done"));
+            staticElements.Add(new GUIelements("NamePickBG"));
+            clickableElements.Add(new GUUClickableElement("name"));
+            clickableElements.Add(new GUUClickableElement("done"));
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-            foreach (var element in pickName)
+            foreach (var element in staticElements)
             {
                     element.Draw(spriteBatch);
+            }
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.Draw(spriteBatch);
             }
         }
 
         public override void Update()
         {
-            foreach (var element in pickName)
+            foreach (var element in staticElements)
             {
                 element.Update();
+            }
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.Update();
             }
             GetKeys();
         }
@@ -53,13 +63,18 @@ namespace SoftUniWarz.States
         public override void LoadContent(ContentManager content)
         {
 
-            foreach (var element in pickName)
+            foreach (var element in staticElements)
             {
                 element.LoadContent(content);
                 element.CenterElement(768,1366);
-                element.ClickEvent += OnClick;
             }
-            pickName.Find(x=>x.ElementName=="done").MoveElement(0,60);
+            foreach (var clickableElement in clickableElements)
+            {
+                clickableElement.LoadContent(content);
+                clickableElement.CenterElement(768, 1366);
+                clickableElement.ClickEvent += OnClick;
+            }
+            clickableElements.Find(x=>x.ElementName=="done").MoveElement(0,60);
         }
 
         public void OnClick(string element)
