@@ -47,6 +47,9 @@
     <Compile Include="Attack\TermosThrowAttack.cs" />
     <Compile Include="Background\GUUClickableElement.cs" />
     <Compile Include="Attack\ConstructorLegoAttack.cs" />
+    <Compile Include="Characters\Enemy\FinalBoss.cs" />
+    <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
+    <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
@@ -57,18 +60,16 @@
     <Compile Include="Attack\Attack.cs" />
     <Compile Include="Background\BackgroundSprite.cs" />
     <Compile Include="Background\BackgroundEffects.cs" />
-    <Compile Include="Characters\Enemy\BasicEnemy.cs" />
     <Compile Include="Bonus\Beer.cs" />
     <Compile Include="Bonus\Bonus.cs" />
     <Compile Include="Bonus\Coffee.cs" />
-    <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Characters\Player\IntermediatePlayer.cs" />
     <Compile Include="Characters\Player\NovicePlayer.cs" />
     <Compile Include="Characters\Player\Player.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
-    <Compile Include="Interfaces\IAttackAppliable.cs" />
+    <Compile Include="Interfaces\IDestroyable.cs" />
     <Compile Include="Interfaces\IBonusAppliable.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="Interfaces\IUpdateable.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="States\QuitState.cs" />
     <Compile Include="States\State.cs" />
     <Compile Include="States\StateManager.cs" />
+    <Compile Include="ValidateData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

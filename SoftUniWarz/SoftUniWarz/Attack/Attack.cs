@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz.Attack
 {
-    public class Attack: GameObject
+    public abstract class Attack: GameObject
     {
         private int damageTake;
         private int manaTake;

@@ -5,7 +5,7 @@
     using Microsoft.Xna.Framework;
     using Validation;
 
-    public abstract class Character : GameObject, IAttackAppliable, IAttackable
+    public abstract class Character : GameObject, IDestroyable, IAttackable
     {
         private string name;
         private string nameValidation;
@@ -22,18 +22,6 @@
             this.ManaPoints = manaPoints;
         }
 
-        public string NameValidation
-        {
-            get { return this.nameValidation; }
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value) || value.Length < 3)
-                {
-                    throw new ArgumentException("Name must be more than 3 characters long!");
-                }
-                this.nameValidation = value;
-            }
-        }
 
         public int HealthPoints
         {
@@ -78,6 +66,16 @@
         {
             this.HealthPoints += bonus.HealthBoost;
             this.ManaPoints += bonus.ManaBoost;
+        }
+
+        public IAttack ProduceAttack()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RespondToAttack(IAttack attack)
+        {
+            throw new NotImplementedException();
         }
     }
     

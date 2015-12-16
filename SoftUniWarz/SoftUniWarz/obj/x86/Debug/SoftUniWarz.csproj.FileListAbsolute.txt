@@ -328,7 +328,6 @@ E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz
 <<<<<<< HEAD
 E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\player.xnb
 =======
-<<<<<<< HEAD
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
@@ -375,7 +374,6 @@ C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
-=======
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\done.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HighScore.png

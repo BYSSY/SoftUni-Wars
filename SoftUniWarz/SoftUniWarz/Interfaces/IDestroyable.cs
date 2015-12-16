@@ -5,8 +5,8 @@ using System.Text;
 using SoftUniWarz.Attack;
 namespace SoftUniWarz.Interfaces
 {
-    interface IAttackAppliable
+    interface IDestroyable
     {
-        void ApplyAttack(Attack.Attack attack);
+        void RespondToAttack(IAttack attack);
     }
 }
