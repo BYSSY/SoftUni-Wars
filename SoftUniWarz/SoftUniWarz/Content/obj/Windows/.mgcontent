@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
@@ -17,5 +18,20 @@
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/player.jpg</File>
     <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Exit.jpg</File>
+=======
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/matrix.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/name.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/done.png</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/NamePickBG.jpg</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/player.jpg</File>
+    <File>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Exit.jpg</File>
+>>>>>>> 54c85655fd1b0b6f5dbc581e6c5f5548dd443ea7
   </SourceFiles>
 </SourceFileCollection>

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <SourceFile>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</SourceFile>
   <SourceTime>2015-12-16T14:29:53.4416214+02:00</SourceTime>
   <DestFile>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/arenaBG.xnb</DestFile>
   <DestTime>2015-12-16T14:46:33.070503+02:00</DestTime>
+=======
+  <SourceFile>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</SourceFile>
+  <SourceTime>2015-12-16T14:44:23.7052722+02:00</SourceTime>
+  <DestFile>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/arenaBG.xnb</DestFile>
+  <DestTime>2015-12-16T14:45:15.6444293+02:00</DestTime>
+>>>>>>> 54c85655fd1b0b6f5dbc581e6c5f5548dd443ea7
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T20:14:44+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
