@@ -17,7 +17,7 @@ namespace SoftUniWarz.States
 
 
         public InGameState()
-        {
+        {   
             staticElements.Add(new GUIelements("arenaBG"));
             staticElements.Add(new GUIelements("Player1"));
             staticElements.Add(new GUIelements("Player2"));

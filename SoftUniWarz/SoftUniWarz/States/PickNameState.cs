@@ -35,10 +35,6 @@ namespace SoftUniWarz.States
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-
-            spriteBatch.DrawString(spriteFont,name,new Vector2(100,100),Color.Black );
-
-
             foreach (var element in staticElements)
             {
                     element.Draw(spriteBatch);
@@ -47,6 +43,8 @@ namespace SoftUniWarz.States
             {
                 clickableElement.Draw(spriteBatch);
             }
+
+            spriteBatch.DrawString(spriteFont, name, new Vector2(400, 480), Color.Black);
         }
 
         public override void Update()
