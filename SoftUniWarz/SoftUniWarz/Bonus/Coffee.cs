@@ -10,11 +10,20 @@ namespace SoftUniWarz
 {
     class Coffee : Bonus
     {
-        private static readonly int healthBoost = 0;
-        private static readonly int manaBoost = 100;
+        private const int DefaultCoffeeBonusHealth = 0;
+        private const int DefaultCoffeeBonusMana = 100;
+        private const string DefaultCoffeeTexturePath = @"\..\..\Coffee";
+        private const int DefaultCoffeeWidth = 100;
+        private const int DefaultCoffeeHeigth = 100;
+        private static readonly Vector2 DefaultCoffeePosition = new Vector2(1100, 100);
 
-        public Coffee(string texturePath, Vector2 position, int witdh, int height) 
-            : base(texturePath, position, witdh, height, healthBoost, manaBoost)
+        public Coffee() 
+            : base(DefaultCoffeeTexturePath,
+                  DefaultCoffeePosition,
+                  DefaultCoffeeWidth,
+                  DefaultCoffeeHeigth,
+                  DefaultCoffeeBonusHealth,
+                  DefaultCoffeeBonusMana)
         {
         }
     }
