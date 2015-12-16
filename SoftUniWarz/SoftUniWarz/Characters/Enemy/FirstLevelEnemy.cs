@@ -1,4 +1,6 @@
-﻿namespace SoftUniWarz
+﻿using SoftUniWarz.Characters.Enemy;
+
+namespace SoftUniWarz
 {
     public class FirstLevelEnemy : Enemy
     {
@@ -9,11 +11,11 @@
 
 
         public FirstLevelEnemy() 
-            : base(
-                  DefaultFirstEnemyName,
-                  DefaultFirstEnemyHealth,
-                  DefaultFirsEnemyMana,
-                  DefaultFirstEnemyTexturePath)
+        //   : base(
+        //         DefaultFirstEnemyName,
+        //         DefaultFirstEnemyHealth,
+        //         DefaultFirsEnemyMana,
+        //         DefaultFirstEnemyTexturePath)
         {
         }
     }
