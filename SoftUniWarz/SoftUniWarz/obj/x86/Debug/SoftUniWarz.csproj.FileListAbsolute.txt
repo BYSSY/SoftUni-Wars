@@ -394,3 +394,5 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\D
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\QuitScreen.xnb
 >>>>>>> de67e92b5a4526c3d5a9b41a14e2bf5a149b95c3
 >>>>>>> c81b6a28d151b7ebf2669dd68a52f5fbc928f8b6
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\MyFont.xnb
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\player.xnb
