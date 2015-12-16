@@ -68,12 +68,12 @@
             this.ManaPoints += bonus.ManaBoost;
         }
 
-        public virtual IAttack ProduceAttack()
+        public IAttack ProduceAttack()
         {
             throw new NotImplementedException();
         }
 
-        public virtual void RespondToAttack(IAttack attack)
+        public void RespondToAttack(IAttack attack)
         {
             throw new NotImplementedException();
         }

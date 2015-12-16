@@ -17,8 +17,6 @@ namespace SoftUniWarz.States
         public InGameState()
         {
             staticElements.Add(new GUIelements("arenaBG"));
-            staticElements.Add(new GUIelements("Player1"));
-            staticElements.Add(new GUIelements("Player2"));
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -54,9 +52,8 @@ namespace SoftUniWarz.States
             foreach (var staticElement in staticElements)
             {
                 staticElement.LoadContent(content);
+                staticElement.CenterElement(768, 1366);
             }
-            staticElements.Find(x => x.ElementName == "Player1").MoveElement(0, 384);
-            staticElements.Find(x => x.ElementName == "Player2").MoveElement(1125, 384);
         }
         public void OnClick(string element)
         {
