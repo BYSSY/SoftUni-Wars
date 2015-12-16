@@ -1,28 +1,25 @@
-﻿using SoftUniWarz.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Attack;
-
-namespace SoftUniWarz
+﻿namespace SoftUniWarz
 {
+    using Interfaces;
+    using System;
+    using Microsoft.Xna.Framework;
+    using Validation;
+
     public abstract class Character : GameObject, IAttackAppliable, IAttackable
     {
         private string name;
         private string nameValidation;
-        private  int healthPoints;
-        private  int manaPoints;
-        private static readonly int maxHealth=500;
-        private static readonly int maxMana = 500;
+        private int healthPoints;
+        private int manaPoints;
+        private const int DefaultMaxHealth = 800;
+        private const int DefaultMaxMana = 500;
+
         public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
             : base(texturePath,position,width,height)
         {
             this.Name = name;
-            this.HealthPoints = maxHealth;
-            this.ManaPoints = maxMana;
+            this.HealthPoints = healthPoints;
+            this.ManaPoints = manaPoints;
         }
 
         public string NameValidation
@@ -37,19 +34,13 @@ namespace SoftUniWarz
                 this.nameValidation = value;
             }
         }
+
         public int HealthPoints
         {
             get { return this.healthPoints; }
             private set
             {
-                if (value<0)
-                {
-                    throw  new ArgumentOutOfRangeException("HP cannot be negative!");
-                }
-                if (value>maxHealth)
-                {
-                    this.healthPoints = maxHealth;
-                }
+                ValidateData.ValidateNumber(0, DefaultMaxHealth, value, nameof(HealthPoints));
                 this.healthPoints = value;
             }
         }
@@ -59,14 +50,7 @@ namespace SoftUniWarz
             get { return this.manaPoints; }
             private set
             {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Mana cannot be negative!");
-                }
-                if (value>maxMana)
-                {
-                    this.ManaPoints = maxMana;
-                }
+                ValidateData.ValidateNumber(0, DefaultMaxMana, value, nameof(ManaPoints));
                 this.manaPoints = value;
             }
         }
@@ -77,16 +61,20 @@ namespace SoftUniWarz
             {
                 return name;
             }
-            private set { this.name = value; }
+            private set
+            {
+                ValidateData.CheckIsNull(value, nameof(Name));
+                this.name = value;
+            }
         }
 
-        public void ApplyAttack(Attack.Attack attack)
+        public virtual void ApplyAttack(Attack.Attack attack)
         {
             this.healthPoints -= attack.DamageTake;
             this.manaPoints -= attack.ManaTake;
         }
 
-        public void ApplyBonus(Bonus bonus)
+        public virtual void ApplyBonus(Bonus bonus)
         {
             this.HealthPoints += bonus.HealthBoost;
             this.ManaPoints += bonus.ManaBoost;
