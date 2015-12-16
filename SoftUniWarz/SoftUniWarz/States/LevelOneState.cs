@@ -39,15 +39,15 @@ namespace SoftUniWarz.States
 
         public override void Update()
         {
-            if (player.HealthPoints <= 0)
-            {
-                StateManager.ChangeToState(GameState.MainMenu);
-                //TODO: save highscore
-            }
-            if (enemy.HealthPoints <= 0)
-            {
-                StateManager.ChangeToState(GameState.LevelTwoState);
-            }
+           //if (player.HealthPoints <= 0)
+           //{
+           //    StateManager.ChangeToState(GameState.MainMenu);
+           //    //TODO: save highscore
+           //}
+           //if (enemy.HealthPoints <= 0)
+           //{
+           //    StateManager.ChangeToState(GameState.LevelTwoState);
+           //}
 
             foreach (var inGameElement in clickableElements)
             {
