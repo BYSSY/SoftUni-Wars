@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 
-namespace SoftUniWarz.Attack
+namespace SoftUniWarz.Attack.PlayerAttacks
 {
-    public class ConstructorLegoAttack : Attack
+    class TermosThrowAttack: Attack
     {
         //TODO: FIX stats of attack
         private static readonly int damageTake = 70;
@@ -19,7 +19,7 @@ namespace SoftUniWarz.Attack
         private static readonly int width;
         private static readonly int height;
 
-        public ConstructorLegoAttack(Vector2 position)
+        public TermosThrowAttack(Vector2 position)
             : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)
         {
         }

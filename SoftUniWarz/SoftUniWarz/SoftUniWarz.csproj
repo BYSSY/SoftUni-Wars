@@ -38,15 +38,14 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Attack\PlayerAttack.cs" />
     <Compile Include="Attack\PlayerAttacks\BinaryAttack.cs" />
     <Compile Include="Attack\RegexAttack.cs" />
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
     <Compile Include="Attack\SnookerBallAttack.cs" />
     <Compile Include="Attack\StreamsAttack.cs" />
-    <Compile Include="Attack\TermosThrowAttack.cs" />
+    <Compile Include="Attack\PlayerAttacks\TermosThrowAttack.cs" />
     <Compile Include="Background\GUUClickableElement.cs" />
-    <Compile Include="Attack\ConstructorLegoAttack.cs" />
+    <Compile Include="Attack\PlayerAttacks\ConstructorLegoAttack.cs" />
     <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
@@ -133,6 +132,9 @@
     <None Include="Content\MyFont.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attack\EnemyAttacks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

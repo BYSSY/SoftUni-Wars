@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SoftUniWarz.Attack.PlayerAttacks
 {
-    class BinaryAttack : PlayerAttack
+    class BinaryAttack : Attack
     {
         private static readonly int damageTake = 80;
         private static readonly int manaTake = 0;
