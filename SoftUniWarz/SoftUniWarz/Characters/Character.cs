@@ -14,7 +14,7 @@
         private int manaPoints;
         private const int DefaultMaxHealth = 800;
         private const int DefaultMaxMana = 500;
-        private IList<Bonus> inventory;
+        private IList<Attack.Attack> spellPool;
 
         public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
             : base(texturePath,position,width,height)
@@ -22,7 +22,7 @@
             this.Name = name;
             this.HealthPoints = healthPoints;
             this.ManaPoints = manaPoints;
-            this.inventory = new List<Bonus>();
+            this.spellPool = new List<Attack.Attack>();
         }
 
 
@@ -59,7 +59,7 @@
             }
         }
 
-        public IEnumerable<Bonus> Inventory{ get; }
+        public IEnumerable<Attack.Attack> SpellPool { get { return this.spellPool; } }
 
         public virtual void ApplyAttack(Attack.Attack attack)
         {
@@ -83,10 +83,10 @@
             throw new NotImplementedException();
         }
 
-        public void AddBonusToInventory(Bonus bonusToAdd)
+        public void AddSpellToInventory(Attack.Attack attack)
         {
-            ValidateData.CheckIsNull(bonusToAdd,nameof(Bonus));
-            this.inventory.Add(bonusToAdd);
+            ValidateData.CheckIsNull(attack,nameof(Bonus));
+            this.spellPool.Add(attack);
         }
     }
     
