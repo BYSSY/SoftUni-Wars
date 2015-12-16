@@ -17,7 +17,7 @@ namespace SoftUniWarz.States
         public QuitState()
 
         {
-            clickableElements.Add(new GUUClickableElement("matrix"));
+            clickableElements.Add(new GUUClickableElement("QuitScreen"));
         }
 
         public override void LoadContent(ContentManager content)
@@ -47,6 +47,7 @@ namespace SoftUniWarz.States
 
         private void OnClick(string element)
         {
+            Thread.Sleep(5000);
             Environment.Exit(1);
         }
 
