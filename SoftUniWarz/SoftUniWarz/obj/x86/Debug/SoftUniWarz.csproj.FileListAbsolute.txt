@@ -251,3 +251,7 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\еxit.xnb
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb
 C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\player.xnb
+C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\еxit.xnb
+C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb
+C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player1.jpg
+C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player2.jpg
