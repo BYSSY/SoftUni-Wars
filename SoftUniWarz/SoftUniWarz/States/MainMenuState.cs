@@ -75,6 +75,10 @@ namespace SoftUniWarz.Background
             {
                 StateManager.ChangeToState(GameState.Quit);
             }
+            if (element == "HighScore")
+            {
+                StateManager.ChangeToState(GameState.HighScore);
+            }
         }
 
         

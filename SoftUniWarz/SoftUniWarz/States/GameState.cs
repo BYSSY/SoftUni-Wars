@@ -10,6 +10,7 @@ namespace SoftUniWarz.Background
         MainMenu,
         PickName,
         InGame,
-        Quit
+        Quit,
+        HighScore
     }
 }
