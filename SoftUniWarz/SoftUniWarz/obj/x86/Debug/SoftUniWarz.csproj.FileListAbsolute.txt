@@ -244,3 +244,5 @@ C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\еxit.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb

@@ -31,7 +31,6 @@ namespace SoftUniWarz.States
         public PickNameState()
         {
             staticElements.Add(new GUIelements("NamePickBG"));
-            clickableElements.Add(new GUUClickableElement("name"));
             clickableElements.Add(new GUUClickableElement("done"));
         }
         public override void Draw(SpriteBatch spriteBatch)

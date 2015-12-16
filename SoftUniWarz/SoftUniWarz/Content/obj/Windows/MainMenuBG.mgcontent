@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</SourceFile>
-  <SourceTime>2015-12-16T14:06:54.4154535+02:00</SourceTime>
-  <DestFile>C:/Users/hp/Desktop/New folder/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/MainMenuBG.xnb</DestFile>
-  <DestTime>2015-12-16T14:07:22.4256056+02:00</DestTime>
+  <SourceFile>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</SourceFile>
+  <SourceTime>2015-12-16T13:44:33.6427901+02:00</SourceTime>
+  <DestFile>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/MainMenuBG.xnb</DestFile>
+  <DestTime>2015-12-16T14:23:41.6636544+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T20:14:44+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
