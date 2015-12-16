@@ -1,14 +1,12 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 
-namespace SoftUniWarz.Attack
+namespace SoftUniWarz.Attack.EnemyAttacks
 {
-    class SimpleEnemyAttack : Attack
+    class LambdaAttack : Attack
     {
         private static readonly int damageTake = 70;
         private static readonly int manaTake = 5;
@@ -21,7 +19,7 @@ namespace SoftUniWarz.Attack
         private static readonly int width;
         private static readonly int height;
 
-        public SimpleEnemyAttack(Vector2 position)
+        public LambdaAttack(Vector2 position)
             : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)
         {
         }

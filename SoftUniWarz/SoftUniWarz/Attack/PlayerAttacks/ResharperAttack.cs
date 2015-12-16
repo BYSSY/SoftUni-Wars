@@ -1,14 +1,13 @@
-﻿using Microsoft.Xna.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
 
-namespace SoftUniWarz.Attack
+namespace SoftUniWarz.Attack.PlayerAttacks
 {
-    class SnookerBallAttack : Attack
+    class ResharperAttack : Attack
     {
-
         //TODO: FIX stats of attack
         private static readonly int damageTake = 70;
         private static readonly int manaTake = 5;
@@ -20,7 +19,7 @@ namespace SoftUniWarz.Attack
         private static readonly int width;
         private static readonly int height;
 
-        public SnookerBallAttack(Vector2 position)
+        public ResharperAttack(Vector2 position)
             : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)
         {
         }
