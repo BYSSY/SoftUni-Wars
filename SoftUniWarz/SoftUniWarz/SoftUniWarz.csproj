@@ -47,7 +47,6 @@
     <Compile Include="Attack\TermosThrowAttack.cs" />
     <Compile Include="Background\GUUClickableElement.cs" />
     <Compile Include="Attack\ConstructorLegoAttack.cs" />
-    <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
