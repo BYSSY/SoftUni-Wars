@@ -261,3 +261,5 @@ E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.png
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.png
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.xnb
+C:\Users\maria\Desktop\GitClone\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
+C:\Users\maria\Desktop\GitClone\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb

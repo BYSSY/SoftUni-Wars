@@ -16,8 +16,8 @@
         private const int DefaultMaxMana = 500;
         private IList<Attack.Attack> spellPool;
 
-        public Character(string name, int healthPoints, int manaPoints,string texturePath,Vector2 position,int width,int height)
-            : base(texturePath,position,width,height)
+        public Character(string name, int healthPoints, int manaPoints, string texturePath, Vector2 position, int width, int height)
+            : base(texturePath, position, width, height)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
@@ -85,9 +85,9 @@
 
         public void AddSpellToInventory(Attack.Attack attack)
         {
-            ValidateData.CheckIsNull(attack,nameof(Bonus));
+            ValidateData.CheckIsNull(attack, nameof(Attack.Attack));
             this.spellPool.Add(attack);
         }
     }
-    
+
 }
