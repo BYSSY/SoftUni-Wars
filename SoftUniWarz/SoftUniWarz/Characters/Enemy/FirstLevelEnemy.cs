@@ -10,12 +10,12 @@ namespace SoftUniWarz
         private const string DefaultFirstEnemyTexturePath = @"\..\..\Preslav";
 
 
-        public FirstLevelEnemy() 
-        //   : base(
-        //         DefaultFirstEnemyName,
-        //         DefaultFirstEnemyHealth,
-        //         DefaultFirsEnemyMana,
-        //         DefaultFirstEnemyTexturePath)
+        public FirstLevelEnemy()
+           : base(
+                 DefaultFirstEnemyName,
+                 DefaultFirstEnemyHealth,
+                 DefaultFirsEnemyMana,
+                 DefaultFirstEnemyTexturePath)
         {
         }
     }
