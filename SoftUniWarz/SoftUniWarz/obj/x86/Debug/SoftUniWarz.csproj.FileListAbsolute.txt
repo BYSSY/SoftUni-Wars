@@ -248,3 +248,6 @@ E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz
 E:\bojo\Fundamentals\OOP\Teamwork\Final Rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\еxit.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\player.xnb

@@ -78,7 +78,7 @@ namespace SoftUniWarz.States
                 clickableElement.CenterElement(768, 1366);
                 clickableElement.ClickEvent += OnClick;
             }
-            clickableElements.Find(x=>x.ElementName=="done").MoveElement(0,60);
+            clickableElements.Find(x=>x.ElementName=="done").MoveElement(0,200);
         }
 
         public void OnClick(string element)
