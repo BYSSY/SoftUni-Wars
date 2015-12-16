@@ -14,10 +14,10 @@ namespace SoftUniWarz.States
     class PickNameState : State
     {
 
-        private  List<GUIelements> staticElements = new List<GUIelements>();
-        private  List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
+        private List<GUIelements> staticElements = new List<GUIelements>();
+        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>();
 
-        private  Keys[] lastPressedKeys = new Keys[5];
+        private Keys[] lastPressedKeys = new Keys[5];
         private string name = string.Empty;
         private SpriteFont spriteFont;
 
@@ -37,14 +37,14 @@ namespace SoftUniWarz.States
         {
             foreach (var element in staticElements)
             {
-                    element.Draw(spriteBatch);
+                element.Draw(spriteBatch);
             }
             foreach (var clickableElement in clickableElements)
             {
                 clickableElement.Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(spriteFont, name, new Vector2(400, 480), Color.Black);
+            spriteBatch.DrawString(spriteFont, name, new Vector2(635, 480), Color.Black);
         }
 
         public override void Update()
@@ -68,7 +68,7 @@ namespace SoftUniWarz.States
             foreach (var element in staticElements)
             {
                 element.LoadContent(content);
-                element.CenterElement(768,1366);
+                element.CenterElement(768, 1366);
             }
             foreach (var clickableElement in clickableElements)
             {
@@ -76,12 +76,12 @@ namespace SoftUniWarz.States
                 clickableElement.CenterElement(768, 1366);
                 clickableElement.ClickEvent += OnClick;
             }
-            clickableElements.Find(x=>x.ElementName=="done").MoveElement(0,200);
+            clickableElements.Find(x => x.ElementName == "done").MoveElement(0, 200);
         }
 
         public void OnClick(string element)
         {
-            if (element =="done")
+            if (element == "done")
             {
                 StateManager.ChangeToState(GameState.InGame);
             }
@@ -98,7 +98,7 @@ namespace SoftUniWarz.States
                     OnKeyUp(key);
                 }
             }
-            foreach (var key in pressedKeys    )
+            foreach (var key in pressedKeys)
             {
                 if (!lastPressedKeys.Contains(key))
                 {
@@ -111,19 +111,19 @@ namespace SoftUniWarz.States
 
         public void OnKeyUp(Keys key)
         {
-           
+
         }
 
         public void OnKeyDown(Keys key)
         {
-            if (key==Keys.Back&&name.Length>0)
+            if (key == Keys.Back && name.Length > 0)
             {
                 name = name.Remove(name.Length - 1);
             }
+
             else
             {
-            name += key.ToString();
-
+                name += key.ToString();
             }
         }
 
