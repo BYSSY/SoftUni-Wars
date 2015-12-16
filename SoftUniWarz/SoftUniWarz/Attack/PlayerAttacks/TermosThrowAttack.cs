@@ -18,6 +18,7 @@ namespace SoftUniWarz.Attack
         //TODO: fix sizes of images
         private static readonly int width;
         private static readonly int height;
+        
 
         public TermosThrowAttack(Vector2 position)
             : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)

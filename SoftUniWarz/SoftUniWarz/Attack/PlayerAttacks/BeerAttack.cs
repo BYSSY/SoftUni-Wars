@@ -14,7 +14,7 @@ namespace SoftUniWarz.Attack.PlayerAttacks
         private static readonly int coffeeTake = 0;
         private static readonly int beerTake = 0;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "done";
         //TODO: fix sizes of images
         private static readonly int width;
         private static readonly int height;

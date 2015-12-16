@@ -2,6 +2,6 @@
 {
     public interface IAttackable
     {
-        IAttack ProduceAttack();
+        void ProduceAttack(Attack.Attack attack);
     }
 }

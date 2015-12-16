@@ -7,7 +7,7 @@ namespace SoftUniWarz
         private const int DefaultFirstEnemyHealth = 500;
         private const int DefaultFirsEnemyMana = 300;
         private const string DefaultFirstEnemyName = "Preslav";
-        private const string DefaultFirstEnemyTexturePath = @"\..\..\Preslav";
+        private const string DefaultFirstEnemyTexturePath = "Player2";
 
 
         public FirstLevelEnemy()

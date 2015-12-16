@@ -5,10 +5,11 @@ using System.Security.Principal;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz.Attack
 {
-    public abstract class Attack: GameObject
+    public abstract class Attack: GameObject, IAttack
     {
         private int damageTake;
         private int manaTake;
@@ -103,5 +104,6 @@ namespace SoftUniWarz.Attack
                 damageTake = value;
             }
         }
+        
     }
 }

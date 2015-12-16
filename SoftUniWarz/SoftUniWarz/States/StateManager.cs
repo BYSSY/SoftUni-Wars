@@ -42,7 +42,7 @@ namespace SoftUniWarz.States
                     CurrentState = new MainMenuState();
                     break;
                 case GameState.LevelOneState:
-                    CurrentState = new LevelOneState();
+                    CurrentState = new LevelOneState(content);
                     break;
                 case GameState.LevelTwoState:
                     CurrentState = new LevelTwoState();
