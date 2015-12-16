@@ -40,8 +40,13 @@
   <ItemGroup>
     <Compile Include="Attack\PlayerAttack.cs" />
     <Compile Include="Attack\PlayerAttacks\BinaryAttack.cs" />
+    <Compile Include="Attack\RegexAttack.cs" />
     <Compile Include="Attack\SimpleEnemyAttack.cs" />
+    <Compile Include="Attack\SnookerBallAttack.cs" />
+    <Compile Include="Attack\StreamsAttack.cs" />
+    <Compile Include="Attack\TermosThrowAttack.cs" />
     <Compile Include="Background\GUUClickableElement.cs" />
+    <Compile Include="Attack\ConstructorLegoAttack.cs" />
     <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
@@ -106,6 +111,7 @@
     <Content Include="Content\Play.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\player.jpg" />
     <Content Include="Content\Quit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
