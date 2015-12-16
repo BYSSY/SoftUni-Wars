@@ -13,12 +13,15 @@ namespace SoftUniWarz.States
         //Here should be the main logic and the instatiation of Game1
         List<GUIelements> staticElements = new List<GUIelements>();
         List<GUUClickableElement>  clickableElements = new List<GUUClickableElement>();
+        private Player player; 
+
 
         public InGameState()
         {
             staticElements.Add(new GUIelements("arenaBG"));
             staticElements.Add(new GUIelements("Player1"));
             staticElements.Add(new GUIelements("Player2"));
+            clickableElements.Add(new GUUClickableElement("PanicButton2"));
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -49,6 +52,7 @@ namespace SoftUniWarz.States
         {
             foreach (var guiElements in clickableElements)
             {
+                guiElements.LoadContent(content);
                 guiElements.ClickEvent += OnClick;
             }
             foreach (var staticElement in staticElements)
@@ -59,14 +63,10 @@ namespace SoftUniWarz.States
             staticElements.Find(y=>y.ElementName=="Player2").MoveElement(1150,250);
         }
         public void OnClick(string element)
-        {
-            if (element == "Play")
+        { 
+            if (element == "PanicButton2")
             {
-                StateManager.ChangeToState(GameState.PickName);
-            }
-            if (element == "Quit")
-            {
-                StateManager.ChangeToState(GameState.Quit);
+                
             }
         }
     }
