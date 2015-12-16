@@ -40,8 +40,11 @@ namespace SoftUniWarz.States
                 case GameState.MainMenu:
                     CurrentState = new MainMenuState();
                     break;
-                case GameState.InGame:
-                    CurrentState = new InGameState();
+                case GameState.LevelOneState:
+                    CurrentState = new LevelOneState();
+                    break;
+                case GameState.LevelTwoState:
+                    CurrentState = new LevelTwoState();
                     break;
                 case GameState.Quit:
                     CurrentState = new QuitState();

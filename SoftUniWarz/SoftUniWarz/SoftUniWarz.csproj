@@ -58,7 +58,8 @@
     <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
-    <Compile Include="States\InGameState.cs" />
+    <Compile Include="States\LevelOneState.cs" />
+    <Compile Include="States\LevelTwoState.cs" />
     <Compile Include="States\MainMenuState.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Player\AdvancedPlayer.cs" />

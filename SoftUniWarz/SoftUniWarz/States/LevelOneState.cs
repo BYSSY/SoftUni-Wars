@@ -8,15 +8,16 @@ using SoftUniWarz.Background;
 
 namespace SoftUniWarz.States
 {
-    class InGameState : State
+    class LevelOneState : State
     {
         //Here should be the main logic and the instatiation of Game1
         List<GUIelements> staticElements = new List<GUIelements>();
         List<GUUClickableElement>  clickableElements = new List<GUUClickableElement>();
-        private Player player; 
+        private Player player;
+        private FirstLevelEnemy enemy;
 
 
-        public InGameState()
+        public LevelOneState()
         {   
             staticElements.Add(new GUIelements("arenaBG"));
             staticElements.Add(new GUIelements("Player1"));
@@ -38,6 +39,16 @@ namespace SoftUniWarz.States
 
         public override void Update()
         {
+            if (player.HealthPoints <= 0)
+            {
+                StateManager.ChangeToState(GameState.MainMenu);
+                //TODO: save highscore
+            }
+            if (enemy.HealthPoints <= 0)
+            {
+                StateManager.ChangeToState(GameState.LevelTwoState);
+            }
+
             foreach (var inGameElement in clickableElements)
             {
                 inGameElement.Update();

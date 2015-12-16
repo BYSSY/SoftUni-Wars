@@ -83,7 +83,7 @@ namespace SoftUniWarz.States
         {
             if (element == "done")
             {
-                StateManager.ChangeToState(GameState.InGame);
+                StateManager.ChangeToState(GameState.LevelOneState);
             }
         }
 
