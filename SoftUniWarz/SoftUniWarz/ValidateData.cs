@@ -23,5 +23,13 @@
                 throw new ArgumentNullException(string.Format($"{name} cannot be null!"));
             }
         }
+
+        public static void CheckIsNegative(int number, string name)
+        {
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException(string.Format($"{name} cannot be negative!"));
+            }
+        }
     }
 }

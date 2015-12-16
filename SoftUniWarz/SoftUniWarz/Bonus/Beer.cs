@@ -9,11 +9,23 @@ namespace SoftUniWarz
 {
     class Beer : Bonus
     {
-        private static readonly int healthBoost = 150;
-        private static readonly int manaBoostt = 0;
+        private const int healthBoost = 150;
+        private const int manaBoostt = 0;
+        private const string DefaultBeerTexturePath = @"\..\..\Beer";
+        private const int DefaultBeerWitdh = 100;
+        private static readonly Vector2 DefaultBeerPosition = new Vector2(100, 100);
+        private const int DefaultBeerHeigth = 100;
 
-        public Beer(string texturePath, Vector2 position, int witdh, int height)
-            : base(texturePath, position, witdh, height, healthBoost, manaBoostt)
+
+
+        public Beer()
+            : base(
+                  DefaultBeerTexturePath,
+                  DefaultBeerPosition,
+                  DefaultBeerWitdh,
+                  DefaultBeerHeigth,
+                  healthBoost,
+                  manaBoostt)
         {
             
         }

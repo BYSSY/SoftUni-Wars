@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-
-namespace SoftUniWarz
+﻿namespace SoftUniWarz
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
+    using SoftUniWarz.Validation;
+
     public abstract class Bonus : GameObject
     {
         private int healthBoost;
@@ -24,10 +25,7 @@ namespace SoftUniWarz
 
             set
             {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Bonus cannot be negative!");
-                }
+                ValidateData.CheckIsNegative(value, nameof(HealthBoost));
                 this.healthBoost = value;
             }
         }
@@ -37,10 +35,7 @@ namespace SoftUniWarz
             get { return this.manaBoost; }
             set
             {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Mana cannot be negative!");
-                }
+                ValidateData.CheckIsNegative(value, nameof(ManaBoost));
                 this.manaBoost = value;
             }
         }
