@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
@@ -16,5 +17,32 @@
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/NamePickBG.jpg</File>
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
     <File>E:/bojo/Fundamentals/OOP/Teamwork/Final Rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/player.jpg</File>
+=======
+<<<<<<< HEAD
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/matrix.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/name.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/done.png</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/NamePickBG.jpg</File>
+    <File>C:/Users/hp/Desktop/Warz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
+=======
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/matrix.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/name.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/done.png</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/NamePickBG.jpg</File>
+    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
+>>>>>>> de67e92b5a4526c3d5a9b41a14e2bf5a149b95c3
+>>>>>>> c81b6a28d151b7ebf2669dd68a52f5fbc928f8b6
   </SourceFiles>
 </SourceFileCollection>
