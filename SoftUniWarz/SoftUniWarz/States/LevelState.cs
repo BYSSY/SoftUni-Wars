@@ -11,6 +11,7 @@ using SoftUniWarz.Background;
 using SoftUniWarz.Characters.Enemy;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Attack;
+using SoftUniWarz.Attack.EnemyAttacks;
 
 namespace SoftUniWarz.States
 {
@@ -109,7 +110,7 @@ namespace SoftUniWarz.States
             for (int i = 0; i < player.SpellPool.Count; i++)
             {
                 player.SpellPool[i].Element.MoveElement(15, 0);
-                if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > enemy.Element.GUIrect.X)
+                if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > 1000)
                 {
                     enemy.ApplyAttack(player.SpellPool[i]);
                     player.SpellPool.RemoveAt(i);
@@ -165,15 +166,31 @@ namespace SoftUniWarz.States
 
         public void OnClick(string element)
         {
-            if (element == "PanicButton2")
+            Vector2 positionForMagic = new Vector2(player.Element.Position.X + player.Element.GUIrect.Width/2,
+                player.Element.Position.Y + player.Element.GUIrect.Height/2);
+            if (element == "BinaryBtn")
             {
-                BeerAttack beerAttack = new BeerAttack(player.Element.Position);
+                BinaryAttack beerAttack = new BinaryAttack(positionForMagic);
                 player.ProduceAttack(beerAttack);
+<<<<<<< HEAD
                 ConstructorLegoAttack constructorAttack = new ConstructorLegoAttack(player.Element.Position);
                 enemyHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
                 //this.enemy.HealthPoints -= beerAttack.Damage;
                 playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
             }
+=======
+                playerHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
+                playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
+            }
+            if (element == "BookBtn")
+            {
+                SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
+                player.ProduceAttack(attack);
+                playerHealthRectangle.Width -= (int)(attack.Damage * 0.75);
+                playerManaRectangle.Width -= (int)(attack.ManaCost * 0.75);
+            }
+
+>>>>>>> 6ed77abba1228692891ea782fb88ab070ac5b233
         }
     }
 }

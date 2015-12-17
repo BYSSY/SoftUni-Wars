@@ -25,8 +25,8 @@
             : base(
                   texturePath,
                   position,
-                  Prefabs.standardPlayerWidth,
-                  Prefabs.standardPlayerWidth)
+                  -1,
+                  -1)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;

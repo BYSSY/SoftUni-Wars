@@ -255,8 +255,6 @@ C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Exit.xnb
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player1.jpg
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player2.jpg
-E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player1.jpg
-E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player2.jpg
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.xnb
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.png
 C:\Users\hp\Desktop\New folder\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.png
@@ -421,4 +419,31 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\D
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.xnb
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBar.xnb
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBarBackground.xnb
+<<<<<<< HEAD
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HealthBar.png
+=======
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.jpg
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.jpg
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBar.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBarBackground.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\CtorBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ReSharperBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\TermBtn.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\CtorBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ReSharperBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\TermBtn.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player1.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player2.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.xnb
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.png
+E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.xnb
+>>>>>>> 6ed77abba1228692891ea782fb88ab070ac5b233
