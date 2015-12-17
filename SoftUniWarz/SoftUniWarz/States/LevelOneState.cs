@@ -9,20 +9,18 @@ using SoftUniWarz.Background;
 
 namespace SoftUniWarz.States
 {
-    class LevelOneState : State
+    class LevelOneState : LevelState
     {
         //Here should be the main logic and the instatiation of Game1
-        List<GUIelements> staticElements = new List<GUIelements>();
         List<GUUClickableElement>  clickableElements = new List<GUUClickableElement>();
         private ContentManager content;
-        private Player player;
-        private FirstLevelEnemy enemy;
         public LevelOneState(ContentManager content)
+            :base()
         {
             this.content = content;
-            player = new NovicePlayer("Nasko");
-            enemy = new FirstLevelEnemy();
-            staticElements.Add(new GUIelements("arenaBG"));
+            base.player = new NovicePlayer("Nasko");
+            base.enemy = new FirstLevelEnemy();
+            base.staticElements.Add(new GUIelements("arenaBG"));
             clickableElements.Add(new GUUClickableElement("PanicButton2"));
         }
 
@@ -73,8 +71,9 @@ namespace SoftUniWarz.States
                 for (int i = 0; i < player.SpellPool.Count; i++)
                 {
                     player.SpellPool[i].Element.MoveElement(15, player.SpellPool[i].Element.GUIrect.Y);
-                    if (player.SpellPool[i].Element.GUIrect.X > 1200)
+                    if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > enemy.Element.GUIrect.X)
                     {
+                        enemy.ApplyAttack(player.SpellPool[i]);
                         player.SpellPool.RemoveAt(i);
                     }
                 }
@@ -89,6 +88,7 @@ namespace SoftUniWarz.States
             {
                 guiElements.LoadContent(content);
                 guiElements.ClickEvent += OnClick;
+                
             }
             foreach (var staticElement in staticElements)
             {
@@ -105,5 +105,6 @@ namespace SoftUniWarz.States
                 player.ProduceAttack(new BeerAttack(player.Position));
             }
         }
+
     }
 }

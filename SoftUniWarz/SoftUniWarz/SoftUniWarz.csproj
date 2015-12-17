@@ -51,6 +51,7 @@
     <Compile Include="Attack\PlayerAttacks\TermosThrowAttack.cs" />
     <Compile Include="Background\GUUClickableElement.cs" />
     <Compile Include="Attack\PlayerAttacks\ConstructorLegoAttack.cs" />
+    <Compile Include="Buttons\Button.cs" />
     <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Background\GUIelements.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
     <Compile Include="States\LevelOneState.cs" />
+    <Compile Include="States\LevelState.cs" />
     <Compile Include="States\LevelTwoState.cs" />
     <Compile Include="States\HighScoreState.cs" />
     <Compile Include="States\MainMenuState.cs" />

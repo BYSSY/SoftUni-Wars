@@ -12,7 +12,7 @@ namespace SoftUniWarz.Background
         public event ElementClickedEventHandler ClickEvent;
         //Lambda instead of delegate !
         public delegate void ElementClickedEventHandler(string element);
-
+        
         public GUUClickableElement(string elementName)
             : base(elementName)
         {
