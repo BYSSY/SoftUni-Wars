@@ -189,11 +189,7 @@
 /processorParam:TextureFormat=Color
 /build:HealthBarBackground.png
 
-<<<<<<< HEAD
-#begin ManaBar.png
-=======
 #begin HSBG.jpg
->>>>>>> 2a468c6ae489b371d24465eb18c9a49a24ce012f
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -202,15 +198,9 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:TextureFormat=Color
-<<<<<<< HEAD
-/build:ManaBar.png
-
-#begin ManaBarBackground.png
-=======
 /build:HSBG.jpg
 
 #begin HS.jpg
->>>>>>> 2a468c6ae489b371d24465eb18c9a49a24ce012f
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -219,9 +209,5 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:TextureFormat=Color
-<<<<<<< HEAD
-/build:ManaBarBackground.png
-=======
 /build:HS.jpg
->>>>>>> 2a468c6ae489b371d24465eb18c9a49a24ce012f
 
