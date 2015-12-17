@@ -16,14 +16,15 @@ namespace SoftUniWarz.States
         private SpriteFont spriteFont;
         private SortedDictionary<int, string> dataDictionary;
         private HighScore highScore;
-        private List<GUIelements> elements = new List<GUIelements>(); 
-        
+        private List<GUIelements> elements = new List<GUIelements>();
+
         public HighScoreState(Vector2 screenSize)
             : base(screenSize)
         {
-            highScore=new HighScore();
+            highScore = new HighScore();
             dataDictionary = highScore.Read();
-            elements.Add(new GUIelements("matrix",new Vector2(0,0),1366,768));
+            elements.Add(new GUIelements("HSBG", new Vector2(0, 0), 1366, 768));
+            elements.Add(new GUIelements("HS",new Vector2(433,30),500,175));
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -32,16 +33,15 @@ namespace SoftUniWarz.States
             {
                 element.Draw(spriteBatch);
             }
-            int y = 100;
+            int y = 200;
             foreach (var entry in dataDictionary.Reverse())
             {
-                spriteBatch.DrawString(spriteFont,"HIGHSCORE",new Vector2(683,20),Color.Azure );
-            spriteBatch.DrawString(spriteFont,entry.Key+"",new Vector2(100,y), Color.AliceBlue);
-                spriteBatch.DrawString(spriteFont,entry.Value,new Vector2(140,y),Color.AliceBlue );
+                spriteBatch.DrawString(spriteFont, entry.Key + "", new Vector2(100, y), Color.AliceBlue);
+                spriteBatch.DrawString(spriteFont, entry.Value, new Vector2(140, y), Color.AliceBlue);
                 y += 50;
             }
-            
-            
+
+
         }
 
         public override void Update()
@@ -57,12 +57,12 @@ namespace SoftUniWarz.States
             spriteFont = content.Load<SpriteFont>("MyFont");
             foreach (var element in elements)
             {
-                    element.LoadContent(content);
+                element.LoadContent(content);
             }
         }
 
 
-        
+
 
     }
 }

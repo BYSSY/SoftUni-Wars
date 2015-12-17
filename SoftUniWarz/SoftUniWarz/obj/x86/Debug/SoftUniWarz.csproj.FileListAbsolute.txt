@@ -353,3 +353,7 @@ C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows
 C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.jpg
+C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.xnb
+C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.jpg
+C:\Users\hp\Desktop\SoftUniWarz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.xnb

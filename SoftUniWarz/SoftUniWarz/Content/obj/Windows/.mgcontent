@@ -4,7 +4,6 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-<<<<<<< HEAD
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
@@ -21,23 +20,7 @@
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/PanicButton2.png</File>
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HealthBar.png</File>
     <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HealthBarBackground.png</File>
-=======
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Command_Home.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Play.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Quit.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/MainMenuBG.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/matrix.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/name.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/done.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/NamePickBG.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/arenaBG.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/player.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/Exit.jpg</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/PanicButton2.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HealthBar.png</File>
-    <File>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HealthBarBackground.png</File>
->>>>>>> 681419c5808ca80e241aea7217e8dab935fb9b9b
+    <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HSBG.jpg</File>
+    <File>C:/Users/hp/Desktop/SoftUniWarz/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HS.jpg</File>
   </SourceFiles>
 </SourceFileCollection>
