@@ -23,36 +23,32 @@ namespace SoftUniWarz.States
         protected ContentManager content;
 
         // HealthBar Player1
-        private Texture2D playerHealthTexture;
+        private Texture2D healthTexture;
         private Rectangle playerHealthRectangle;
         private Vector2 playerHealthPosition;
 
-        private Texture2D playerHealthTextureBG;
+        private Texture2D healthTextureBG;
         private Rectangle playerHealthRectangleBG;
 
         // ManaBar Player1
-        private Texture2D playerManaTexture;
+        private Texture2D manaTexture;
         private Rectangle playerManaRectangle;
         private Vector2 playerManaPosition;
 
-        private Texture2D playerManaTextureBG;
+        private Texture2D manaTextureBG;
         private Rectangle playerManaRectangleBG;
 
         // HealthBar Player2
-        private Texture2D enemyHealthTexture;
         private Rectangle enemyHealthRectangle;
         private Vector2 enemyHealthPosition;
 
-        private Texture2D enemyHealthTextureBG;
         private Rectangle enemyHealthRectangleBG;
 
         // ManaBar Player2
 
-        private Texture2D enemyManaTexture;
         private Rectangle enemyManaRectangle;
         private Vector2 enemyManaPosition;
 
-        private Texture2D enemyManaTextureBG;
         private Rectangle enemyManaRectangleBG;
 
         public LevelState(Vector2 screenSize)
@@ -86,11 +82,20 @@ namespace SoftUniWarz.States
             }
 
             player.Draw(spriteBatch);
-            //Drawing the player's bars
-            spriteBatch.Draw(playerHealthTextureBG, playerHealthRectangleBG, Color.White);
-            spriteBatch.Draw(playerHealthTexture, playerHealthPosition, playerHealthRectangle, Color.White);
-            spriteBatch.Draw(playerManaTextureBG, playerManaRectangleBG, Color.White);
-            spriteBatch.Draw(playerManaTexture, playerManaPosition, playerManaRectangle, Color.White);
+            // Drawing the player's bars
+            spriteBatch.Draw(healthTextureBG, playerHealthRectangleBG, Color.White);
+            spriteBatch.Draw(healthTexture, playerHealthPosition, playerHealthRectangle, Color.White);
+            spriteBatch.Draw(manaTextureBG, playerManaRectangleBG, Color.White);
+            spriteBatch.Draw(manaTexture, playerManaPosition, playerManaRectangle, Color.White);
+
+            // Drawing enemy's bars
+            spriteBatch.Draw(healthTextureBG, enemyHealthRectangleBG, Color.White);
+            spriteBatch.Draw(healthTexture, enemyHealthPosition, enemyHealthRectangle, Color.White);
+            spriteBatch.Draw(manaTextureBG, enemyManaRectangleBG, Color.White);
+            spriteBatch.Draw(manaTexture, enemyManaPosition, enemyManaRectangle, Color.White);
+
+
+
         }
 
         public override void Update()
@@ -118,6 +123,10 @@ namespace SoftUniWarz.States
             //Player bars backgrounds
             playerHealthRectangleBG = new Rectangle(200, 20, (int)(this.player.HealthPoints * 0.75), 30);
             playerManaRectangleBG = new Rectangle(200, 80, (int)(this.player.HealthPoints * 0.75), 30);
+
+            //
+            enemyHealthRectangleBG = new Rectangle(780, 20, (int)(this.player.HealthPoints * 0.75), 30);
+            enemyManaRectangleBG = new Rectangle(780, 80, (int)(this.player.HealthPoints * 0.75), 30);
         }
 
         public override void LoadContent(ContentManager content)
@@ -136,17 +145,22 @@ namespace SoftUniWarz.States
             }
 
             // Setting player's mana and health bars: textures, position and rectangles.
-            playerHealthTexture = content.Load<Texture2D>("HealthBar");
+            healthTexture = content.Load<Texture2D>("HealthBar");
             playerHealthPosition = new Vector2(200, 20);
             playerHealthRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
-            playerHealthTextureBG = content.Load<Texture2D>("HealthBarBackground");
+            healthTextureBG = content.Load<Texture2D>("HealthBarBackground");
 
-            playerManaTexture = content.Load<Texture2D>("ManaBar");
+            manaTexture = content.Load<Texture2D>("ManaBar");
             playerManaPosition = new Vector2(200, 80);
             playerManaRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
-            playerManaTextureBG = content.Load<Texture2D>("ManaBarBackground");
+            manaTextureBG = content.Load<Texture2D>("ManaBarBackground");
 
+            // Setting enemy's mana and health bar - position and rectangle.
+            enemyHealthPosition = new Vector2(780, 20);
+            enemyHealthRectangle = new Rectangle(0, 0, (int)((this.enemy.HealthPoints) * 0.75), 30);
 
+            enemyManaPosition = new Vector2(780, 80);
+            enemyManaRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
 
         }
 
