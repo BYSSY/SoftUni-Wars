@@ -8,19 +8,14 @@ namespace SoftUniWarz.Attack.PlayerAttacks
 {
     class CSharpBookAttack : Attack
     {
-        //TODO: FIX stats of attack
-        private static readonly int damageTake = 70;
-        private static readonly int manaTake = 5;
-        private static readonly int coffeeTake = 0;
-        private static readonly int beerTake = 0;
+        private static readonly int damageTake = 60;
+        private static readonly int manaTake = 15;
         private static readonly bool isParalizable = false;
         private static readonly string texturePath = "";
-        //TODO: fix sizes of images
-        private static readonly int width;
-        private static readonly int height;
+        // TODO: Set texture path.
 
         public CSharpBookAttack(Vector2 position)
-            : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)
+            : base(damageTake, manaTake, isParalizable, texturePath, position)
         {
         }
     }

@@ -5,6 +5,7 @@
     using Microsoft.Xna.Framework;
     using Validation;
     using System.Collections.Generic;
+    using Content;
 
     public abstract class Character : GameObject, IDestroyable, IAttackable
     {
@@ -16,8 +17,16 @@
         private const int DefaultMaxMana = 500;
         private List<Attack.Attack> spellPool;
 
-        public Character(string name, int healthPoints, int manaPoints, string texturePath, Vector2 position, int width, int height)
-            : base(texturePath, position, width, height)
+        public Character(string name,
+            int healthPoints,
+            int manaPoints,
+            string texturePath,
+            Vector2 position)
+            : base(
+                  texturePath,
+                  position,
+                  Prefabs.standardPlayerWidth,
+                  Prefabs.standardPlayerWidth)
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
@@ -63,14 +72,23 @@
 
         public virtual void ApplyAttack(Attack.Attack attack)
         {
-            this.healthPoints -= attack.DamageTake;
-            this.manaPoints -= attack.ManaTake;
+            this.healthPoints -= attack.Damage;
+            this.manaPoints -= attack.ManaCost;
         }
 
         public virtual void ApplyBonus(Bonus bonus)
         {
             this.HealthPoints += bonus.HealthBoost;
+            if (this.HealthPoints > DefaultMaxHealth)
+            {
+                this.HealthPoints = DefaultMaxHealth;
+            }
+
             this.ManaPoints += bonus.ManaBoost;
+            if (this.ManaPoints > DefaultMaxMana)
+            {
+                this.ManaPoints = DefaultMaxMana;
+            }
         }
 
         public void ProduceAttack(Attack.Attack attack)
@@ -80,7 +98,11 @@
 
         public void RespondToAttack(IAttack attack)
         {
-            throw new NotImplementedException();
+            this.HealthPoints -= attack.Damage;
+            if (this.HealthPoints < 0)
+            {
+                this.HealthPoints = 0;
+            }
         }
 
         public void AddSpellToInventory(Attack.Attack attack)

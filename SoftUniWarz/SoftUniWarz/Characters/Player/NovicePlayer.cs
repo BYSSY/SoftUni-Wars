@@ -1,17 +1,14 @@
-﻿using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SoftUniWarz
+﻿namespace SoftUniWarz
 {
+    using Microsoft.Xna.Framework;
+    using System.Collections.Generic;
+
     class NovicePlayer : Player
     {
         private const int healthPoints = 500;
         private const int manaPoints = 500;
         private const string playerPath = "Player1";
-        private static readonly Vector2 position = new Vector2(250, 250);
+        private static readonly Vector2 position = new Vector2(200, 250);
         private const int width = -1;
         private const int height = -1;
         private IList<Bonus> inventory;
@@ -19,7 +16,7 @@ namespace SoftUniWarz
         public NovicePlayer(string name)
             : base(name, healthPoints, manaPoints, playerPath, position, width, height)
         {
-
+            this.inventory = new List<Bonus>();
         }
 
         public IEnumerable<Bonus> Inventory { get { return this.inventory; } }
