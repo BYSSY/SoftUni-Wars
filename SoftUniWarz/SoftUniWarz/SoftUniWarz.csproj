@@ -55,6 +55,7 @@
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
     <Compile Include="Content\Prefabs.cs" />
+    <Compile Include="HighScore.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />
