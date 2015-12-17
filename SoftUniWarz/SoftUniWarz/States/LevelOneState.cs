@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Attack.PlayerAttacks;
 using SoftUniWarz.Background;
+using Microsoft.Xna.Framework;
 
 namespace SoftUniWarz.States
 {
@@ -14,11 +15,19 @@ namespace SoftUniWarz.States
         //Here should be the main logic and the instatiation of Game1
         List<GUUClickableElement>  clickableElements = new List<GUUClickableElement>();
         private ContentManager content;
+
+        private Texture2D healthTexture;
+        private Rectangle healthRectangle;
+        private Vector2 healthPosition;
+
+        private Texture2D healthTextureBG;
+        private Rectangle healthRectangleBG;
         public LevelOneState(ContentManager content)
             :base()
         {
             this.content = content;
             base.player = new NovicePlayer("Nasko");
+
             base.enemy = new FirstLevelEnemy();
             base.staticElements.Add(new GUIelements("arenaBG"));
             clickableElements.Add(new GUUClickableElement("PanicButton2"));
@@ -43,20 +52,27 @@ namespace SoftUniWarz.States
                 attack.Draw(spriteBatch);
             }
             player.Draw(spriteBatch);
+            spriteBatch.Draw(healthTextureBG, healthRectangleBG, Color.White);
+            spriteBatch.Draw(healthTexture,healthPosition, healthRectangle, Color.White);
             enemy.Draw(spriteBatch);
+
+            
         }
 
         public override void Update()
         {
-           //if (player.HealthPoints <= 0)
-           //{
-           //    StateManager.ChangeToState(GameState.MainMenu);
-           //    //TODO: save highscore
-           //}
-           //if (enemy.HealthPoints <= 0)
-           //{
-           //    StateManager.ChangeToState(GameState.LevelTwoState);
-           //}
+            const int PlayerHealth = 500;
+            healthRectangleBG = new Rectangle(50, 20, PlayerHealth, 30);
+
+            //if (player.HealthPoints <= 0)
+            //{
+            //    StateManager.ChangeToState(GameState.MainMenu);
+            //    //TODO: save highscore
+            //}
+            //if (enemy.HealthPoints <= 0)
+            //{
+            //    StateManager.ChangeToState(GameState.LevelTwoState);
+            //}
 
             foreach (var inGameElement in clickableElements)
             {
@@ -67,6 +83,7 @@ namespace SoftUniWarz.States
                 staticElement.Update();
             }
             player.Update();
+
             
                 for (int i = 0; i < player.SpellPool.Count; i++)
                 {
@@ -97,13 +114,20 @@ namespace SoftUniWarz.States
            
             player.Element.MoveElement(0, 250);
             enemy.Element.MoveElement(1150, 250);
+
+            healthTexture = content.Load<Texture2D>("HealthBar");
+            healthPosition = new Vector2(50, 20);
+            healthRectangle = new Rectangle(0, 0, this.player.HealthPoints, 30);
+            healthTextureBG = content.Load<Texture2D>("HealthBarBackground");
         }
         public void OnClick(string element)
         { 
             if (element == "PanicButton2")
             {
                 player.ProduceAttack(new BeerAttack(player.Position));
+                healthRectangle.Width -= 10;
             }
+
         }
 
     }

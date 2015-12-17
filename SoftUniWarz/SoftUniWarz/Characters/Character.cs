@@ -29,7 +29,7 @@
         public int HealthPoints
         {
             get { return this.healthPoints; }
-            private set
+            set
             {
                 ValidateData.ValidateNumber(0, DefaultMaxHealth, value, nameof(HealthPoints));
                 this.healthPoints = value;
