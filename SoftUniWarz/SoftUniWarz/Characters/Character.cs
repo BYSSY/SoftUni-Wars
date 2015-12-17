@@ -7,7 +7,7 @@
     using System.Collections.Generic;
     using Content;
 
-    public abstract class Character : GameObject, IDestroyable, IAttackable
+    public abstract class Character : GameObject, IAttackable
     {
         private string name;
         private string nameValidation;
@@ -94,15 +94,6 @@
         public void ProduceAttack(Attack.Attack attack)
         {
             spellPool.Add(attack);
-        }
-
-        public void RespondToAttack(IAttack attack)
-        {
-            this.HealthPoints -= attack.Damage;
-            if (this.HealthPoints < 0)
-            {
-                this.HealthPoints = 0;
-            }
         }
 
         public void AddSpellToInventory(Attack.Attack attack)

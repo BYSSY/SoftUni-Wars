@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>E:/bojo/Fundamentals/OOP/Teamwork/Final rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/ReSharperBtn.png</SourceFile>
-  <SourceTime>2015-12-16T16:59:54+02:00</SourceTime>
+  <SourceTime>2015-12-17T07:09:36+02:00</SourceTime>
   <DestFile>E:/bojo/Fundamentals/OOP/Teamwork/Final rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/ReSharperBtn.xnb</DestFile>
-  <DestTime>2015-12-17T17:04:32.4761799+02:00</DestTime>
+  <DestTime>2015-12-17T17:32:57.6003324+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T20:14:44+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -79,7 +79,6 @@
     <Compile Include="Characters\Player\NovicePlayer.cs" />
     <Compile Include="Characters\Player\Player.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
-    <Compile Include="Interfaces\IDestroyable.cs" />
     <Compile Include="Interfaces\IBonusAppliable.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="Interfaces\IUpdateable.cs" />
