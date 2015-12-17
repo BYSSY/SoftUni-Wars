@@ -8,7 +8,7 @@ namespace SoftUniWarz.Attack.EnemyAttacks
         private static readonly int damage = 40;
         private static readonly int manaCost = 10;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "binary_dumbell";
         // TODO: Set texture path.
 
         public SimpleEnemyAttack(Vector2 position)

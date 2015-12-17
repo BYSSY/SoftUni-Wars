@@ -7,10 +7,10 @@
         private static readonly int damageTake = 70;
         private static readonly int beerTake = 25;
         private static readonly bool isParalizable = false;
-        private static readonly string path = "";
+        private static readonly string path = "BinAttack";
         // TODO: Set texture path.
 
-        public BinaryAttack( Vector2 position, int width, int height, bool isActive, bool isVisible) 
+        public BinaryAttack( Vector2 position) 
             : base(damageTake, beerTake, isParalizable, path, position)
         {
         }

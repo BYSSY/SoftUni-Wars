@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</SourceFile>
-  <SourceTime>2015-12-17T16:00:35.42736+02:00</SourceTime>
-  <DestFile>C:/Users/Георги/Desktop/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/QuitScreen.xnb</DestFile>
-  <DestTime>2015-12-17T16:00:55.0406072+02:00</DestTime>
+  <SourceFile>E:/bojo/Fundamentals/OOP/Teamwork/Final rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/QuitScreen.jpg</SourceFile>
+  <SourceTime>2015-12-17T04:49:14+02:00</SourceTime>
+  <DestFile>E:/bojo/Fundamentals/OOP/Teamwork/Final rep/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/QuitScreen.xnb</DestFile>
+  <DestTime>2015-12-17T17:04:31.5888486+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T20:14:44+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

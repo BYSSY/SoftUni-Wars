@@ -8,7 +8,7 @@
         private const int healthPoints = 500;
         private const int manaPoints = 500;
         private const string playerPath = "Player1";
-        private static readonly Vector2 position = new Vector2(200, 250);
+        private static readonly Vector2 position = new Vector2(60, 0);
         private const int width = -1;
         private const int height = -1;
         private IList<Bonus> inventory;
