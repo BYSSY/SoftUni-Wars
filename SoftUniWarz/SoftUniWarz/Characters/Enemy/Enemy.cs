@@ -9,7 +9,7 @@
 
     public abstract class Enemy : Character
     {
-        private static readonly Vector2 DefaultEnemyPosition = new Vector2(1150, 250);
+        private static readonly Vector2 DefaultEnemyPosition = new Vector2(1000, 250);
 
         public Enemy(
         string name,
@@ -22,9 +22,7 @@
             healthPoints,
             manaPoints,
             texturePath,
-            DefaultEnemyPosition,
-            Prefabs.standardPlayerWidth,
-            Prefabs.standardPlayerHeight)
+            DefaultEnemyPosition)
         {
 
         }

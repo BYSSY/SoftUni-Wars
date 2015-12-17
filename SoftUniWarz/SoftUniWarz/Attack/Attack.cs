@@ -1,29 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Interfaces;
-
-namespace SoftUniWarz.Attack
+﻿namespace SoftUniWarz.Attack
 {
+    using System;
+    using Microsoft.Xna.Framework;
+    using SoftUniWarz.Interfaces;
+
     public abstract class Attack: GameObject, IAttack
     {
-        private int damageTake;
-        private int manaTake;
-        private int coffeeTake;
-        private int beerTake;
+        private int damage;
+        private int manaCost;
         private bool isParalizable;
 
-        public Attack(int damageTake, int manaTake, int coffeeTake, int beerTake, bool isParalizable, string texturePath ,Vector2 position , int width , int height)
-            :base(texturePath,position,width,height)
+        // TODO: Check all attacks texutre's sizes.
+        private const int DefaultAttackTextureWidth = -1;
+        private const int DefaultAttackTextureHegth = -1;
+
+        // All the attacks have the same textures sizes.
+
+        public Attack(
+            int damage,
+            int manaCost,
+            bool isParalizable,
+            string texturePath,
+            Vector2 position)
+            
+            : base(
+                 texturePath,
+                 position,
+                 DefaultAttackTextureWidth,
+                 DefaultAttackTextureHegth)
         {
-            this.DamageTake = damageTake;
-            this.ManaTake = manaTake;
-            this.CoffeeTake = coffeeTake;
-            this.BeerTake = beerTake;
+            this.Damage = damage;
+            this.ManaCost = manaCost;
             this.IsParalizable = isParalizable;
         }
 
@@ -40,70 +47,38 @@ namespace SoftUniWarz.Attack
             }
         }
 
-        public int BeerTake
+        public int ManaCost
         {
             get
             {
-                return beerTake;
+                return manaCost;
             }
 
             set
             {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Beer cannot be negative");
-                }
-                beerTake = value;
-            }
-        }
-        public int CoffeeTake
-        {
-            get
-            {
-                return coffeeTake;
-            }
-
-            set
-            {
-                if (value<0)
-                {
-                    throw new ArgumentOutOfRangeException("Coffee cannot be negative!");
-                }
-                coffeeTake = value;
-            }
-        }
-        public int ManaTake
-        {
-            get
-            {
-                return manaTake;
-            }
-
-            set
-            {
-                if (value<0)
+                if (value < 0) 
                 {
                     throw new ArgumentOutOfRangeException("Cannot steal less than 1 or more than 150 mana!");
                 }
-                manaTake = value;
+                manaCost = value;
             }
         }
-        public int DamageTake
+
+        public int Damage
         {
             get
             {
-                return damageTake;
+                return damage;
             }
 
             set
             {
-                if (value<0)
+                if (value < 0) 
                 {
                     throw new ArgumentOutOfRangeException("Damage cannot be negative!");
                 }
-                damageTake = value;
+                damage = value;
             }
         }
-        
     }
 }
