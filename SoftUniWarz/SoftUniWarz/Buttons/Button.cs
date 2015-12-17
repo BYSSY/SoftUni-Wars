@@ -10,6 +10,7 @@ namespace SoftUniWarz.Buttons
 {
     public  class Button : GameObject
     {
+        private bool isPressed;
         public event Button.ElementClickedEventHandler ClickEvent;
         //Lambda instead of delegate !
         public delegate void ElementClickedEventHandler(string element);
@@ -18,14 +19,20 @@ namespace SoftUniWarz.Buttons
         public Button(string texturePath, Vector2 position, int width, int height) 
             : base(texturePath, position, width, height)
         {
+            isPressed = false;
         }
         
         public override void Update()
         {
             MouseState state = Mouse.GetState();
-            if (this.Element.GUIrect.Contains(new Point(state.X, state.Y)) && state.LeftButton == ButtonState.Pressed)
+            if (!isPressed && this.Element.GUIrect.Contains(new Point(state.X, state.Y)) && state.LeftButton == ButtonState.Pressed)
             {
                 ClickEvent(this.Element.ElementName);
+                isPressed = true;
+            }
+            else if (state.LeftButton == ButtonState.Released)
+            {
+                isPressed = false;
             }
         }
     }
