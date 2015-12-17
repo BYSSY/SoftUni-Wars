@@ -416,3 +416,9 @@ C:\Users\stil2_000\Desktop\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f
 C:\Users\stil2_000\Desktop\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\stil2_000\Desktop\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\stil2_000\Desktop\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUni-Wars-2a468c6ae489b371d24465eb18c9a49a24ce012f\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.jpg
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.jpg
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.xnb
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.xnb
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBar.xnb
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBarBackground.xnb
