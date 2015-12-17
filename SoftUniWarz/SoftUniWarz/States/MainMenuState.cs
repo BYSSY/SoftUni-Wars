@@ -36,9 +36,9 @@ namespace SoftUniWarz.Background
                 clickableElement.CenterElement(768, 1366);
                 clickableElement.ClickEvent += OnClick;
             }
-            clickableElements.Find(x => x.ElementName == "Play").MoveElement(0, -50);
-            clickableElements.Find(z => z.ElementName == "HighScore").MoveElement(0, 25);
-            clickableElements.Find(y => y.ElementName == "Quit").MoveElement(0, 100);
+            clickableElements.Find(x => x.ElementName == "Play").MoveElement(0, -30);
+            clickableElements.Find(z => z.ElementName == "HighScore").MoveElement(0, 90);
+            clickableElements.Find(y => y.ElementName == "Quit").MoveElement(0, 200);
         }
 
         public override void Update()

@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -17,11 +19,14 @@ namespace SoftUniWarz
         public static bool isInitialized = false;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        private TimeSpan frame;
+        private bool printFrame;
         
 
         public Game1()
         {
-
+            frame = new TimeSpan();
+            printFrame = false;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             StateManager.Content = Content;
@@ -72,11 +77,16 @@ namespace SoftUniWarz
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-
-          //  if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-          //      Exit();
-          StateManager.CurrentState.Update();
-            base.Update(gameTime);
+            frame += gameTime.ElapsedGameTime;
+            if (frame.CompareTo(new  TimeSpan(0, 0, 0,0 ,30)) == 1)
+            {
+                Debug.Print(frame.TotalMilliseconds + "");
+                frame = new TimeSpan();
+                printFrame = true;
+                StateManager.CurrentState.Update();
+                base.Update(gameTime);
+            }
+          
         }
 
         /// <summary>
@@ -85,14 +95,18 @@ namespace SoftUniWarz
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-            spriteBatch.Begin();
+            if (printFrame)
+            {
+                GraphicsDevice.Clear(Color.CornflowerBlue);
+                spriteBatch.Begin();
 
-            StateManager.CurrentState.Draw(spriteBatch);
+                StateManager.CurrentState.Draw(spriteBatch);
 
-            spriteBatch.End();
+                spriteBatch.End();
 
-            base.Draw(gameTime);
+                base.Draw(gameTime);
+                printFrame = false;
+            }
         }
 
         

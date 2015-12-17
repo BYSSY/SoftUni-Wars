@@ -72,8 +72,8 @@ namespace SoftUniWarz.States
             
                 for (int i = 0; i < player.SpellPool.Count; i++)
                 {
-                    player.SpellPool[i].Element.MoveElement(player.SpellPool[i].Element.GUIrect.X + 1, player.SpellPool[i].Element.GUIrect.Y);
-                    if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > 1200)
+                    player.SpellPool[i].Element.MoveElement(15, player.SpellPool[i].Element.GUIrect.Y);
+                    if (player.SpellPool[i].Element.GUIrect.X > 1200)
                     {
                         player.SpellPool.RemoveAt(i);
                     }
