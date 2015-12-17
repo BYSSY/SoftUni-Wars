@@ -2,47 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using SoftUniWarz.Background;
 
 namespace SoftUniWarz.Buttons
 {
-    public abstract class Button
+    public  class Button : GameObject
     {
-        public event GUUClickableElement.ElementClickedEventHandler ClickEvent;
+        public event Button.ElementClickedEventHandler ClickEvent;
         //Lambda instead of delegate !
         public delegate void ElementClickedEventHandler(string element);
-
-        private string buttonName;
-        private GUIelements element;
-
-        public Button(string name)
+        
+        
+        public Button(string texturePath, Vector2 position, int width, int height) 
+            : base(texturePath, position, width, height)
         {
-            this.buttonName = name;
         }
-
-        public GUIelements Element
+        
+        public override void Update()
         {
-            get
+            MouseState state = Mouse.GetState();
+            if (this.Element.GUIrect.Contains(new Point(state.X, state.Y)) && state.LeftButton == ButtonState.Pressed)
             {
-                return element;
-            }
-
-            set
-            {
-                element = value;
-            }
-        }
-
-        public string ButtonName
-        {
-            get
-            {
-                return buttonName;
-            }
-
-            set
-            {
-                buttonName = value;
+                ClickEvent(this.Element.ElementName);
             }
         }
     }

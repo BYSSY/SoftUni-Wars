@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -14,12 +15,13 @@ namespace SoftUniWarz.Background
         private Texture2D GUItexture;
         private Rectangle gUIrect;
         private string elementName;
+        private Vector2 position;
 
-
-
-        public GUIelements(string elementName)
+        public GUIelements(string elementName, Vector2 position, int width, int height)
         {
             this.ElementName = elementName;
+            this.Position = position;
+            GUIrect = new Rectangle((int)position.X, (int)position.Y, width, height);
         }
 
         public string ElementName
@@ -41,10 +43,26 @@ namespace SoftUniWarz.Background
             }
         }
 
+        public Vector2 Position
+        {
+            get
+            {
+                return position;
+            }
+
+            set
+            {
+                position = value;
+            }
+        }
+
         public void LoadContent(ContentManager content)
         {
             GUItexture = content.Load<Texture2D>(elementName);
-            GUIrect= new Rectangle(0,0,GUItexture.Width,GUItexture.Height);
+            if (gUIrect.Width == -1 || gUIrect.Height == -1)
+            {
+                gUIrect = new Rectangle(gUIrect.X, gUIrect.Y, GUItexture.Width, GUItexture.Height);
+            }
         }
 
         public virtual void Update()

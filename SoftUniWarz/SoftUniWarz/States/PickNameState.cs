@@ -8,6 +8,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SoftUniWarz.Background;
+using SoftUniWarz.Buttons;
+using SoftUniWarz.Content;
 
 namespace SoftUniWarz.States
 {
@@ -15,7 +17,7 @@ namespace SoftUniWarz.States
     {
 
         private List<GUIelements> staticElements = new List<GUIelements>();
-        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>();
+        private List<Button> clickableElements = new List<Button>();
 
         private Keys[] lastPressedKeys = new Keys[5];
         private string name = string.Empty;
@@ -28,10 +30,11 @@ namespace SoftUniWarz.States
             set { this.KeysPressed = value; }
         }
 
-        public PickNameState()
+        public PickNameState(Vector2 screenSize)
+            :base(screenSize)
         {
-            staticElements.Add(new GUIelements("NamePickBG"));
-            clickableElements.Add(new GUUClickableElement("done"));
+            staticElements.Add(new GUIelements("NamePickBG", new Vector2(0,0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+            clickableElements.Add(new Button("done", new Vector2(screenSize.X/2, screenSize.Y/2), -1, -1));
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -73,10 +76,8 @@ namespace SoftUniWarz.States
             foreach (var clickableElement in clickableElements)
             {
                 clickableElement.LoadContent(content);
-                clickableElement.CenterElement(768, 1366);
                 clickableElement.ClickEvent += OnClick;
             }
-            clickableElements.Find(x => x.ElementName == "done").MoveElement(0, 200);
         }
 
         public void OnClick(string element)

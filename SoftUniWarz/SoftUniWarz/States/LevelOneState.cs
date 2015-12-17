@@ -7,13 +7,15 @@ using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Attack.PlayerAttacks;
 using SoftUniWarz.Background;
 using Microsoft.Xna.Framework;
+using SoftUniWarz.Buttons;
+using SoftUniWarz.Content;
 
 namespace SoftUniWarz.States
 {
     class LevelOneState : LevelState
     {
         //Here should be the main logic and the instatiation of Game1
-        List<GUUClickableElement>  clickableElements = new List<GUUClickableElement>();
+        List<Button>  clickableElements = new List<Button>();
         private ContentManager content;
 
         private Texture2D healthTexture;
@@ -22,15 +24,15 @@ namespace SoftUniWarz.States
 
         private Texture2D healthTextureBG;
         private Rectangle healthRectangleBG;
-        public LevelOneState(ContentManager content)
-            :base()
+        public LevelOneState(ContentManager content, Vector2 screenSize)
+            :base(screenSize)
         {
             this.content = content;
             base.player = new NovicePlayer("Nasko");
 
             base.enemy = new FirstLevelEnemy();
-            base.staticElements.Add(new GUIelements("arenaBG"));
-            clickableElements.Add(new GUUClickableElement("PanicButton2"));
+            base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int) screenSize.X, (int) screenSize.Y));
+            clickableElements.Add(new Button("PanicButton2", new Vector2(100, 100), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -87,7 +89,7 @@ namespace SoftUniWarz.States
             
                 for (int i = 0; i < player.SpellPool.Count; i++)
                 {
-                    player.SpellPool[i].Element.MoveElement(15, player.SpellPool[i].Element.GUIrect.Y);
+                    player.SpellPool[i].Element.MoveElement(15, 0);
                     if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > enemy.Element.GUIrect.X)
                     {
                         enemy.ApplyAttack(player.SpellPool[i]);
@@ -112,7 +114,6 @@ namespace SoftUniWarz.States
                 staticElement.LoadContent(content);
             }
            
-            player.Element.MoveElement(0, 250);
             enemy.Element.MoveElement(1150, 250);
 
             healthTexture = content.Load<Texture2D>("HealthBar");
@@ -124,7 +125,7 @@ namespace SoftUniWarz.States
         { 
             if (element == "PanicButton2")
             {
-                player.ProduceAttack(new BeerAttack(player.Position));
+                player.ProduceAttack(new BeerAttack(player.Element.Position));
                 healthRectangle.Width -= 10;
             }
 

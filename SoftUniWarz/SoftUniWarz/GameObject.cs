@@ -16,7 +16,6 @@ namespace SoftUniWarz
     public class GameObject : IDrawable, IUpdateable
     {
         private GUIelements element;
-        private Vector2 position;
         private int witdh;
         private int height;
         private bool isLoaded;
@@ -25,9 +24,8 @@ namespace SoftUniWarz
         {
             //TODO: LOAD textures from texture loader
             //this.Texture = (path);
-            element = new GUIelements(texturePath);
+            element = new GUIelements(texturePath, position, width, height);
             isLoaded = false;
-            this.Position = position;
             this.Width = width;
             this.Height  = height;
         }
@@ -42,23 +40,6 @@ namespace SoftUniWarz
             set
             {
                 element = value;
-            }
-        }
-
-        public Vector2 Position
-        {
-            get
-            {
-                return position;
-            }
-
-            set
-            {
-                if (value.X < 0 && value.Y < 0 && value.X + this.Width > 1366 && value.Y + this.Height > 768)
-                {
-                    throw new ArgumentOutOfRangeException("Position must be valid!");
-                }
-                position = value;
             }
         }
 

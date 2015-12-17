@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Background;
@@ -17,7 +18,8 @@ namespace SoftUniWarz.States
         protected List<Button> buttons;
         protected Player player;
         protected Enemy enemy;
-        public LevelState()
+        public LevelState(Vector2 screenSize)
+            :base(screenSize)
         {
             staticElements = new List<GUIelements>();
             buttons  =new List<Button>();
@@ -25,7 +27,17 @@ namespace SoftUniWarz.States
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            throw new NotImplementedException();
+            //Drawing background and all the static sprites
+            foreach (var element in staticElements)
+            {
+                element.Draw(spriteBatch);
+            }
+            //Drawing all the buttons 
+            foreach (var button in buttons)
+            {
+                button.Draw(spriteBatch);
+            }
+            
         }
 
         public override void Update()

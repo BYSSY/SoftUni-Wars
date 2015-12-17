@@ -13,6 +13,26 @@ namespace SoftUniWarz.States
 {
     public abstract class State : IDrawable, IUpdateable, IContentLoadable
     {
+        private Vector2 screenSize;
+
+        public State(Vector2 screenSize)
+        {
+            this.ScreenSize = screenSize;
+        }
+
+        public Vector2 ScreenSize
+        {
+            get
+            {
+                return screenSize;
+            }
+
+            set
+            {
+                screenSize = value;
+            }
+        }
+
         public abstract void Draw(SpriteBatch spriteBatch);
         public abstract void Update();
         public abstract void LoadContent(ContentManager content);

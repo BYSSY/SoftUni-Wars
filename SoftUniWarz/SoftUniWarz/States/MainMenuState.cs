@@ -5,6 +5,8 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using SoftUniWarz.Buttons;
+using SoftUniWarz.Content;
 using SoftUniWarz.States;
 
 namespace SoftUniWarz.Background
@@ -13,14 +15,15 @@ namespace SoftUniWarz.Background
     {
 
         private List<GUIelements> staticElements = new List<GUIelements>();
-        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
+        private List<Button> clickableElements = new List<Button>(); 
 
-        public MainMenuState()
+        public MainMenuState(Vector2 screenSize)
+            :base(screenSize)
         {
-            staticElements.Add(new GUIelements("MainMenuBG"));
-            clickableElements.Add(new GUUClickableElement("Play"));
-            clickableElements.Add(new GUUClickableElement("HighScore"));
-            clickableElements.Add(new GUUClickableElement("Quit"));
+            staticElements.Add(new GUIelements("MainMenuBG", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+            clickableElements.Add(new Button("Play", new Vector2(screenSize.X / 2, screenSize.Y / 2-30), -1, -1));
+            clickableElements.Add(new Button("HighScore", new Vector2(screenSize.X / 2, screenSize.Y / 2 + 90), -1, -1));
+            clickableElements.Add(new Button("Quit", new Vector2(screenSize.X / 2, screenSize.Y / 2 + 150), -1, -1));
         }
 
         public override void LoadContent(ContentManager content)
@@ -33,12 +36,8 @@ namespace SoftUniWarz.Background
             foreach (var clickableElement in clickableElements)
             {
                 clickableElement.LoadContent(content);
-                clickableElement.CenterElement(768, 1366);
                 clickableElement.ClickEvent += OnClick;
             }
-            clickableElements.Find(x => x.ElementName == "Play").MoveElement(0, -30);
-            clickableElements.Find(z => z.ElementName == "HighScore").MoveElement(0, 90);
-            clickableElements.Find(y => y.ElementName == "Quit").MoveElement(0, 200);
         }
 
         public override void Update()

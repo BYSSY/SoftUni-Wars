@@ -16,8 +16,8 @@ namespace SoftUniWarz.Attack.PlayerAttacks
         private static readonly bool isParalizable = false;
         private static readonly string texturePath = "done";
         //TODO: fix sizes of images
-        private static readonly int width;
-        private static readonly int height;
+        private static readonly int width = -1;
+        private static readonly int height = -1;
 
         public BeerAttack(Vector2 position)
             : base(damageTake, manaTake, coffeeTake, beerTake, isParalizable, texturePath, position, width, height)

@@ -4,28 +4,30 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Background;
+using SoftUniWarz.Buttons;
+using SoftUniWarz.Content;
 
 namespace SoftUniWarz.States
 {
     class QuitState : State
     {
-        private List<GUUClickableElement> clickableElements = new List<GUUClickableElement>(); 
-        
-        public QuitState()
+        private List<Button> clickableElements = new List<Button>();
 
+        public QuitState(Vector2 screenSize)
+            : base(screenSize)
         {
-            clickableElements.Add(new GUUClickableElement("Exit"));
-        }
+            clickableElements.Add(new Button("Exit", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+        }   
 
         public override void LoadContent(ContentManager content)
         {
             foreach (var element in clickableElements)
             {
                 element.LoadContent(content);
-                element.CenterElement(768,1366 );
                 element.ClickEvent += OnClick;
             }
         }

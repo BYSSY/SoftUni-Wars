@@ -49,12 +49,12 @@
     <Compile Include="Attack\EnemyAttacks\SnookerBallAttack.cs" />
     <Compile Include="Attack\EnemyAttacks\StreamsAttack.cs" />
     <Compile Include="Attack\PlayerAttacks\TermosThrowAttack.cs" />
-    <Compile Include="Background\GUUClickableElement.cs" />
     <Compile Include="Attack\PlayerAttacks\ConstructorLegoAttack.cs" />
     <Compile Include="Buttons\Button.cs" />
     <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
+    <Compile Include="Content\Prefabs.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="States\GameState.cs" />
     <Compile Include="Background\GUIelements.cs" />

@@ -5,6 +5,7 @@ using System.Net.Mime;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using SoftUniWarz.Background;
 
@@ -14,6 +15,7 @@ namespace SoftUniWarz.States
     {
         private static State currentState;
         private static ContentManager content;
+        public static Vector2 currentScreenSize = new Vector2(1366, 768);
 
         public static State CurrentState
         {
@@ -39,22 +41,22 @@ namespace SoftUniWarz.States
             switch (state)
             {
                 case GameState.MainMenu:
-                    CurrentState = new MainMenuState();
+                    CurrentState = new MainMenuState(currentScreenSize);
                     break;
                 case GameState.LevelOneState:
-                    CurrentState = new LevelOneState(content);
+                    CurrentState = new LevelOneState(content, currentScreenSize);
                     break;
                 case GameState.LevelTwoState:
-                    CurrentState = new LevelTwoState();
+                 //   CurrentState = new LevelTwoState();
                     break;
                 case GameState.Quit:
-                    CurrentState = new QuitState();
+                    CurrentState = new QuitState(currentScreenSize);
                     break;
                 case GameState.PickName:
-                    CurrentState = new PickNameState();
+                    CurrentState = new PickNameState(currentScreenSize);
                     break;
                     case GameState.HighScore:
-                    CurrentState = new HighScoreState();
+                    CurrentState = new HighScoreState(currentScreenSize);
                     break;
             }
             if (Game1.isInitialized)
