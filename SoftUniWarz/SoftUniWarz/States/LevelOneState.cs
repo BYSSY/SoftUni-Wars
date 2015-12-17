@@ -113,8 +113,7 @@ namespace SoftUniWarz.States
             {
                 staticElement.LoadContent(content);
             }
-           
-            enemy.Element.MoveElement(1150, 250);
+          
 
             healthTexture = content.Load<Texture2D>("HealthBar");
             healthPosition = new Vector2(50, 20);

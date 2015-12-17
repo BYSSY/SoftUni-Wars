@@ -5,12 +5,11 @@
     using System.Linq;
     using System.Text;
     using Microsoft.Xna.Framework;
+    using Content;
 
     public abstract class Enemy : Character
     {
-        private static readonly Vector2 DefaultEnemyPosition = new Vector2(500, 500);
-        private const int DefaultEnemyWidth = 500;
-        private const int DefaultEnemyHeigth = 500;
+        private static readonly Vector2 DefaultEnemyPosition = new Vector2(1150, 250);
 
         public Enemy(
         string name,
@@ -24,8 +23,8 @@
             manaPoints,
             texturePath,
             DefaultEnemyPosition,
-            DefaultEnemyWidth,
-            DefaultEnemyHeigth)
+            Prefabs.standardPlayerWidth,
+            Prefabs.standardPlayerHeight)
         {
 
         }
