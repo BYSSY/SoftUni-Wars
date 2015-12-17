@@ -95,8 +95,6 @@ namespace SoftUniWarz.States
             spriteBatch.Draw(manaTextureBG, enemyManaRectangleBG, Color.White);
             spriteBatch.Draw(manaTexture, enemyManaPosition, enemyManaRectangle, Color.White);
 
-
-
         }
 
         public override void Update()
@@ -121,13 +119,14 @@ namespace SoftUniWarz.States
             enemy.Update();
             player.Update();
 
-            //Player bars backgrounds
+            // Player bars backgrounds
             playerHealthRectangleBG = new Rectangle(200, 20, (int)(this.player.HealthPoints * 0.75), 30);
             playerManaRectangleBG = new Rectangle(200, 80, (int)(this.player.HealthPoints * 0.75), 30);
 
-            //
+            // Enemy bars backgrounds
             enemyHealthRectangleBG = new Rectangle(780, 20, (int)(this.player.HealthPoints * 0.75), 30);
             enemyManaRectangleBG = new Rectangle(780, 80, (int)(this.player.HealthPoints * 0.75), 30);
+
         }
 
         public override void LoadContent(ContentManager content)
@@ -173,6 +172,13 @@ namespace SoftUniWarz.States
             {
                 BinaryAttack beerAttack = new BinaryAttack(positionForMagic);
                 player.ProduceAttack(beerAttack);
+<<<<<<< HEAD
+                ConstructorLegoAttack constructorAttack = new ConstructorLegoAttack(player.Element.Position);
+                enemyHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
+                //this.enemy.HealthPoints -= beerAttack.Damage;
+                playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
+            }
+=======
                 playerHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
                 playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
             }
@@ -184,6 +190,7 @@ namespace SoftUniWarz.States
                 playerManaRectangle.Width -= (int)(attack.ManaCost * 0.75);
             }
 
+>>>>>>> 6ed77abba1228692891ea782fb88ab070ac5b233
         }
     }
 }
