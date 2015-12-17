@@ -28,6 +28,13 @@ namespace SoftUniWarz
             }
             return data;
         }
-       
+
+        public void Write()
+        {
+            using (StreamWriter writer = new StreamWriter("highscore.txt"))
+            {
+            }
+        }
+
     }
 }
