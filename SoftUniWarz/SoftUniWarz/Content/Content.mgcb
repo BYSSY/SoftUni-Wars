@@ -167,6 +167,17 @@
 /processorParam:TextureFormat=Color
 /build:PanicButton2.png
 
+#begin HealthBar.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:HealthBar.png
+
 #begin HealthBarBackground.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -222,11 +233,7 @@
 /processorParam:TextureFormat=Color
 /build:ManaBarBackground.png
 
-<<<<<<< HEAD
-#begin ../../../../../Pictures/HealthBar.png
-=======
 #begin BeerBtn.png
->>>>>>> 6ed77abba1228692891ea782fb88ab070ac5b233
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -235,9 +242,6 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:TextureFormat=Color
-<<<<<<< HEAD
-/build:../../../../../Pictures/HealthBar.png
-=======
 /build:BeerBtn.png
 
 #begin BinaryBtn.png
@@ -316,5 +320,4 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:TextureFormat=Color
 /build:binary_dumbell.png
->>>>>>> 6ed77abba1228692891ea782fb88ab070ac5b233
 
