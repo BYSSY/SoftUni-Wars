@@ -17,12 +17,6 @@ namespace SoftUniWarz.States
 {
     public abstract class LevelState : State
     {
-        protected List<GUIelements> staticElements;
-        protected List<Button> buttons;
-        protected Player player;
-        protected Enemy enemy;
-        protected ContentManager content;
-
         // HealthBar Player1
         private Texture2D healthTexture;
         private Rectangle playerHealthRectangle;
@@ -52,11 +46,23 @@ namespace SoftUniWarz.States
 
         private Rectangle enemyManaRectangleBG;
 
+        private bool isPlayerMove;
+        private bool playerHasHit;
+
+        protected List<GUIelements> staticElements;
+        protected List<Button> buttons;
+        protected Player player;
+        protected Enemy enemy;
+        protected ContentManager content;
+        
+
         public LevelState(Vector2 screenSize)
             : base(screenSize)
         {
             staticElements = new List<GUIelements>();
             buttons = new List<Button>();
+            isPlayerMove = true;
+            playerHasHit = false;
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -74,6 +80,14 @@ namespace SoftUniWarz.States
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
             foreach (var attack in player.SpellPool)
+            {
+                if (!attack.IsLoaded)
+                {
+                    attack.LoadContent(content);
+                }
+                attack.Draw(spriteBatch);
+            }
+            foreach (var attack in enemy.SpellPool)
             {
                 if (!attack.IsLoaded)
                 {
@@ -101,6 +115,14 @@ namespace SoftUniWarz.States
 
         public override void Update()
         {
+            //EnemyMove
+            if (playerHasHit && !isPlayerMove)
+            {
+                Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
+               enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
+                enemy.ProduceAttack(new BinaryAttack(positionForMagic));
+                isPlayerMove = true;
+            }
             foreach (var inGameElement in buttons)
             {
                 inGameElement.Update();
@@ -114,8 +136,19 @@ namespace SoftUniWarz.States
                 player.SpellPool[i].Element.MoveElement(15, 0);
                 if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > 1000)
                 {
+                    playerHasHit = true;
                     enemy.ApplyAttack(player.SpellPool[i]);
                     player.SpellPool.RemoveAt(i);
+                }
+            }
+            for (int i = 0; i < enemy.SpellPool.Count; i++)
+            {
+                enemy.SpellPool[i].Element.MoveElement(-15, 0);
+                if (enemy.SpellPool[i].Element.GUIrect.X + enemy.SpellPool[i].Element.GUIrect.Width < 400)
+                {
+                    playerHasHit = false;
+                    player.ApplyAttack(enemy.SpellPool[i]);
+                    enemy.SpellPool.RemoveAt(i);
                 }
             }
             enemy.Update();
@@ -167,21 +200,25 @@ namespace SoftUniWarz.States
 
         public void OnClick(string element)
         {
-            Vector2 positionForMagic = new Vector2(player.Element.Position.X + player.Element.GUIrect.Width/2,
-                player.Element.Position.Y + player.Element.GUIrect.Height/2);
-            if (element == "BinaryBtn")
+            if (isPlayerMove)
             {
-                BinaryAttack beerAttack = new BinaryAttack(positionForMagic);
-                player.ProduceAttack(beerAttack);
-                playerHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
-                playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
-            }
-            if (element == "BookBtn")
-            {
-                SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
-                player.ProduceAttack(attack);
-                playerHealthRectangle.Width -= (int)(attack.Damage * 0.75);
-                playerManaRectangle.Width -= (int)(attack.ManaCost * 0.75);
+                Vector2 positionForMagic = new Vector2(player.Element.Position.X + player.Element.GUIrect.Width / 2,
+               player.Element.Position.Y + player.Element.GUIrect.Height / 2);
+                if (element == "BinaryBtn")
+                {
+                    BinaryAttack beerAttack = new BinaryAttack(positionForMagic);
+                    player.ProduceAttack(beerAttack);
+                    playerHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
+                    playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
+                }
+                if (element == "BookBtn")
+                {
+                    SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
+                    player.ProduceAttack(attack);
+                    playerHealthRectangle.Width -= (int)(attack.Damage * 0.75);
+                    playerManaRectangle.Width -= (int)(attack.ManaCost * 0.75);
+                }
+                isPlayerMove = false;
             }
 
         }
