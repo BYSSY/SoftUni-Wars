@@ -17,6 +17,8 @@ namespace SoftUniWarz.States
 {
     public abstract class LevelState : State
     {
+        private readonly int HealthAndManaBarWidth;
+
         // HealthBar Player1
         private Texture2D healthTexture;
         private Rectangle playerHealthRectangle;
@@ -155,16 +157,17 @@ namespace SoftUniWarz.States
             player.Update();
 
             //Player bars backgrounds
-            playerHealthRectangleBG = new Rectangle(200, 20, (int)(this.player.HealthPoints * 0.75), 30);
-            playerManaRectangleBG = new Rectangle(200, 80, (int)(this.player.HealthPoints * 0.75), 30);
+            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth -200, 30);
+            playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
 
             //
-            enemyHealthRectangleBG = new Rectangle(780, 20, (int)(this.player.HealthPoints * 0.75), 30);
-            enemyManaRectangleBG = new Rectangle(780, 80, (int)(this.player.HealthPoints * 0.75), 30);
+            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth-200, 30);
+            enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
         }
 
         public override void LoadContent(ContentManager content)
         {
+
             player.LoadContent(content);
             enemy.LoadContent(content);
             foreach (var guiElements in buttons)
@@ -180,21 +183,21 @@ namespace SoftUniWarz.States
 
             // Setting player's mana and health bars: textures, position and rectangles.
             healthTexture = content.Load<Texture2D>("HealthBar");
-            playerHealthPosition = new Vector2(200, 20);
-            playerHealthRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
+            playerHealthPosition = new Vector2(170, 50);
+            playerHealthRectangle = new Rectangle(0, 0, this.player.HealthPoints * 3 / 5, 30);
             healthTextureBG = content.Load<Texture2D>("HealthBarBackground");
 
             manaTexture = content.Load<Texture2D>("ManaBar");
-            playerManaPosition = new Vector2(200, 80);
-            playerManaRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
+            playerManaPosition = new Vector2(170, 80);
+            playerManaRectangle = new Rectangle(0, 0, this.player.ManaPoints, 30);
             manaTextureBG = content.Load<Texture2D>("ManaBarBackground");
 
             // Setting enemy's mana and health bar - position and rectangle.
-            enemyHealthPosition = new Vector2(780, 20);
-            enemyHealthRectangle = new Rectangle(0, 0, (int)((this.enemy.HealthPoints) * 0.75), 30);
+            enemyHealthPosition = new Vector2(890, 50);
+            enemyHealthRectangle = new Rectangle(0, 0, this.enemy.HealthPoints * 3 / 5, 30);
 
-            enemyManaPosition = new Vector2(780, 80);
-            enemyManaRectangle = new Rectangle(0, 0, (int)((this.player.HealthPoints) * 0.75), 30);
+            enemyManaPosition = new Vector2(890, 80);
+            enemyManaRectangle = new Rectangle(0, 0, this.enemy.ManaPoints, 30);
 
         }
 
@@ -206,17 +209,17 @@ namespace SoftUniWarz.States
                player.Element.Position.Y + player.Element.GUIrect.Height / 2);
                 if (element == "BinaryBtn")
                 {
-                    BinaryAttack beerAttack = new BinaryAttack(positionForMagic);
-                    player.ProduceAttack(beerAttack);
-                    playerHealthRectangle.Width -= (int)(beerAttack.Damage * 0.75);
-                    playerManaRectangle.Width -= (int)(beerAttack.ManaCost * 0.75);
+                    BinaryAttack binaryAttack = new BinaryAttack(positionForMagic);
+                    player.ProduceAttack(binaryAttack);
+                    enemyHealthRectangle.Width = this.enemy.HealthPoints*3/5;
+                    playerManaRectangle.Width = this.player.ManaPoints;
                 }
                 if (element == "BookBtn")
                 {
                     SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    playerHealthRectangle.Width -= (int)(attack.Damage * 0.75);
-                    playerManaRectangle.Width -= (int)(attack.ManaCost * 0.75);
+                    playerHealthRectangle.Width -= attack.Damage * 3 / 5;
+                    playerManaRectangle.Width = this.player.ManaPoints;
                 }
                 isPlayerMove = false;
             }

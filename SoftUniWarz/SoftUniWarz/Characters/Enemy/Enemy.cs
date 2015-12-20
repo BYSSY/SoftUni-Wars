@@ -24,7 +24,7 @@
             texturePath,
             DefaultEnemyPosition)
         {
-
         }
+
     }
 }

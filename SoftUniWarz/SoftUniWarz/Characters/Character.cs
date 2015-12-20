@@ -15,6 +15,10 @@
         private int manaPoints;
         private const int DefaultMaxHealth = 800;
         private const int DefaultMaxMana = 500;
+
+        private readonly int initialHealth;
+        private readonly int initialMana;
+
         private List<Attack.Attack> spellPool;
 
         public Character(string name,
@@ -30,7 +34,9 @@
         {
             this.Name = name;
             this.HealthPoints = healthPoints;
+            this.initialHealth = healthPoints;
             this.ManaPoints = manaPoints;
+            this.initialMana = manaPoints;
             this.spellPool = new List<Attack.Attack>();
         }
 
@@ -45,12 +51,17 @@
             }
         }
 
+        public int InitialHealth { get { return this.initialHealth; } }
+
+        public int InitialMana { get { return this.initialMana; } }
+
+
         public int ManaPoints
         {
             get { return this.manaPoints; }
-            private set
+            set
             {
-                ValidateData.ValidateNumber(0, DefaultMaxMana, value, nameof(ManaPoints));
+                //ValidateData.ValidateNumber(0, DefaultMaxMana, value, nameof(ManaPoints));
                 this.manaPoints = value;
             }
         }
