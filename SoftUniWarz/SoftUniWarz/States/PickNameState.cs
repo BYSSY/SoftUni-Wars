@@ -34,7 +34,7 @@ namespace SoftUniWarz.States
             :base(screenSize)
         {
             staticElements.Add(new GUIelements("NamePickBG", new Vector2(0,0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
-            clickableElements.Add(new Button("done", new Vector2(screenSize.X/2, screenSize.Y/2), -1, -1));
+            clickableElements.Add(new Button("done", new Vector2(553,563), -1, -1));
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -72,12 +72,15 @@ namespace SoftUniWarz.States
             {
                 element.LoadContent(content);
                 element.CenterElement(768, 1366);
+               
+                
             }
             foreach (var clickableElement in clickableElements)
             {
                 clickableElement.LoadContent(content);
                 clickableElement.ClickEvent += OnClick;
             }
+            
         }
 
         public void OnClick(string element)
@@ -120,6 +123,19 @@ namespace SoftUniWarz.States
             if (key == Keys.Back && name.Length > 0)
             {
                 name = name.Remove(name.Length - 1);
+            }
+
+            else if (key == Keys.LeftAlt||key==Keys.RightAlt||key==Keys.RightControl||key==Keys.LeftControl||key==Keys.LeftShift||key==Keys.RightShift||key==Keys.LeftWindows||key==Keys.RightWindows||key==Keys.CapsLock||key==Keys.Tab)
+            {
+                name += "";
+            }
+            else if (key==Keys.Space)
+            {
+                name += " ";
+            }
+            else if (key == Keys.Enter)
+            {
+                StateManager.ChangeToState(GameState.LevelOneState);
             }
 
             else

@@ -444,3 +444,31 @@ E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.xnb
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.png
 E:\bojo\Fundamentals\OOP\Teamwork\Final rep\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\CtorBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.jpg
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.jpg
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player1.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Player2.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ReSharperBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\TermBtn.png
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\CtorBtn.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HealthBar.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HealthBarBackground.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HS.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\HSBG.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBar.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ManaBarBackground.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\PanicButton2.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ReSharperBtn.xnb
+C:\Users\hp\Desktop\Warz\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\TermBtn.xnb

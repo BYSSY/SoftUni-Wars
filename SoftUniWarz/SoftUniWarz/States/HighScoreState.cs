@@ -25,6 +25,8 @@ namespace SoftUniWarz.States
             dataDictionary = highScore.Read();
             elements.Add(new GUIelements("HSBG", new Vector2(0, 0), 1366, 768));
             elements.Add(new GUIelements("HS",new Vector2(433,30),500,175));
+
+
         }
 
         public override void Draw(SpriteBatch spriteBatch)
