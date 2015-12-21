@@ -19,23 +19,23 @@ namespace SoftUniWarz.States
 
         // HealthBar Player1
         private Texture2D healthTexture;
-        private Rectangle playerHealthRectangle;
-        private Vector2 playerHealthPosition;
+        protected Rectangle playerHealthRectangle;
+        protected Vector2 playerHealthPosition;
 
         private Texture2D healthTextureBG;
         private Rectangle playerHealthRectangleBG;
 
         // ManaBar Player1
         private Texture2D manaTexture;
-        private Rectangle playerManaRectangle;
+        protected Rectangle playerManaRectangle;
         private Vector2 playerManaPosition;
 
         private Texture2D manaTextureBG;
-        private Rectangle playerManaRectangleBG;
+        protected Rectangle playerManaRectangleBG;
 
         // HealthBar Player2
-        private Rectangle enemyHealthRectangle;
-        private Vector2 enemyHealthPosition;
+        protected Rectangle enemyHealthRectangle;
+        protected Vector2 enemyHealthPosition;
 
         private Rectangle enemyHealthRectangleBG;
 
@@ -52,8 +52,8 @@ namespace SoftUniWarz.States
         // Name text
         private SpriteFont nameFont;
         
-        private bool isPlayerMove;
-        private bool playerHasHit;
+        protected bool isPlayerMove;
+        protected bool playerHasHit;
 
         protected List<GUIelements> staticElements;
         protected List<Button> buttons;
@@ -131,13 +131,7 @@ namespace SoftUniWarz.States
 
             spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.DarkGray);
             spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.DarkGray);
-
-
-
-
-
-
-
+            
         }
 
         public override void Update()
@@ -145,7 +139,7 @@ namespace SoftUniWarz.States
             //EnemyMove
             if (playerHasHit && !isPlayerMove)
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(2000);
                 Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
                 enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
                 enemy.ProduceAttack(new BinaryAttack(positionForMagic));
@@ -172,7 +166,7 @@ namespace SoftUniWarz.States
             for (int i = 0; i < enemy.SpellPool.Count; i++)
             {
                 enemy.SpellPool[i].Element.MoveElement(-15, 0);
-                if (enemy.SpellPool[i].Element.GUIrect.X + enemy.SpellPool[i].Element.GUIrect.Width < 400)
+                if (enemy.SpellPool[i].Element.GUIrect.X + enemy.SpellPool[i].Element.GUIrect.Width < 450)
                 {
                     player.ApplyAttack(enemy.SpellPool[i]);
                     enemy.SpellPool.RemoveAt(i);
@@ -198,12 +192,7 @@ namespace SoftUniWarz.States
 
             player.LoadContent(content);
             enemy.LoadContent(content);
-            foreach (var guiElements in buttons)
-            {
-                guiElements.LoadContent(content);
-                guiElements.ClickEvent += OnClick;
-
-            }
+          
             foreach (var staticElement in staticElements)
             {
                 staticElement.LoadContent(content);
@@ -229,33 +218,6 @@ namespace SoftUniWarz.States
 
             spriteFont = content.Load<SpriteFont>("MyFont");
             //nameFont = content.Load<SpriteFont>("NameFont");
-
-
-        }
-
-        public void OnClick(string element)
-        {
-            if (isPlayerMove)
-            {
-                Vector2 positionForMagic = new Vector2(player.Element.Position.X + player.Element.GUIrect.Width / 2,
-               player.Element.Position.Y + player.Element.GUIrect.Height / 2);
-                if (element == "BinaryBtn")
-                {
-                    BinaryAttack binaryAttack = new BinaryAttack(positionForMagic);
-                    player.ProduceAttack(binaryAttack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
-                }
-                if (element == "BookBtn")
-                {
-                    SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
-                    player.ProduceAttack(attack);
-                    playerHealthRectangle.Width -= attack.Damage * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
-                }
-                isPlayerMove = false;
-            }
-
         }
     }
 }

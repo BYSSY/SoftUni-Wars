@@ -7,7 +7,7 @@
         private static readonly int damageTake = 70;
         private static readonly int manaTake = 30;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "done";
+        private static readonly string texturePath = "BinAttack";
 
         public BeerAttack(Vector2 position)
             : base(damageTake, manaTake, isParalizable, texturePath, position)

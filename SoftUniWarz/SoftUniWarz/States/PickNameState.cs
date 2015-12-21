@@ -87,7 +87,7 @@ namespace SoftUniWarz.States
         {
             if (element == "done")
             {
-                StateManager.ChangeToState(GameState.LevelOneState);
+                StateManager.ChangeToState(GameStates.LevelOneState);
             }
         }
 
@@ -135,7 +135,7 @@ namespace SoftUniWarz.States
             }
             else if (key == Keys.Enter)
             {
-                StateManager.ChangeToState(GameState.LevelOneState);
+                StateManager.ChangeToState(GameStates.LevelOneState);
             }
 
             else

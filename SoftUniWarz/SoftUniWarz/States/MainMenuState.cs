@@ -68,15 +68,15 @@ namespace SoftUniWarz.Background
         {
             if (element == "Play")
             {
-                StateManager.ChangeToState(GameState.PickName);
+                StateManager.ChangeToState(GameStates.PickName);
             }
             if (element == "Quit")
             {
-                StateManager.ChangeToState(GameState.Quit);
+                StateManager.ChangeToState(GameStates.Quit);
             }
             if (element == "HighScore")
             {
-                StateManager.ChangeToState(GameState.HighScore);
+                StateManager.ChangeToState(GameStates.HighScore);
             }
         }
 

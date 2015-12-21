@@ -11,7 +11,7 @@ namespace SoftUniWarz.Attack.PlayerAttacks
         private static readonly int damageTake = 60;
         private static readonly int manaTake = 15;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "BinAttack";
         // TODO: Set texture path.
 
         public CSharpBookAttack(Vector2 position)

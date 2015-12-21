@@ -36,29 +36,32 @@ namespace SoftUniWarz.States
             }
         }
 
-        public static void ChangeToState(GameState state)
+        public static void ChangeToState(GameStates state)
         {
             switch (state)
             {
-                case GameState.MainMenu:
+                case GameStates.MainMenu:
                     CurrentState = new MainMenuState(currentScreenSize);
                     break;
-                case GameState.LevelOneState:
+                case GameStates.LevelOneState:
                     CurrentState = new LevelOneState(content, currentScreenSize);
                     break;
-                case GameState.LevelTwoState:
+                case GameStates.LevelTwoState:
                     CurrentState = new LevelTwoState(content, currentScreenSize);
                     break;
-                case GameState.LevelThreeState:
+                case GameStates.LevelThreeState:
                     CurrentState = new LevelThreeState(content, currentScreenSize);
                     break;
-                case GameState.Quit:
+                case GameStates.FinalLevel:
+                    CurrentState = new FinalLevel(content, currentScreenSize);
+                    break;
+                case GameStates.Quit:
                     CurrentState = new QuitState(currentScreenSize);
                     break;
-                case GameState.PickName:
+                case GameStates.PickName:
                     CurrentState = new PickNameState(currentScreenSize);
                     break;
-                    case GameState.HighScore:
+                    case GameStates.HighScore:
                     CurrentState = new HighScoreState(currentScreenSize);
                     break;
             }

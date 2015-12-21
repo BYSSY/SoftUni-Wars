@@ -5,12 +5,13 @@ using System.Text;
 
 namespace SoftUniWarz.Background
 {
-    public enum GameState
+    public enum GameStates
     {
         MainMenu,
         LevelOneState,
         LevelTwoState,
         LevelThreeState,
+        FinalLevel,
         PickName,
         Quit,
         HighScore

@@ -8,7 +8,7 @@ namespace SoftUniWarz.Attack.PlayerAttacks
         private static readonly int damage = 100;
         private static readonly int manaCost = 50;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "BinAttack";
         // Set texture path.
 
         public ResharperAttack(Vector2 position)
