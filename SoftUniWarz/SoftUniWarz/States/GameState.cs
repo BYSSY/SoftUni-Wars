@@ -10,6 +10,7 @@ namespace SoftUniWarz.Background
         MainMenu,
         LevelOneState,
         LevelTwoState,
+        LevelThreeState,
         PickName,
         Quit,
         HighScore

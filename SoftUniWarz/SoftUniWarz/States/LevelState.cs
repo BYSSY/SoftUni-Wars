@@ -151,7 +151,7 @@ namespace SoftUniWarz.States
                 Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
                enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
                 enemy.ProduceAttack(new BinaryAttack(positionForMagic));
-                isPlayerMove = true;
+                playerHasHit = false;
             }
             foreach (var inGameElement in buttons)
             {
@@ -166,9 +166,9 @@ namespace SoftUniWarz.States
                 player.SpellPool[i].Element.MoveElement(15, 0);
                 if (player.SpellPool[i].Element.GUIrect.X + player.SpellPool[i].Element.GUIrect.Width > 1000)
                 {
-                    playerHasHit = true;
                     enemy.ApplyAttack(player.SpellPool[i]);
                     player.SpellPool.RemoveAt(i);
+                    playerHasHit = true;
                 }
             }
             for (int i = 0; i < enemy.SpellPool.Count; i++)
@@ -176,9 +176,9 @@ namespace SoftUniWarz.States
                 enemy.SpellPool[i].Element.MoveElement(-15, 0);
                 if (enemy.SpellPool[i].Element.GUIrect.X + enemy.SpellPool[i].Element.GUIrect.Width < 400)
                 {
-                    playerHasHit = false;
                     player.ApplyAttack(enemy.SpellPool[i]);
                     enemy.SpellPool.RemoveAt(i);
+                    isPlayerMove = true;
                 }
             }
             enemy.Update();
@@ -228,10 +228,9 @@ namespace SoftUniWarz.States
 
             enemyManaPosition = new Vector2(890, 80);
             enemyManaRectangle = new Rectangle(0, 0, this.enemy.ManaPoints, 30);
-
-            //
+            
             spriteFont = content.Load<SpriteFont>("MyFont");
-//            nameFont = content.Load<SpriteFont>("NameFont");
+            //nameFont = content.Load<SpriteFont>("NameFont");
 
 
         }

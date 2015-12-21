@@ -49,6 +49,9 @@ namespace SoftUniWarz.States
                 case GameState.LevelTwoState:
                     CurrentState = new LevelTwoState(content, currentScreenSize);
                     break;
+                case GameState.LevelThreeState:
+                    CurrentState = new LevelThreeState(content, currentScreenSize);
+                    break;
                 case GameState.Quit:
                     CurrentState = new QuitState(currentScreenSize);
                     break;
