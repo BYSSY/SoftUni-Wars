@@ -55,16 +55,12 @@ namespace SoftUniWarz.States
                 {
                     BeerAttack attack = new BeerAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
                 if (element == Buttons.Buttons.ReSharperBtn.ToString())
                 {
                     ResharperAttack attack = new ResharperAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
             }

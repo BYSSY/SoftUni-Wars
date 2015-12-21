@@ -52,8 +52,6 @@ namespace SoftUniWarz.States
                 {
                     TermosThrowAttack attack = new TermosThrowAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
             }

@@ -52,8 +52,6 @@ namespace SoftUniWarz.States
                 {
                     ConstructorLegoAttack attack = new ConstructorLegoAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
             }
