@@ -4,10 +4,10 @@
 
     public class RegexAttack : Attack
     {
-        private static readonly int DefaultRegexAttackDamage = 60;
-        private static readonly int DefaultRegexAttackManaCost = 25;
-        private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private const int DefaultRegexAttackDamage = 60;
+        private const int DefaultRegexAttackManaCost = 25;
+        private const bool isParalizable = false;
+        private const string texturePath = "";
         // TODO: SetTexturePath
 
         

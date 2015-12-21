@@ -6,9 +6,9 @@ namespace SoftUniWarz.Attack.EnemyAttacks
 
     class SimpleEnemyAttack : Attack
     {
-        private static readonly int DefaultSimpleEnemyAttackDamage = 65;
-        private static readonly int DefaultSimpleEnemyAttacManaCost = 30;
-        private static readonly bool isParalizable = false;
+        private const int DefaultSimpleEnemyAttackDamage = 65;
+        private const int DefaultSimpleEnemyAttacManaCost = 30;
+        private const bool isParalizable = false;
         private static readonly string[] texturePaths = new string[]
         {
             "dumbel", "dna", "wine"

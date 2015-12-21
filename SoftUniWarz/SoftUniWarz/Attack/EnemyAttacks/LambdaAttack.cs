@@ -1,14 +1,13 @@
-﻿
-namespace SoftUniWarz.Attack.EnemyAttacks
+﻿namespace SoftUniWarz.Attack.EnemyAttacks
 {
     using Microsoft.Xna.Framework;
 
     class LambdaAttack : Attack
     {
-        private static readonly int DefaultLambdaAttackDamage = 70;
-        private static readonly int DefaultLambdaAttackManaCost = 30;
-        private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private const int DefaultLambdaAttackDamage = 70;
+        private const int DefaultLambdaAttackManaCost = 30;
+        private const bool isParalizable = false;
+        private const string texturePath = "";
         // TODO: SetTexturePath
 
         public LambdaAttack(Vector2 position)

@@ -4,11 +4,11 @@
 
     class SnookerBallAttack : Attack
     {
-        private static readonly int DefaultSnookerBallAttackDamage = 50;
-        private static readonly int DefaultSnookerBallAttackManaCost = 20;
+        private const int DefaultSnookerBallAttackDamage = 50;
+        private const int DefaultSnookerBallAttackManaCost = 20;
 
-        private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private const bool isParalizable = false;
+        private const string texturePath = "";
         // TODO: Set texture path.
 
         public SnookerBallAttack(Vector2 position)

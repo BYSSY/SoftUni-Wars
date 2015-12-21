@@ -1,15 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using SoftUniWarz.Background;
-using SoftUniWarz.States;
-
-namespace SoftUniWarz
+﻿namespace SoftUniWarz
 {
+    using System;
+    using System.Diagnostics;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
+    using Background;
+    using States;
 
     public class UnSeriousEngine : Game
     {

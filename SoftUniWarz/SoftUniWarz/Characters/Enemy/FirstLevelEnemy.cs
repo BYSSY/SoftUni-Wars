@@ -1,8 +1,8 @@
-﻿using SoftUniWarz.Characters.Enemy;
-using Microsoft.Xna.Framework;
-
-namespace SoftUniWarz
+﻿namespace SoftUniWarz
 {
+    using Characters.Enemy;
+    using Microsoft.Xna.Framework;
+
     public class FirstLevelEnemy : Enemy
     {
         private static readonly Vector2 DefaultEnemyPosition = new Vector2(700, 0);
