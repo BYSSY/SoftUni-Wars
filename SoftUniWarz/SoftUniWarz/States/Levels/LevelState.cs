@@ -116,6 +116,7 @@ namespace SoftUniWarz.States
             if (player.HealthPoints <= 0)
             {
                 StateManager.ChangeToState(GameStates.MainMenu);
+                //TODO: Write Score
             }
             //EnemyMove
             if (playerHasHit && !isPlayerMove)

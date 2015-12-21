@@ -65,5 +65,15 @@ namespace SoftUniWarz.States
                 }
             }
         }
+
+        public override void Update()
+        {
+            if (enemy.HealthPoints <= 0)
+            {
+                StateManager.ChangeToState(GameStates.MainMenu);
+                //TODO write Score
+            }
+            base.Update();
+        }
     }
 }

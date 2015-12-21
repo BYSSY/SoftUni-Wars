@@ -9,6 +9,7 @@ namespace SoftUniWarz
     {
         private SortedDictionary<int,string> data;
         private string path = @"..\..\..\highscore.txt";
+
         public HighScore()
         {
             data = new SortedDictionary<int, string>();
