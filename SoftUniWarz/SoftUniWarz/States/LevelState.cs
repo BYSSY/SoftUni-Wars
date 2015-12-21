@@ -48,6 +48,10 @@ namespace SoftUniWarz.States
 
         private Rectangle enemyManaRectangleBG;
 
+        // Mana and Health text
+        private SpriteFont spriteFont;
+
+
         private bool isPlayerMove;
         private bool playerHasHit;
 
@@ -111,6 +115,24 @@ namespace SoftUniWarz.States
             spriteBatch.Draw(manaTextureBG, enemyManaRectangleBG, Color.White);
             spriteBatch.Draw(manaTexture, enemyManaPosition, enemyManaRectangle, Color.White);
 
+            //PlayerText:
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
+
+            // Player's and enemy's name.
+            spriteBatch.DrawString(spriteFont, this.player.Name , new Vector2(170, 30), Color.White);
+            spriteBatch.DrawString(spriteFont,  this.enemy.Name, new Vector2(1130, 30), Color.DarkRed);
+
+
+            // Player and enemy health and mana indicators.
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints+"/"+ this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
+            spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(280, 82), Color.AntiqueWhite);
+
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.DarkGray);
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.DarkGray);
+
+
+
 
 
         }
@@ -163,6 +185,9 @@ namespace SoftUniWarz.States
             //
             enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth-200, 30);
             enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
+
+
+            //ManaAnHealth text
         }
 
         public override void LoadContent(ContentManager content)
@@ -198,6 +223,10 @@ namespace SoftUniWarz.States
 
             enemyManaPosition = new Vector2(890, 80);
             enemyManaRectangle = new Rectangle(0, 0, this.enemy.ManaPoints, 30);
+
+            //
+            spriteFont = content.Load<SpriteFont>("MyFont");
+
 
         }
 
