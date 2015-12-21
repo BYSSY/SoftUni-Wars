@@ -51,16 +51,12 @@ namespace SoftUniWarz.States
                 {
                     BinaryAttack attack = new BinaryAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
                 if (element == Buttons.Buttons.BookBtn.ToString())
                 {
                     CSharpBookAttack attack = new CSharpBookAttack(positionForMagic);
                     player.ProduceAttack(attack);
-                    playerHealthRectangle.Width -= attack.Damage * 3 / 5;
-                    playerManaRectangle.Width = this.player.ManaPoints;
                     isPlayerMove = false;
                 }
 

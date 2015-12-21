@@ -84,7 +84,6 @@
         public virtual void ApplyAttack(Attack.Attack attack)
         {
             this.healthPoints -= attack.Damage;
-            this.manaPoints -= attack.ManaCost;
         }
 
         public virtual void ApplyBonus(Bonus bonus)
@@ -105,6 +104,8 @@
         public void ProduceAttack(Attack.Attack attack)
         {
             spellPool.Add(attack);
+            this.manaPoints -= attack.ManaCost;
+
         }
 
         public void AddSpellToInventory(Attack.Attack attack)

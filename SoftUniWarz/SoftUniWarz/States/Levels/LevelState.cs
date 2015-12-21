@@ -51,7 +51,7 @@ namespace SoftUniWarz.States
 
         // Name text
         private SpriteFont nameFont;
-        
+
         protected bool isPlayerMove;
         protected bool playerHasHit;
 
@@ -105,16 +105,11 @@ namespace SoftUniWarz.States
             player.Draw(spriteBatch);
             // Drawing the player's bars
             spriteBatch.Draw(healthTextureBG, playerHealthRectangleBG, Color.White);
-            spriteBatch.Draw(healthTexture, playerHealthPosition, playerHealthRectangle, Color.White);
             spriteBatch.Draw(manaTextureBG, playerManaRectangleBG, Color.White);
-            spriteBatch.Draw(manaTexture, playerManaPosition, playerManaRectangle, Color.White);
 
             // Drawing enemy's bars
             spriteBatch.Draw(healthTextureBG, enemyHealthRectangleBG, Color.White);
-            spriteBatch.Draw(healthTexture, enemyHealthPosition, enemyHealthRectangle, Color.White);
             spriteBatch.Draw(manaTextureBG, enemyManaRectangleBG, Color.White);
-            spriteBatch.Draw(manaTexture, enemyManaPosition, enemyManaRectangle, Color.White);
-
             //PlayerText:
             spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
             spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
@@ -122,20 +117,21 @@ namespace SoftUniWarz.States
             // Player's and enemy's name. 
             // TODO: We need another font the names.
             spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(170, 20), Color.White);
-            spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
+            spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1100, 20), Color.White);
 
 
             // Player and enemy health and mana indicators.
-            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
-            spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(280, 82), Color.AntiqueWhite);
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(280, 82), Color.Black);
 
-            spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.DarkGray);
-            spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.DarkGray);
-            
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.Black);
+
         }
 
         public override void Update()
         {
+
             //EnemyMove
             if (playerHasHit && !isPlayerMove)
             {
@@ -176,14 +172,6 @@ namespace SoftUniWarz.States
             enemy.Update();
             player.Update();
 
-            //Player bars backgrounds
-            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth - 200, 30);
-            playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
-
-            //
-            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth - 200, 30);
-            enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
-
 
         }
 
@@ -192,32 +180,24 @@ namespace SoftUniWarz.States
 
             player.LoadContent(content);
             enemy.LoadContent(content);
-          
+
+            //Player bars backgrounds
+            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth - 200, 30);
+            playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
+
+            //
+            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth - 200, 30);
+            enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
+
             foreach (var staticElement in staticElements)
             {
                 staticElement.LoadContent(content);
             }
 
             // Setting player's mana and health bars: textures, position and rectangles.
-            healthTexture = content.Load<Texture2D>("HealthBar");
-            playerHealthPosition = new Vector2(170, 50);
-            playerHealthRectangle = new Rectangle(0, 0, this.player.HealthPoints * 3 / 5, 30);
-            healthTextureBG = content.Load<Texture2D>("HealthBarBackground");
-
-            manaTexture = content.Load<Texture2D>("ManaBar");
-            playerManaPosition = new Vector2(170, 80);
-            playerManaRectangle = new Rectangle(0, 0, this.player.ManaPoints, 30);
-            manaTextureBG = content.Load<Texture2D>("ManaBarBackground");
-
-            // Setting enemy's mana and health bar - position and rectangle.
-            enemyHealthPosition = new Vector2(890, 50);
-            enemyHealthRectangle = new Rectangle(0, 0, this.enemy.HealthPoints * 3 / 5, 30);
-
-            enemyManaPosition = new Vector2(890, 80);
-            enemyManaRectangle = new Rectangle(0, 0, this.enemy.ManaPoints, 30);
-
+            healthTextureBG = content.Load<Texture2D>("HealthBar");
+            manaTextureBG = content.Load<Texture2D>("ManaBar");
             spriteFont = content.Load<SpriteFont>("MyFont");
-            //nameFont = content.Load<SpriteFont>("NameFont");
         }
     }
 }
