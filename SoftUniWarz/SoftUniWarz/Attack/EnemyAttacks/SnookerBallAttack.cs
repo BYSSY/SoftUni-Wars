@@ -8,11 +8,16 @@
         private const int DefaultSnookerBallAttackManaCost = 20;
 
         private const bool isParalizable = false;
-        private const string texturePath = "";
+        private const string DefaultSnookerBallAttackTexturePath = "";
         // TODO: Set texture path.
 
         public SnookerBallAttack(Vector2 position)
-            : base(DefaultSnookerBallAttackDamage, DefaultSnookerBallAttackManaCost, isParalizable, texturePath, position)
+            : base(
+                  DefaultSnookerBallAttackDamage,
+                  DefaultSnookerBallAttackManaCost,
+                  isParalizable,
+                  DefaultSnookerBallAttackTexturePath,
+                  position)
         {
         }
     }

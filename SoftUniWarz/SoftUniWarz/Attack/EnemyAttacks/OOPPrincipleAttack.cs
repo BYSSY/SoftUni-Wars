@@ -7,11 +7,16 @@
         private const int DefaultOOPPrincipleAttackAttack = 80;
         private const int DefaultOOPPrincipleAttackAttackManaCost = 40;
         private const bool isParalizable = false;
-        private const string texturePath = "";
+        private const string DefaultOOPPrincipleAttackAttackTexturePath = "";
         // TODO: Set texture path;
 
         public OOPPrincipleAttack(Vector2 position)
-            : base(DefaultOOPPrincipleAttackAttack, DefaultOOPPrincipleAttackAttackManaCost, isParalizable, texturePath, position )
+            : base(
+                  DefaultOOPPrincipleAttackAttack,
+                  DefaultOOPPrincipleAttackAttackManaCost,
+                  isParalizable,
+                  DefaultOOPPrincipleAttackAttackTexturePath,
+                  position )
         {
         }
     }

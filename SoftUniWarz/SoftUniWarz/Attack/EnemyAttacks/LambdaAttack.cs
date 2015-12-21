@@ -7,11 +7,16 @@
         private const int DefaultLambdaAttackDamage = 70;
         private const int DefaultLambdaAttackManaCost = 30;
         private const bool isParalizable = false;
-        private const string texturePath = "";
+        private const string DefaultLambdaAttackTexturePath = "";
         // TODO: SetTexturePath
 
         public LambdaAttack(Vector2 position)
-            : base(DefaultLambdaAttackDamage, DefaultLambdaAttackManaCost, isParalizable, texturePath, position)
+            : base(
+                  DefaultLambdaAttackDamage,
+                  DefaultLambdaAttackManaCost,
+                  isParalizable,
+                  DefaultLambdaAttackTexturePath,
+                  position)
         {
         }
     }
