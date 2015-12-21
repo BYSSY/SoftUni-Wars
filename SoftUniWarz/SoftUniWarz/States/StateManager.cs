@@ -47,7 +47,7 @@ namespace SoftUniWarz.States
                     CurrentState = new LevelOneState(content, currentScreenSize);
                     break;
                 case GameState.LevelTwoState:
-                 //   CurrentState = new LevelTwoState();
+                    CurrentState = new LevelTwoState(content, currentScreenSize);
                     break;
                 case GameState.Quit:
                     CurrentState = new QuitState(currentScreenSize);
@@ -59,7 +59,7 @@ namespace SoftUniWarz.States
                     CurrentState = new HighScoreState(currentScreenSize);
                     break;
             }
-            if (Game1.isInitialized)
+            if (UnSeriousEngine.isInitialized)
             {
                 CurrentState.LoadContent(Content);
             }

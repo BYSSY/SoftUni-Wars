@@ -124,8 +124,8 @@ namespace SoftUniWarz.States
 
             // Player's and enemy's name. 
             // TODO: We need another font the names.
-            spriteBatch.DrawString(nameFont, this.player.Name, new Vector2(170, 20), Color.White);
-            spriteBatch.DrawString(nameFont,  this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
+            spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(170, 20), Color.White);
+            spriteBatch.DrawString(spriteFont,  this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
 
 
             // Player and enemy health and mana indicators.
@@ -231,7 +231,7 @@ namespace SoftUniWarz.States
 
             //
             spriteFont = content.Load<SpriteFont>("MyFont");
-            nameFont = content.Load<SpriteFont>("NameFont");
+//            nameFont = content.Load<SpriteFont>("NameFont");
 
 
         }

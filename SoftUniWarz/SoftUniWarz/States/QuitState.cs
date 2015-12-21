@@ -20,7 +20,7 @@ namespace SoftUniWarz.States
         public QuitState(Vector2 screenSize)
             : base(screenSize)
         {
-            clickableElements.Add(new Button("Exit", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+            clickableElements.Add(new Button(Buttons.Buttons.Exit, new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
         }   
 
         public override void LoadContent(ContentManager content)

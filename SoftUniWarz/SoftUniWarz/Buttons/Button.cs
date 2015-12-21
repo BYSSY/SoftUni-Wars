@@ -16,8 +16,8 @@ namespace SoftUniWarz.Buttons
         public delegate void ElementClickedEventHandler(string element);
         
         
-        public Button(string texturePath, Vector2 position, int width, int height) 
-            : base(texturePath, position, width, height)
+        public Button(Buttons texturePath, Vector2 position, int width, int height) 
+            : base(texturePath.ToString(), position, width, height)
         {
             isPressed = false;
         }

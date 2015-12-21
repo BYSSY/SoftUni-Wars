@@ -34,7 +34,7 @@ namespace SoftUniWarz.States
             :base(screenSize)
         {
             staticElements.Add(new GUIelements("NamePickBG", new Vector2(0,0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
-            clickableElements.Add(new Button("done", new Vector2(553,563), -1, -1));
+            clickableElements.Add(new Button(Buttons.Buttons.Done, new Vector2(553,563), -1, -1));
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
