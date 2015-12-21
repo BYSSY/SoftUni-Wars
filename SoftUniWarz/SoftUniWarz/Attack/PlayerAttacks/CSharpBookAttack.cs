@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-
-namespace SoftUniWarz.Attack.PlayerAttacks
+﻿namespace SoftUniWarz.Attack.PlayerAttacks
 {
+    using Microsoft.Xna.Framework;
+
     class CSharpBookAttack : Attack
     {
-        private static readonly int damageTake = 60;
-        private static readonly int manaTake = 15;
+        private const int DefaultCSharpBookAttackDamage = 60;
+        private const int DefaultCSharpBookAttackManaCost = 30;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "book";
+        private const string texturePath = "book";
 
         public CSharpBookAttack(Vector2 position)
-            : base(damageTake, manaTake, isParalizable, texturePath, position)
+            : base(DefaultCSharpBookAttackDamage, DefaultCSharpBookAttackManaCost, isParalizable, texturePath, position)
         {
         }
     }

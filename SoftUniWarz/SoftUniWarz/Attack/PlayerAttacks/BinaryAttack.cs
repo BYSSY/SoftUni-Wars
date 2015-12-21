@@ -4,13 +4,13 @@
 
     class BinaryAttack : Attack
     {
-        private static readonly int damage = 70;
-        private static readonly int manaCost = 50;
+        private const int DefaultBinaryAttackDamage = 80;
+        private const int DefaultBinaryAttackManaCOst = 50;
         private static readonly bool isParalizable = false;
-        private static readonly string path = "BinAttack";
+        private const string path = "BinAttack";
 
         public BinaryAttack( Vector2 position) 
-            : base(damage, manaCost, isParalizable, path, position)
+            : base(DefaultBinaryAttackDamage, DefaultBinaryAttackManaCOst, isParalizable, path, position)
         {
         }
     }

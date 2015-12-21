@@ -4,13 +4,13 @@
 
     class BeerAttack : Attack
     {
-        private static readonly int damageTake = 70;
-        private static readonly int manaTake = 30;
+        private const int DefaultBeerAttackDamage = 70;
+        private const int DefaultBeerAttackManaCost = 30;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "beer";
+        private const string texturePath = "beer";
 
         public BeerAttack(Vector2 position)
-            : base(damageTake, manaTake, isParalizable, texturePath, position)
+            : base(DefaultBeerAttackDamage, DefaultBeerAttackManaCost, isParalizable, texturePath, position)
         {
         }
     }

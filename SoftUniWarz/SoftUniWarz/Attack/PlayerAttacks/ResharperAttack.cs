@@ -5,14 +5,13 @@ namespace SoftUniWarz.Attack.PlayerAttacks
 
     class ResharperAttack : Attack
     {
-        private static readonly int damage = 100;
-        private static readonly int manaCost = 50;
+        private const int DefaultResharperAttackDamage = 100;
+        private const int DefaultResharperAttackManaCost = 50;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "rshp";
-        // Set texture path.
+        private const string texturePath = "rshp";
 
         public ResharperAttack(Vector2 position)
-            : base(damage, manaCost, isParalizable, texturePath, position)
+            : base(DefaultResharperAttackDamage, DefaultResharperAttackManaCost, isParalizable, texturePath, position)
         {
         }
     }

@@ -4,14 +4,13 @@
 
     public class ConstructorLegoAttack : Attack
     {
-        private static readonly int damageTake = 95;
-        private static readonly int manaTake = 45;
+        private const int DefaultConstructorLegoAttackDamage = 95;
+        private const int DefaultConstructorLegoManaCost = 45;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "constructor";
-        // TODO: Set texture path.
+        private const string texturePath = "constructor";
 
         public ConstructorLegoAttack(Vector2 position)
-            : base(damageTake, manaTake, isParalizable, texturePath, position)
+            : base(DefaultConstructorLegoAttackDamage, DefaultConstructorLegoManaCost, isParalizable, texturePath, position)
         {
         }
     }
