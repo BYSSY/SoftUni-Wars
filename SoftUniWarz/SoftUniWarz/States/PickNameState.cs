@@ -85,8 +85,9 @@ namespace SoftUniWarz.States
 
         public void OnClick(string element)
         {
-            if (element == "done")
+            if (element == Buttons.Buttons.Done.ToString())
             {
+                StateManager.PlayerName = name;
                 StateManager.ChangeToState(GameStates.LevelOneState);
             }
         }
@@ -135,6 +136,7 @@ namespace SoftUniWarz.States
             }
             else if (key == Keys.Enter)
             {
+                StateManager.PlayerName = name;
                 StateManager.ChangeToState(GameStates.LevelOneState);
             }
 

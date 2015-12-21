@@ -11,9 +11,10 @@ using SoftUniWarz.Background;
 
 namespace SoftUniWarz.States
 {
-    class StateManager
+    static class StateManager
     {
         private static State currentState;
+        private static string playerName;
         private static ContentManager content;
         public static Vector2 currentScreenSize = new Vector2(1366, 768);
 
@@ -33,6 +34,19 @@ namespace SoftUniWarz.States
             set
             {
                 content = value;
+            }
+        }
+
+        public static string PlayerName
+        {
+            get
+            {
+                return playerName;
+            }
+
+            set
+            {
+                playerName = value;
             }
         }
 

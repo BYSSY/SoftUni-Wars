@@ -2,17 +2,21 @@
 namespace SoftUniWarz.Attack.EnemyAttacks
 {
     using Microsoft.Xna.Framework;
+    using System;
 
     class SimpleEnemyAttack : Attack
     {
-        private static readonly int damage = 40;
+        private static readonly int damage = 500;
         private static readonly int manaCost = 10;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "binary_dumbell";
-        // TODO: Set texture path.
+        private static readonly string[] texturePaths = new string[]
+        {
+            "dumbel", "dna", "wine"
+        };
+        private static readonly Random rnd = new Random();
 
         public SimpleEnemyAttack(Vector2 position)
-            : base(damage, manaCost, isParalizable, texturePath, position)
+            : base(damage, manaCost, isParalizable, texturePaths[rnd.Next(0, 3)], position)
         {
         }
     }

@@ -113,14 +113,17 @@ namespace SoftUniWarz.States
 
         public override void Update()
         {
-
+            if (player.HealthPoints <= 0)
+            {
+                StateManager.ChangeToState(GameStates.MainMenu);
+            }
             //EnemyMove
             if (playerHasHit && !isPlayerMove)
             {
                 Thread.Sleep(2000);
                 Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
                 enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
-                enemy.ProduceAttack(new BinaryAttack(positionForMagic));
+                enemy.ProduceAttack(new SimpleEnemyAttack(positionForMagic));
                 playerHasHit = false;
             }
             foreach (var inGameElement in buttons)

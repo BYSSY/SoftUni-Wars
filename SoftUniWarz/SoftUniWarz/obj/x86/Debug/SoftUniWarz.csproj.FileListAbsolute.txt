@@ -55,7 +55,6 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\D
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\arenaBG.jpg
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.png
-E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
@@ -148,3 +147,7 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\D
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\book.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dna.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dumbel.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\wine.png

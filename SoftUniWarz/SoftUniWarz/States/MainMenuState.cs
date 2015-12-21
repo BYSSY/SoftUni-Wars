@@ -66,15 +66,15 @@ namespace SoftUniWarz.Background
 
         public void OnClick(string element)
         {
-            if (element == "Play")
+            if (element == Buttons.Buttons.Play.ToString())
             {
                 StateManager.ChangeToState(GameStates.PickName);
             }
-            if (element == "Quit")
+            if (element == Buttons.Buttons.Quit.ToString())
             {
                 StateManager.ChangeToState(GameStates.Quit);
             }
-            if (element == "HighScore")
+            if (element == Buttons.Buttons.HighScore.ToString())
             {
                 StateManager.ChangeToState(GameStates.HighScore);
             }
