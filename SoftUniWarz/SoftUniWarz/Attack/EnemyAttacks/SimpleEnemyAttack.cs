@@ -6,7 +6,7 @@ namespace SoftUniWarz.Attack.EnemyAttacks
 
     class SimpleEnemyAttack : Attack
     {
-        private static readonly int damage = 500;
+        private static readonly int damage = 50;
         private static readonly int manaCost = 10;
         private static readonly bool isParalizable = false;
         private static readonly string[] texturePaths = new string[]
