@@ -51,6 +51,9 @@ namespace SoftUniWarz.States
         // Mana and Health text
         private SpriteFont spriteFont;
 
+        // Name text
+        private SpriteFont nameFont;
+
 
         private bool isPlayerMove;
         private bool playerHasHit;
@@ -119,9 +122,10 @@ namespace SoftUniWarz.States
             spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
             spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
 
-            // Player's and enemy's name.
-            spriteBatch.DrawString(spriteFont, this.player.Name , new Vector2(170, 30), Color.White);
-            spriteBatch.DrawString(spriteFont,  this.enemy.Name, new Vector2(1130, 30), Color.DarkRed);
+            // Player's and enemy's name. 
+            // TODO: We need another font the names.
+            spriteBatch.DrawString(nameFont, this.player.Name, new Vector2(170, 20), Color.White);
+            spriteBatch.DrawString(nameFont,  this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
 
 
             // Player and enemy health and mana indicators.
@@ -130,6 +134,8 @@ namespace SoftUniWarz.States
 
             spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.DarkGray);
             spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.DarkGray);
+
+
 
 
 
@@ -187,7 +193,6 @@ namespace SoftUniWarz.States
             enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
 
 
-            //ManaAnHealth text
         }
 
         public override void LoadContent(ContentManager content)
@@ -226,6 +231,7 @@ namespace SoftUniWarz.States
 
             //
             spriteFont = content.Load<SpriteFont>("MyFont");
+            nameFont = content.Load<SpriteFont>("NameFont");
 
 
         }

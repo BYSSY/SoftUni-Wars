@@ -321,3 +321,9 @@
 /processorParam:TextureFormat=Color
 /build:binary_dumbell.png
 
+#begin NameFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:NameFont.spritefont
+
