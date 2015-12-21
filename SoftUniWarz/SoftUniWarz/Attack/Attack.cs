@@ -2,7 +2,7 @@
 {
     using System;
     using Microsoft.Xna.Framework;
-    using SoftUniWarz.Interfaces;
+    using Interfaces;
 
     public abstract class Attack: GameObject, IAttack
     {
@@ -10,11 +10,8 @@
         private int manaCost;
         private bool isParalizable;
 
-        // TODO: Check all attacks texutre's sizes.
         private const int DefaultAttackTextureWidth = -1;
         private const int DefaultAttackTextureHegth = -1;
-
-        // All the attacks have the same textures sizes.
 
         public Attack(
             int damage,
@@ -58,7 +55,7 @@
             {
                 if (value < 0) 
                 {
-                    throw new ArgumentOutOfRangeException("Cannot steal less than 1 or more than 150 mana!");
+                    throw new InvalidOperationException("Cannot create attack with negative mana cost!");
                 }
                 manaCost = value;
             }
@@ -75,7 +72,7 @@
             {
                 if (value < 0) 
                 {
-                    throw new ArgumentOutOfRangeException("Damage cannot be negative!");
+                    throw new ArgumentOutOfRangeException("The attack's damage cannot be negative!");
                 }
                 damage = value;
             }

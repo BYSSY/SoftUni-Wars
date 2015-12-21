@@ -1,5 +1,4 @@
-﻿
-namespace SoftUniWarz.Attack.PlayerAttacks
+﻿namespace SoftUniWarz.Attack.PlayerAttacks
 {
     using Microsoft.Xna.Framework;
 

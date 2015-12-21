@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Content;
-
-namespace SoftUniWarz.Interfaces
+﻿namespace SoftUniWarz.Interfaces
 {
+    using Microsoft.Xna.Framework.Content;
+
     interface IContentLoadable
     {
         void LoadContent(ContentManager content);
