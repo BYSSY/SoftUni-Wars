@@ -151,3 +151,8 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windo
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dna.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dumbel.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\wine.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\beer.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\constructor.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\rshp.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\thermus.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\edu.png

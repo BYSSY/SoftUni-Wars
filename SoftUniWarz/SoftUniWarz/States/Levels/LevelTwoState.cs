@@ -10,6 +10,7 @@ using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
 using SoftUniWarz.Attack.PlayerAttacks;
 using SoftUniWarz.Attack;
+using SoftUniWarz.Characters.Enemy;
 
 namespace SoftUniWarz.States
 {
@@ -19,8 +20,8 @@ namespace SoftUniWarz.States
             : base(screenSize)
         {
             base.content = content;
-            base.player = new NovicePlayer("Nasko");
-            base.enemy = new FirstLevelEnemy();
+            base.player = new NovicePlayer(StateManager.PlayerName);
+            base.enemy = new SecondLevelEnemy();
             base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));

@@ -60,8 +60,6 @@ namespace SoftUniWarz.States
                     player.ProduceAttack(attack);
                     isPlayerMove = false;
                 }
-
-                
             }
 
         }

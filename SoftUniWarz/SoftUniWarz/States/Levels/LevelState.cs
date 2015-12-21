@@ -124,7 +124,15 @@ namespace SoftUniWarz.States
                 Thread.Sleep(2000);
                 Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
                 enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
-                enemy.ProduceAttack(new SimpleEnemyAttack(positionForMagic));
+                SimpleEnemyAttack attack = new SimpleEnemyAttack(positionForMagic);
+                if (enemy.ManaPoints < attack.ManaCost)
+                {
+                    enemy.ManaPoints += attack.ManaCost + 10;
+                }
+                else
+                {
+                    enemy.ProduceAttack(attack);
+                }
                 playerHasHit = false;
             }
             foreach (var inGameElement in buttons)

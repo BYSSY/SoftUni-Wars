@@ -18,7 +18,7 @@ namespace SoftUniWarz.States
             : base(screenSize)
         {
             base.content = content;
-            base.player = new NovicePlayer("Nasko");
+            base.player = new NovicePlayer(StateManager.PlayerName);
             base.enemy = new FirstLevelEnemy();
             base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));

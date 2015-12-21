@@ -7,7 +7,7 @@
         private static readonly int damageTake = 95;
         private static readonly int manaTake = 45;
         private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "BinAttack";
+        private static readonly string texturePath = "constructor";
         // TODO: Set texture path.
 
         public ConstructorLegoAttack(Vector2 position)

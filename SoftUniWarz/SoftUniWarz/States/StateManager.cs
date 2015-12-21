@@ -11,7 +11,7 @@ using SoftUniWarz.Background;
 
 namespace SoftUniWarz.States
 {
-    static class StateManager
+    public static class StateManager
     {
         private static State currentState;
         private static string playerName;

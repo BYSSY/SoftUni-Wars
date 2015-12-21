@@ -55,6 +55,7 @@
     <Compile Include="Characters\Enemy\Enemy.cs" />
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
+    <Compile Include="Characters\Enemy\SecondLevelEnemy.cs" />
     <Compile Include="Content\Prefabs.cs" />
     <Compile Include="HighScore.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
@@ -104,6 +105,9 @@
     <Content Include="Content\arenaBG.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\beer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\BeerBtn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -122,6 +126,9 @@
     <Content Include="Content\Command_Home.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\constructor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\CtorBtn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -132,6 +139,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\dumbel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\edu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Exit.jpg">
@@ -173,7 +183,13 @@
     <Content Include="Content\ReSharperBtn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\rshp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\TermBtn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\thermus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\wine.png">

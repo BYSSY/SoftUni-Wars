@@ -1,18 +1,18 @@
-﻿using SoftUniWarz.Characters.Enemy;
+﻿using System;
 using Microsoft.Xna.Framework;
 
-namespace SoftUniWarz
+namespace SoftUniWarz.Characters.Enemy
 {
-    public class FirstLevelEnemy : Enemy
+    public class SecondLevelEnemy : Enemy
     {
-        private static readonly Vector2 DefaultEnemyPosition = new Vector2(700, 0);
+        private static readonly Vector2 DefaultEnemyPosition = new Vector2(950, 200);
         private const int DefaultFirstEnemyHealth = 500;
         private const int DefaultFirsEnemyMana = 300;
-        private const string DefaultFirstEnemyName = "Pre-C-3PO";
-        private const string DefaultFirstEnemyTexturePath = "Player2";
+        private const string DefaultFirstEnemyName = "EduBaka";
+        private const string DefaultFirstEnemyTexturePath = "edu";
 
 
-        public FirstLevelEnemy()
+        public SecondLevelEnemy()
            : base(
                  DefaultFirstEnemyName,
                  DefaultFirstEnemyHealth,
