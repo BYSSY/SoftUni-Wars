@@ -123,17 +123,6 @@
 /processorParam:TextureFormat=Color
 /build:HealthBar.png
 
-#begin HealthBarBackground.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:TextureFormat=Color
-/build:HealthBarBackground.png
-
 #begin HighScore.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -189,27 +178,10 @@
 /processorParam:TextureFormat=Color
 /build:ManaBar.png
 
-#begin ManaBarBackground.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:TextureFormat=Color
-/build:ManaBarBackground.png
-
 #begin MyFont.xnb
 /importer:
 /processor:
 /build:MyFont.xnb
-
-#begin NameFont.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:TextureFormat=Compressed
-/build:NameFont.spritefont
 
 #begin NamePickBG.jpg
 /importer:TextureImporter

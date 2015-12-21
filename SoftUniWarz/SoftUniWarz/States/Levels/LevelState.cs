@@ -15,35 +15,18 @@ namespace SoftUniWarz.States
 {
     public abstract class LevelState : State
     {
-        private readonly int HealthAndManaBarWidth;
-
         // HealthBar Player1
-        private Texture2D healthTexture;
-        protected Rectangle playerHealthRectangle;
-        protected Vector2 playerHealthPosition;
-
         private Texture2D healthTextureBG;
         private Rectangle playerHealthRectangleBG;
 
         // ManaBar Player1
-        private Texture2D manaTexture;
-        protected Rectangle playerManaRectangle;
-        private Vector2 playerManaPosition;
-
         private Texture2D manaTextureBG;
         protected Rectangle playerManaRectangleBG;
 
         // HealthBar Player2
-        protected Rectangle enemyHealthRectangle;
-        protected Vector2 enemyHealthPosition;
-
         private Rectangle enemyHealthRectangleBG;
 
         // ManaBar Player2
-
-        private Rectangle enemyManaRectangle;
-        private Vector2 enemyManaPosition;
-
         private Rectangle enemyManaRectangleBG;
 
         // Mana and Health text
@@ -115,7 +98,6 @@ namespace SoftUniWarz.States
             spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
 
             // Player's and enemy's name. 
-            // TODO: We need another font the names.
             spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(170, 20), Color.White);
             spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1100, 20), Color.White);
 
@@ -159,6 +141,7 @@ namespace SoftUniWarz.States
                     playerHasHit = true;
                 }
             }
+
             for (int i = 0; i < enemy.SpellPool.Count; i++)
             {
                 enemy.SpellPool[i].Element.MoveElement(-15, 0);
@@ -169,10 +152,9 @@ namespace SoftUniWarz.States
                     isPlayerMove = true;
                 }
             }
+
             enemy.Update();
             player.Update();
-
-
         }
 
         public override void LoadContent(ContentManager content)
@@ -181,11 +163,11 @@ namespace SoftUniWarz.States
             player.LoadContent(content);
             enemy.LoadContent(content);
 
-            //Player bars backgrounds
+            // Player bars
             playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth - 200, 30);
             playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
 
-            //
+            // Enemy bars
             enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth - 200, 30);
             enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
 
@@ -194,7 +176,7 @@ namespace SoftUniWarz.States
                 staticElement.LoadContent(content);
             }
 
-            // Setting player's mana and health bars: textures, position and rectangles.
+            // Setting  mana and health bars' textures.
             healthTextureBG = content.Load<Texture2D>("HealthBar");
             manaTextureBG = content.Load<Texture2D>("ManaBar");
             spriteFont = content.Load<SpriteFont>("MyFont");
