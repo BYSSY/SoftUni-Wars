@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -53,8 +51,7 @@ namespace SoftUniWarz.States
 
         // Name text
         private SpriteFont nameFont;
-
-
+        
         private bool isPlayerMove;
         private bool playerHasHit;
 
@@ -63,7 +60,7 @@ namespace SoftUniWarz.States
         protected Player player;
         protected Enemy enemy;
         protected ContentManager content;
-        
+
 
         public LevelState(Vector2 screenSize)
             : base(screenSize)
@@ -125,11 +122,11 @@ namespace SoftUniWarz.States
             // Player's and enemy's name. 
             // TODO: We need another font the names.
             spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(170, 20), Color.White);
-            spriteBatch.DrawString(spriteFont,  this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
+            spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1100, 20), Color.DarkRed);
 
 
             // Player and enemy health and mana indicators.
-            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints+"/"+ this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
             spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(280, 82), Color.AntiqueWhite);
 
             spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.DarkGray);
@@ -148,8 +145,9 @@ namespace SoftUniWarz.States
             //EnemyMove
             if (playerHasHit && !isPlayerMove)
             {
+                Thread.Sleep(3000);
                 Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
-               enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
+                enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
                 enemy.ProduceAttack(new BinaryAttack(positionForMagic));
                 playerHasHit = false;
             }
@@ -185,11 +183,11 @@ namespace SoftUniWarz.States
             player.Update();
 
             //Player bars backgrounds
-            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth -200, 30);
+            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth - 200, 30);
             playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
 
             //
-            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth-200, 30);
+            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth - 200, 30);
             enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
 
 
@@ -228,7 +226,7 @@ namespace SoftUniWarz.States
 
             enemyManaPosition = new Vector2(890, 80);
             enemyManaRectangle = new Rectangle(0, 0, this.enemy.ManaPoints, 30);
-            
+
             spriteFont = content.Load<SpriteFont>("MyFont");
             //nameFont = content.Load<SpriteFont>("NameFont");
 
@@ -245,7 +243,7 @@ namespace SoftUniWarz.States
                 {
                     BinaryAttack binaryAttack = new BinaryAttack(positionForMagic);
                     player.ProduceAttack(binaryAttack);
-                    enemyHealthRectangle.Width = this.enemy.HealthPoints*3/5;
+                    enemyHealthRectangle.Width = this.enemy.HealthPoints * 3 / 5;
                     playerManaRectangle.Width = this.player.ManaPoints;
                 }
                 if (element == "BookBtn")
