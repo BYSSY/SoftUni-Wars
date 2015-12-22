@@ -4,7 +4,7 @@
 
     class BinaryAttack : Attack
     {
-        private const int DefaultBinaryAttackDamage = 80;
+        private const int DefaultBinaryAttackDamage = 70;
         private const int DefaultBinaryAttackManaCOst = 40;
         private const string path = "BinAttack";
 

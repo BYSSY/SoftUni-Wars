@@ -24,7 +24,7 @@
             StateManager.Content = Content;
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
-            StateManager.ChangeToState(GameStates.LevelThreeState);
+            StateManager.ChangeToState(GameStates.FinalLevel);
             IsMouseVisible = true;
         }
 

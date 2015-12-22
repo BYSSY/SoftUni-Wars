@@ -8,7 +8,7 @@ namespace SoftUniWarz.Attack.EnemyAttacks
 {
     class ErrorAttack : Attack
     {
-        private static readonly int DefaultLambdaAttackDamage = 70;
+        private static readonly int DefaultLambdaAttackDamage = 80;
         private static readonly int DefaultLambdaAttackManaCost = 30;
         private static readonly string texturePath = "еррор";
 

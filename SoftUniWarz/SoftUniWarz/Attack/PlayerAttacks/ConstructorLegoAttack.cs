@@ -4,8 +4,8 @@
 
     public class ConstructorLegoAttack : Attack
     {
-        private const int DefaultConstructorLegoAttackDamage = 100;
-        private const int DefaultConstructorLegoManaCost = 50;
+        private const int DefaultConstructorLegoAttackDamage = 110;
+        private const int DefaultConstructorLegoManaCost = 70;
         private const string texturePath = "constructor";
 
         public ConstructorLegoAttack(Vector2 position)
