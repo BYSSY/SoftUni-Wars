@@ -8,11 +8,6 @@
     {
         private int damage;
         private int manaCost;
-<<<<<<< HEAD
-=======
-        private bool isParalizable;
-
->>>>>>> 25289c1335d6cc11632785e3b034143533dd6489
         private const int DefaultAttackTextureWidth = -1;
         private const int DefaultAttackTextureHegth = -1;
 

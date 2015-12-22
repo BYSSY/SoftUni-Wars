@@ -8,7 +8,7 @@
 
     public class FinalBoss : Enemy
     {
-        private static readonly Vector2 DefaultEnemyPosition = new Vector2(750, 0);
+        private static readonly Vector2 DefaultEnemyPosition = new Vector2(750, 100);
         private const int DefaultFirstEnemyHealth = 500;
         private const int DefaultFirsEnemyMana = 300;
         private const string DefaultFirstEnemyName = "The darth gang";
