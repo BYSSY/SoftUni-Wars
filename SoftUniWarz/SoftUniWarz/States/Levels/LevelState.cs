@@ -10,6 +10,7 @@ using SoftUniWarz.Characters.Enemy;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Attack;
 using SoftUniWarz.Attack.EnemyAttacks;
+using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz.States
 {
@@ -44,12 +45,16 @@ namespace SoftUniWarz.States
         protected Enemy enemy;
         protected ContentManager content;
 
+        protected List<IAttackInformation> attackInformation;
+
+
 
         public LevelState(Vector2 screenSize)
             : base(screenSize)
         {
             staticElements = new List<GUIelements>();
             buttons = new List<Button>();
+            attackInformation = new List<IAttackInformation>();
             isPlayerMove = true;
             playerHasHit = false;
         }

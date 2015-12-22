@@ -11,6 +11,7 @@ using SoftUniWarz.Attack;
 using SoftUniWarz.Characters.Enemy;
 using System.Threading;
 using SoftUniWarz.Attack.EnemyAttacks;
+using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz.States
 {
@@ -28,6 +29,8 @@ namespace SoftUniWarz.States
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X / 2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.CtorBtn, new Vector2(screenSize.X/2 + 200, 650),Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize ));
+            IAttackInformation ConstructorAttackInformation = new AttackInformation(new Vector2(50, 50), new Vector2(50, 50));
+            this.attackInformation.Add(ConstructorAttackInformation);
         }
         public LevelThreeState(Vector2 screenSize)
             :base(screenSize)
@@ -56,6 +59,8 @@ namespace SoftUniWarz.States
                     ConstructorLegoAttack attack = new ConstructorLegoAttack(positionForMagic);
                     player.ProduceAttack(attack);
                     isPlayerMove = false;
+                    this.attackInformation[3].AddDamageInformation(attack.Damage);
+                    this.attackInformation[3].AddManaCostInformation(attack.ManaCost);
                 }
             }
         }
