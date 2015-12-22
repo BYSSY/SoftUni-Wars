@@ -103,7 +103,6 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\arenaBG.jpg
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BeerBtn.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BinaryBtn.png
-C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binary_dumbell.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\binAttack.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\BookBtn.png
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\Command_Home.png
@@ -156,6 +155,7 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windo
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\rshp.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\thermus.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\edu.png
+<<<<<<< HEAD
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball1.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball2.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball3.png
@@ -165,3 +165,14 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windo
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\encapsulation.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\oop1.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\boss.png
+=======
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\beer.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\book.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\constructor.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dna.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\dumbel.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\edu.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\rshp.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\thermus.png
+C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\wine.png
+>>>>>>> 25289c1335d6cc11632785e3b034143533dd6489
