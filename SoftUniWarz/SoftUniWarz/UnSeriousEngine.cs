@@ -42,7 +42,7 @@
 
         protected override void UnloadContent()
         {
-            Content.Unload();
+            //Implement unload content
         }
 
         protected override void Update(GameTime gameTime)

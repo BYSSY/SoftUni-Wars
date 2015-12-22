@@ -13,7 +13,6 @@ using SoftUniWarz.Attack;
 using SoftUniWarz.Characters.Enemy;
 using System.Threading;
 using SoftUniWarz.Attack.EnemyAttacks;
-using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz.States
 {
@@ -30,12 +29,6 @@ namespace SoftUniWarz.States
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X /2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
-            //IAttackInformation CSharpBookInformation = new AttackInformation(new Vector2(0, 0), new Vector2(150, 0));
-            //IAttackInformation BinaryAttackInformation = new AttackInformation(new Vector2(0, 0), new Vector2(150, 0));
-            IAttackInformation ThermosAttacInformation = new AttackInformation(new Vector2(10, 10), new Vector2(150, 0));
-            //this.attackInformation.Add(CSharpBookInformation);
-            //this.attackInformation.Add(CSharpBookInformation);
-            this.attackInformation.Add(ThermosAttacInformation);
         }
         public LevelTwoState(Vector2 screenSize)
             :base(screenSize)
@@ -64,8 +57,6 @@ namespace SoftUniWarz.States
                     TermosThrowAttack attack = new TermosThrowAttack(positionForMagic);
                     player.ProduceAttack(attack);
                     isPlayerMove = false;
-                    this.attackInformation[2].AddDamageInformation(attack.Damage);
-                    this.attackInformation[2].AddManaCostInformation(attack.ManaCost);
                 }
             }
 
