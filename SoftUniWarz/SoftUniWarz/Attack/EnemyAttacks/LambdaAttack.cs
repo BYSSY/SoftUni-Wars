@@ -6,7 +6,7 @@
     {
         private static readonly int DefaultLambdaAttackDamage = 70;
         private static readonly int DefaultLambdaAttackManaCost = 30;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "LAMBDA";
 
         public LambdaAttack(Vector2 position)
             : base(DefaultLambdaAttackDamage, DefaultLambdaAttackManaCost, texturePath, position)
