@@ -21,9 +21,9 @@ namespace SoftUniWarz.Background
             :base(screenSize)
         {
             staticElements.Add(new GUIelements("MainMenuBG", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
-            clickableElements.Add(new Button(Buttons.Buttons.Play, new Vector2(screenSize.X / 2-15, screenSize.Y / 2-30), -1, -1));
-            clickableElements.Add(new Button(Buttons.Buttons.HighScore, new Vector2(screenSize.X / 2, screenSize.Y / 2 + 70), -1, -1));
-            clickableElements.Add(new Button(Buttons.Buttons.Quit, new Vector2(screenSize.X / 2, screenSize.Y / 2 + 150), -1, -1));
+            clickableElements.Add(new Button(Buttons.Buttons.Play, new Vector2(screenSize.X / 2-150, screenSize.Y / 2-105), -1, -1));
+            clickableElements.Add(new Button(Buttons.Buttons.HighScore, new Vector2(screenSize.X / 2-130, screenSize.Y / 2 -5), -1, -1));
+            clickableElements.Add(new Button(Buttons.Buttons.Quit, new Vector2(screenSize.X / 2-130, screenSize.Y / 2 +75), -1, -1));
         }
 
         public override void LoadContent(ContentManager content)

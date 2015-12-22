@@ -26,8 +26,8 @@ namespace SoftUniWarz.States
             base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
-            buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X / 2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.CtorBtn, new Vector2(screenSize.X / 2 + 200, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X / 2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BeerBtn, new Vector2(screenSize.X / 2 + 300, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.ReSharperBtn, new Vector2(screenSize.X / 2 + 400, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
         }

@@ -143,6 +143,7 @@ namespace SoftUniWarz.States
             else
             {
                 name += key.ToString();
+
             }
         }
 
