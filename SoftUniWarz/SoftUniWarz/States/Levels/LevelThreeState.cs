@@ -8,6 +8,9 @@ using SoftUniWarz.Background;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
 using SoftUniWarz.Attack;
+using SoftUniWarz.Characters.Enemy;
+using System.Threading;
+using SoftUniWarz.Attack.EnemyAttacks;
 
 namespace SoftUniWarz.States
 {
@@ -19,7 +22,7 @@ namespace SoftUniWarz.States
         {
             base.content = content;
             base.player = new NovicePlayer(StateManager.PlayerName);
-            base.enemy = new FirstLevelEnemy();
+            base.enemy = new ThirdLevelEnemy();
             base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
@@ -62,6 +65,19 @@ namespace SoftUniWarz.States
             if (this.enemy.HealthPoints <= 0)
             {
                 StateManager.ChangeToState(GameStates.FinalLevel);
+            }
+            if (playerHasHit && !isPlayerMove)
+            {
+                Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
+               enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
+                Random rnd = new Random();
+                Attack.Attack attack = new OOPPrincipleAttack(positionForMagic);
+                if (rnd.Next(0, 2) == 1 && enemy.ManaPoints > attack.ManaCost)
+                {
+                    Thread.Sleep(2000);
+                    enemy.ProduceAttack(attack);
+                    playerHasHit = false;
+                }
             }
             base.Update();
         }

@@ -56,6 +56,7 @@
     <Compile Include="Characters\Enemy\FinalBoss.cs" />
     <Compile Include="Characters\Enemy\FirstLevelEnemy.cs" />
     <Compile Include="Characters\Enemy\SecondLevelEnemy.cs" />
+    <Compile Include="Characters\Enemy\ThirdLevelEnemy.cs" />
     <Compile Include="Content\Prefabs.cs" />
     <Compile Include="HighScore.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
@@ -72,7 +73,6 @@
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Player\AdvancedPlayer.cs" />
     <Compile Include="Attack\Attack.cs" />
-    <Compile Include="Background\BackgroundEffects.cs" />
     <Compile Include="Bonus\Beer.cs" />
     <Compile Include="Bonus\Bonus.cs" />
     <Compile Include="Bonus\Coffee.cs" />
@@ -102,7 +102,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\abstraction.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\arenaBG.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ball1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ball2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ball3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\beer.png">
@@ -121,6 +133,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\BookBtn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\boss.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Command_Home.png">
@@ -142,6 +157,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\edu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\encapsulation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Exit.jpg">
@@ -168,6 +186,9 @@
     <Content Include="Content\NamePickBG.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\oop1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Play.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -180,7 +201,13 @@
     <Content Include="Content\Quit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\regex.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\ReSharperBtn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\royal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\rshp.png">

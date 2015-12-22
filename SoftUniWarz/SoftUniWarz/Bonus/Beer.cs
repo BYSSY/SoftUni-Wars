@@ -16,8 +16,7 @@ namespace SoftUniWarz
         private const int DefaultBeerHeigth = 100;
         private static readonly Vector2 DefaultBeerPosition = new Vector2(1000, 100);
 
-
-
+       
         public Beer()
             : base(DefaultBeerTexturePath,
                   DefaultBeerPosition,

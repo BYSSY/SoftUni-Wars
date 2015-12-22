@@ -6,13 +6,12 @@
     {
         private static readonly int DefaultRegexAttackDamage = 60;
         private static readonly int DefaultRegexAttackManaCost = 25;
-        private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
+        private static readonly string texturePath = "regex";
         // TODO: SetTexturePath
 
         
         public RegexAttack(Vector2 position)
-            : base(DefaultRegexAttackDamage, DefaultRegexAttackManaCost, isParalizable, texturePath, position)
+            : base(DefaultRegexAttackDamage, DefaultRegexAttackManaCost, texturePath, position)
         {
         }
     }

@@ -7,11 +7,10 @@ namespace SoftUniWarz.Attack.PlayerAttacks
     {
         private const int DefaultResharperAttackDamage = 100;
         private const int DefaultResharperAttackManaCost = 50;
-        private static readonly bool isParalizable = false;
         private const string texturePath = "rshp";
 
         public ResharperAttack(Vector2 position)
-            : base(DefaultResharperAttackDamage, DefaultResharperAttackManaCost, isParalizable, texturePath, position)
+            : base(DefaultResharperAttackDamage, DefaultResharperAttackManaCost, texturePath, position)
         {
         }
     }

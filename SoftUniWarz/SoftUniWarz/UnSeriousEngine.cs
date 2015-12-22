@@ -28,7 +28,7 @@ namespace SoftUniWarz
             StateManager.Content = Content;
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
-            StateManager.ChangeToState(GameStates.MainMenu);
+            StateManager.ChangeToState(GameStates.FinalLevel);
             IsMouseVisible = true;
         }
 

@@ -1,18 +1,20 @@
 ﻿namespace SoftUniWarz.Attack.EnemyAttacks
 {
     using Microsoft.Xna.Framework;
+    using System;
 
     class SnookerBallAttack : Attack
     {
         private static readonly int DefaultSnookerBallAttackDamage = 50;
         private static readonly int DefaultSnookerBallAttackManaCost = 20;
-
-        private static readonly bool isParalizable = false;
-        private static readonly string texturePath = "";
-        // TODO: Set texture path.
+        private static readonly string[] texturePaths = new string[]
+          {
+            "ball1", "ball2", "ball3"
+          };
+        private static readonly Random rnd = new Random();
 
         public SnookerBallAttack(Vector2 position)
-            : base(DefaultSnookerBallAttackDamage, DefaultSnookerBallAttackManaCost, isParalizable, texturePath, position)
+            : base(DefaultSnookerBallAttackDamage, DefaultSnookerBallAttackManaCost, texturePaths[rnd.Next(0, 3)], position)
         {
         }
     }

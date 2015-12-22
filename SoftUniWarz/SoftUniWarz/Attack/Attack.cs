@@ -8,9 +8,6 @@
     {
         private int damage;
         private int manaCost;
-        private bool isParalizable;
-
-        // TODO: Check all attacks texutre's sizes.
         private const int DefaultAttackTextureWidth = -1;
         private const int DefaultAttackTextureHegth = -1;
 
@@ -19,7 +16,6 @@
         public Attack(
             int damage,
             int manaCost,
-            bool isParalizable,
             string texturePath,
             Vector2 position)
             
@@ -31,20 +27,6 @@
         {
             this.Damage = damage;
             this.ManaCost = manaCost;
-            this.IsParalizable = isParalizable;
-        }
-
-        public bool IsParalizable
-        {
-            get
-            {
-                return isParalizable;
-            }
-
-            set
-            {
-                isParalizable = value;
-            }
         }
 
         public int ManaCost

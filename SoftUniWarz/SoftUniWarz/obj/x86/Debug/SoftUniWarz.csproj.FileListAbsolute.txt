@@ -156,3 +156,12 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windo
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\rshp.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\thermus.png
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\edu.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball1.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball2.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\ball3.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\regex.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\royal.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\abstraction.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\encapsulation.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\oop1.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\boss.png

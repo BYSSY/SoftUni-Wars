@@ -4,21 +4,24 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Microsoft.Xna.Framework;
 
-    public class FinalBoss 
+    public class FinalBoss : Enemy
     {
-        private const int DefaultFinalBossHealth = 800;
-        private const int DefaultFinalBossMana = 500;
-        private const string DefaultFinalBossName = "TriHeadedMonster";
-        private const string DefaultFinalBossTexturePath = @"\..\..\TriHeadedMonster";
+        private static readonly Vector2 DefaultEnemyPosition = new Vector2(750, 0);
+        private const int DefaultFirstEnemyHealth = 500;
+        private const int DefaultFirsEnemyMana = 300;
+        private const string DefaultFirstEnemyName = "The darth gang";
+        private const string DefaultFirstEnemyTexturePath = "boss";
 
-        //public FinalBoss()
-        //    : base(
-        //          DefaultFinalBossName,
-        //          DefaultFinalBossHealth,
-        //          DefaultFinalBossMana,
-        //          DefaultFinalBossTexturePath)
-        //{
-        //}
+        public FinalBoss()
+           : base(
+                 DefaultFirstEnemyName,
+                 DefaultFirstEnemyHealth,
+                 DefaultFirsEnemyMana,
+                 DefaultFirstEnemyTexturePath,
+                 DefaultEnemyPosition)
+        {
+        }
     }
 }
