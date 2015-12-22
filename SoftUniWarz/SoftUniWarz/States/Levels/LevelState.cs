@@ -113,8 +113,9 @@ namespace SoftUniWarz.States
         {
             if (player.HealthPoints <= 0)
             {
+                HighScore score = new HighScore();
+                score.Write(this.player.Name, StateManager.score);
                 StateManager.ChangeToState(GameStates.MainMenuState);
-                //TODO: Write Score
                 return;
             }
             //EnemyMove

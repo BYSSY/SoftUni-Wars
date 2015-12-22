@@ -30,10 +30,25 @@ namespace SoftUniWarz
             return data;
         }
 
-        public void Write()
+        public void Write(string name, int score)
         {
             using (StreamWriter writer = new StreamWriter("highscore.txt"))
             {
+                using (StreamReader reader = new StreamReader("highscore.txt"))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        int points = int.Parse(line.Split()[0]);
+                        string nick = line.Split()[1];
+                        data.Add(points, nick);
+                    }
+                }
+                data.Add(score, name);
+                foreach (var item in data)
+                {
+                    writer.WriteLine(String.Format("{0} {1})", item.Key, item.Value));
+                }
             }
         }
 

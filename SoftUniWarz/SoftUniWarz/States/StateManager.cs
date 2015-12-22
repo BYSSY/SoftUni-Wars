@@ -15,6 +15,7 @@ namespace SoftUniWarz.States
     {
         private static State currentState;
         private static string playerName;
+        public static int score;
         private static ContentManager content;
         public static Vector2 currentScreenSize = new Vector2(1366, 768);
         private static Dictionary<string, GameStates> currentNextState = new Dictionary<string, GameStates>()
@@ -63,6 +64,7 @@ namespace SoftUniWarz.States
             {
                 case GameStates.MainMenuState:
                     CurrentState = new MainMenuState(currentScreenSize);
+                    score = 0;
                     break;
                 case GameStates.LevelOneState:
                     CurrentState = new LevelOneState(content, currentScreenSize);

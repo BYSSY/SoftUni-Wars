@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<<<<<<< HEAD
   <SourceFile>E:/bojo/Fundamentals/OOP/Teamwork/release/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</SourceFile>
   <SourceTime>2015-12-21T22:52:42+02:00</SourceTime>
   <DestFile>E:/bojo/Fundamentals/OOP/Teamwork/release/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/HighScore.xnb</DestFile>
-  <DestTime>2015-12-22T10:27:34.0219505+02:00</DestTime>
-=======
-  <SourceFile>C:/Users/hp/Desktop/Last/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/HighScore.png</SourceFile>
-  <SourceTime>2015-12-22T10:32:08.5643902+02:00</SourceTime>
-  <DestFile>C:/Users/hp/Desktop/Last/SoftUni-Wars/SoftUniWarz/SoftUniWarz/Content/bin/Windows/HighScore.xnb</DestFile>
-  <DestTime>2015-12-22T10:34:24.7304913+02:00</DestTime>
->>>>>>> 02c9a067597ed0640f04c0d5e8ff97efcb4f4444
+  <DestTime>2015-12-22T10:41:07.7909279+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T20:14:44+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

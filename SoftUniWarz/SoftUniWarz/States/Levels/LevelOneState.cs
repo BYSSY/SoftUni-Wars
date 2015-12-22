@@ -69,8 +69,9 @@ namespace SoftUniWarz.States
         {
             if (this.enemy.HealthPoints <= 0)
             {
+                StateManager.score = 100;
                 StateManager.ChangeToState(StateManager.GetNextState());
-
+                
                 return;
             }
             base.Update();
