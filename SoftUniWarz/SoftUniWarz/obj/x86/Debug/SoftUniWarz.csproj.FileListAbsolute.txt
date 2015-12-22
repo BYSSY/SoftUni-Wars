@@ -64,6 +64,7 @@ E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windo
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
+<<<<<<< HEAD
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.exe
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.pdb
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\abstraction.png
@@ -130,3 +131,8 @@ C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\D
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Георги\Desktop\SoftUni-Wars\SoftUniWarz\SoftUniWarz\obj\x86\Debug\SoftUniWarz.csprojResolveAssemblyReference.cache
+=======
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\graph.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\LAMBDA.png
+E:\bojo\Fundamentals\OOP\Teamwork\SoftUni-Wars\SoftUniWarz\SoftUniWarz\bin\Windows\Debug\Content\еррор.png
+>>>>>>> ee8f39fc4011434506df2e43bb477c6a64e26a3d

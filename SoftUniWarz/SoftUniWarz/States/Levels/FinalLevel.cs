@@ -10,6 +10,8 @@ using SoftUniWarz.Content;
 using SoftUniWarz.Attack;
 using SoftUniWarz.Attack.PlayerAttacks;
 using SoftUniWarz.Characters.Enemy;
+using SoftUniWarz.Attack.EnemyAttacks;
+using System.Threading;
 
 namespace SoftUniWarz.States
 {
@@ -71,8 +73,37 @@ namespace SoftUniWarz.States
         {
             if (enemy.HealthPoints <= 0)
             {
-                StateManager.ChangeToState(GameStates.MainMenu);
+                StateManager.ChangeToState(StateManager.GetNextState());
+
                 //TODO write Score
+                return;
+            }
+            if (playerHasHit && !isPlayerMove)
+            {
+                Vector2 positionForMagic = new Vector2(enemy.Element.Position.X + enemy.Element.GUIrect.Width / 2,
+               enemy.Element.Position.Y + enemy.Element.GUIrect.Height / 2);
+                Random rnd = new Random();
+                Attack.Attack attack = new ErrorAttack(positionForMagic);
+                if (rnd.Next(0, 2) == 1 && enemy.ManaPoints > attack.ManaCost)
+                {
+                    Thread.Sleep(2000);
+                    enemy.ProduceAttack(attack);
+                    playerHasHit = false;
+                }
+                attack = new GraphAttack(positionForMagic);
+                if (rnd.Next(0, 2) == 1 && enemy.ManaPoints > attack.ManaCost && playerHasHit)
+                {
+                    Thread.Sleep(2000);
+                    enemy.ProduceAttack(attack);
+                    playerHasHit = false;
+                }
+                attack = new LambdaAttack(positionForMagic);
+                if (rnd.Next(0, 2) == 1 && enemy.ManaPoints > attack.ManaCost && playerHasHit)
+                {
+                    Thread.Sleep(2000);
+                    enemy.ProduceAttack(attack);
+                    playerHasHit = false;
+                }
             }
             base.Update();
         }

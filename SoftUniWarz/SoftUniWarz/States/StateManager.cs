@@ -17,6 +17,13 @@ namespace SoftUniWarz.States
         private static string playerName;
         private static ContentManager content;
         public static Vector2 currentScreenSize = new Vector2(1366, 768);
+        private static Dictionary<string, GameStates> currentNextState = new Dictionary<string, GameStates>()
+        {
+            {GameStates.LevelOneState.ToString(), GameStates.LevelTwoState },
+            {GameStates.LevelTwoState.ToString(), GameStates.LevelThreeState },
+            {GameStates.LevelThreeState.ToString(), GameStates.FinalLevel },
+            {GameStates.FinalLevel.ToString(), GameStates.MainMenuState }
+        };
 
         public static State CurrentState
         {
@@ -54,7 +61,7 @@ namespace SoftUniWarz.States
         {
             switch (state)
             {
-                case GameStates.MainMenu:
+                case GameStates.MainMenuState:
                     CurrentState = new MainMenuState(currentScreenSize);
                     break;
                 case GameStates.LevelOneState:
@@ -85,6 +92,9 @@ namespace SoftUniWarz.States
             }
 
         }
-
+        public static GameStates GetNextState()
+        {
+            return StateManager.currentNextState[currentState.GetType().Name];
+        }
     }
 }

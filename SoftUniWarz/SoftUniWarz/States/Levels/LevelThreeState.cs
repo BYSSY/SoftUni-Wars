@@ -64,7 +64,8 @@ namespace SoftUniWarz.States
         {
             if (this.enemy.HealthPoints <= 0)
             {
-                StateManager.ChangeToState(GameStates.FinalLevel);
+                StateManager.ChangeToState(StateManager.GetNextState());
+                return;
             }
             if (playerHasHit && !isPlayerMove)
             {

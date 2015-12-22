@@ -7,7 +7,7 @@ namespace SoftUniWarz.Background
 {
     public enum GameStates
     {
-        MainMenu,
+        MainMenuState,
         LevelOneState,
         LevelTwoState,
         LevelThreeState,
