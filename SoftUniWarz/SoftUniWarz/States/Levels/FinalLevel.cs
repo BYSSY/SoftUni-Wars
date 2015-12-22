@@ -23,6 +23,7 @@ namespace SoftUniWarz.States
             base.content = content;
             base.player = new NovicePlayer(StateManager.PlayerName);
             base.enemy = new FinalBoss();
+<<<<<<< HEAD
             base.staticElements.Add(new GUIelement("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
@@ -30,6 +31,15 @@ namespace SoftUniWarz.States
             buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X / 2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BeerBtn, new Vector2(screenSize.X / 2 + 300, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.ReSharperBtn, new Vector2(screenSize.X / 2 + 400, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+=======
+            base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
+            buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 250, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2-150, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.CtorBtn, new Vector2(screenSize.X / 2 + 50, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X / 2 -50, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.BeerBtn, new Vector2(screenSize.X / 2 + 150, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            buttons.Add(new Button(Buttons.Buttons.ReSharperBtn, new Vector2(screenSize.X / 2 + 250, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+>>>>>>> 02c9a067597ed0640f04c0d5e8ff97efcb4f4444
         }
 
         public FinalLevel(Vector2 screenSize)
