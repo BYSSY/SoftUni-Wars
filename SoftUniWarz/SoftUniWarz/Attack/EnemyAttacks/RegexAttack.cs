@@ -4,8 +4,8 @@
 
     public class RegexAttack : Attack
     {
-        private static readonly int DefaultRegexAttackDamage = 60;
-        private static readonly int DefaultRegexAttackManaCost = 25;
+        private static readonly int DefaultRegexAttackDamage = 90;
+        private static readonly int DefaultRegexAttackManaCost = 40;
         private static readonly string texturePath = "regex";
                 
         public RegexAttack(Vector2 position)

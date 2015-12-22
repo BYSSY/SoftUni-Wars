@@ -5,8 +5,8 @@
 
     class SnookerBallAttack : Attack
     {
-        private static readonly int DefaultSnookerBallAttackDamage = 50;
-        private static readonly int DefaultSnookerBallAttackManaCost = 20;
+        private static readonly int DefaultSnookerBallAttackDamage = 80;
+        private static readonly int DefaultSnookerBallAttackManaCost = 30;
         private static readonly string[] texturePaths = new string[]
           {
             "ball1", "ball2", "ball3"

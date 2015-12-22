@@ -5,7 +5,7 @@
     class BinaryAttack : Attack
     {
         private const int DefaultBinaryAttackDamage = 80;
-        private const int DefaultBinaryAttackManaCOst = 50;
+        private const int DefaultBinaryAttackManaCOst = 40;
         private const string path = "BinAttack";
 
         public BinaryAttack( Vector2 position) 

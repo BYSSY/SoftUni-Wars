@@ -93,21 +93,19 @@ namespace SoftUniWarz.States
             // Drawing enemy's bars
             spriteBatch.Draw(healthTextureBG, enemyHealthRectangleBG, Color.White);
             spriteBatch.Draw(manaTextureBG, enemyManaRectangleBG, Color.White);
-            //PlayerText:
-            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
-            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.AntiqueWhite);
 
             // Player's and enemy's name. 
-            spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(170, 20), Color.White);
-            spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1100, 20), Color.White);
+            spriteBatch.DrawString(spriteFont, this.player.Name, new Vector2(180, 20), Color.White);
+            spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1050, 20), Color.White);
+            //spriteBatch.DrawString(spriteFont, this.enemy.Name, new Vector2(1050, 20), Color.White, 0f, new Vector2(0, 0), 1, SpriteEffects.None, 1);
 
 
             // Player and enemy health and mana indicators.
-            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(280, 52), Color.Black);
-            spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(280, 82), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.player.HealthPoints + "/" + this.player.InitialHealth, new Vector2(290, 52), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.player.ManaPoints + "/" + this.player.InitialMana, new Vector2(290, 82), Color.Black);
 
-            spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1010, 52), Color.Black);
-            spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1010, 82), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.HealthPoints + "/" + this.enemy.InitialHealth, new Vector2(1000, 52), Color.Black);
+            spriteBatch.DrawString(spriteFont, "" + this.enemy.ManaPoints + "/" + this.enemy.InitialMana, new Vector2(1000, 82), Color.Black);
 
         }
 
@@ -176,12 +174,12 @@ namespace SoftUniWarz.States
             enemy.LoadContent(content);
 
             // Player bars
-            playerHealthRectangleBG = new Rectangle(170, 50, this.player.InitialHealth - 200, 30);
-            playerManaRectangleBG = new Rectangle(170, 80, this.player.InitialMana, 30);
+            playerHealthRectangleBG = new Rectangle(180, 50, this.player.InitialHealth - 200, 30);
+            playerManaRectangleBG = new Rectangle(180, 80, this.player.InitialMana, 30);
 
             // Enemy bars
-            enemyHealthRectangleBG = new Rectangle(890, 50, this.enemy.InitialHealth - 200, 30);
-            enemyManaRectangleBG = new Rectangle(890, 80, this.enemy.InitialMana, 30);
+            enemyHealthRectangleBG = new Rectangle(875, 50, this.enemy.InitialHealth - 200, 30);
+            enemyManaRectangleBG = new Rectangle(875, 80, this.enemy.InitialMana, 30);
 
             foreach (var staticElement in staticElements)
             {

@@ -5,8 +5,8 @@
 
     class OOPPrincipleAttack : Attack
     {
-        private static readonly int DefaultOOPPrincipleDamage = 80;
-        private static readonly int DefaultOOPPrincipleManaCost = 40;
+        private static readonly int DefaultOOPPrincipleDamage = 110;
+        private static readonly int DefaultOOPPrincipleManaCost = 50;
         private static readonly string[] texturePaths = new string[]
         {
             "abstraction", "oop1", "encapsulation"

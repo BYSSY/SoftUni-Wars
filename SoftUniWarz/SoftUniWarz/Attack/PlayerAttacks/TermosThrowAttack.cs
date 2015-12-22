@@ -4,7 +4,7 @@
 
     class TermosThrowAttack : Attack
     {
-        private const int DefaultTermosThrowAttackDamage = 80;
+        private const int DefaultTermosThrowAttackDamage = 90;
         private const int DefaultTermosThrowAttackManaCost = 40;
         private const string texturePath = "thermus";
 
