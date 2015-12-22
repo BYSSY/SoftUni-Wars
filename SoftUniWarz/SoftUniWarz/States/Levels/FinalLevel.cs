@@ -12,6 +12,7 @@ using SoftUniWarz.Attack.PlayerAttacks;
 using SoftUniWarz.Characters.Enemy;
 using SoftUniWarz.Attack.EnemyAttacks;
 using System.Threading;
+using SoftUniWarz.Interfaces;
 
 namespace SoftUniWarz.States
 {
@@ -30,6 +31,10 @@ namespace SoftUniWarz.States
             buttons.Add(new Button(Buttons.Buttons.CtorBtn, new Vector2(screenSize.X / 2 + 200, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BeerBtn, new Vector2(screenSize.X / 2 + 300, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.ReSharperBtn, new Vector2(screenSize.X / 2 + 400, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
+            IAttackInformation BeerAttackInformation = new AttackInformation(new Vector2(0, 0), new Vector2(0, 0));
+            this.attackInformation.Add(BeerAttackInformation);
+            IAttackInformation ReshaprperAttackInformation = new AttackInformation(new Vector2(0, 0), new Vector2(0, 0));
+            this.attackInformation.Add(ReshaprperAttackInformation);
         }
 
         public FinalLevel(Vector2 screenSize)
@@ -59,12 +64,16 @@ namespace SoftUniWarz.States
                     BeerAttack attack = new BeerAttack(positionForMagic);
                     player.ProduceAttack(attack);
                     isPlayerMove = false;
+                    this.attackInformation[4].AddDamageInformation(attack.Damage);
+                    this.attackInformation[4].AddManaCostInformation(attack.ManaCost);
                 }
                 if (element == Buttons.Buttons.ReSharperBtn.ToString())
                 {
                     ResharperAttack attack = new ResharperAttack(positionForMagic);
                     player.ProduceAttack(attack);
                     isPlayerMove = false;
+                    this.attackInformation[5].AddDamageInformation(attack.Damage);
+                    this.attackInformation[5].AddManaCostInformation(attack.ManaCost);
                 }
             }
         }
