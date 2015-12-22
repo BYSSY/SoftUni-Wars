@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using IDrawable = SoftUniWarz.Interfaces.IDrawable;
 using IUpdateable = SoftUniWarz.Interfaces.IUpdateable;
 
@@ -15,7 +15,7 @@ namespace SoftUniWarz
 {
     public class GameObject : IDrawable, IUpdateable
     {
-        private GUIelements element;
+        private GUIelement element;
         private int witdh;
         private int height;
         private bool isLoaded;
@@ -24,13 +24,13 @@ namespace SoftUniWarz
         {
             //TODO: LOAD textures from texture loader
             //this.Texture = (path);
-            element = new GUIelements(texturePath, position, width, height);
+            element = new GUIelement(texturePath, position, width, height);
             isLoaded = false;
             this.Width = width;
             this.Height  = height;
         }
 
-        public GUIelements Element
+        public GUIelement Element
         {
             get
             {

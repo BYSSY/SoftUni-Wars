@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.Content;
 
 namespace SoftUniWarz.States
@@ -16,15 +16,15 @@ namespace SoftUniWarz.States
         private SpriteFont spriteFont;
         private SortedDictionary<int, string> dataDictionary;
         private HighScore highScore;
-        private List<GUIelements> elements = new List<GUIelements>();
+        private List<GUIelement> elements = new List<GUIelement>();
 
         public HighScoreState(Vector2 screenSize)
             : base(screenSize)
         {
             highScore = new HighScore();
             dataDictionary = highScore.Read();
-            elements.Add(new GUIelements("HSBG", new Vector2(0, 0), 1366, 768));
-            elements.Add(new GUIelements("HS",new Vector2(433,30),500,175));
+            elements.Add(new GUIelement("HSBG", new Vector2(0, 0), 1366, 768));
+            elements.Add(new GUIelement("HS",new Vector2(433,30),500,175));
 
 
         }

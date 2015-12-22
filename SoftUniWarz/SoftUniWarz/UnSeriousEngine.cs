@@ -4,7 +4,7 @@
     using System.Diagnostics;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
-    using Background;
+    using GUIElements;
     using States;
 
     public class UnSeriousEngine : Game
@@ -24,7 +24,7 @@
             StateManager.Content = Content;
             graphics.PreferredBackBufferWidth = 1366;
             graphics.PreferredBackBufferHeight = 768;
-            StateManager.ChangeToState(GameStates.FinalLevel);
+            StateManager.ChangeToState(GameStates.MainMenuState);
             IsMouseVisible = true;
         }
 

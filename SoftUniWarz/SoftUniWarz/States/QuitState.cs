@@ -7,7 +7,7 @@ using System.Threading;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
 

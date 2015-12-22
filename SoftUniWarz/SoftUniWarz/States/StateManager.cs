@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 
 namespace SoftUniWarz.States
 {

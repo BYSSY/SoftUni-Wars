@@ -10,7 +10,7 @@
         private const string playerPath = "Player1";
 
         //FIX 
-        private const string name = "dsa";
+        //private const string name = "dsa";
 
         private static readonly Vector2 position = new Vector2(60, 0);
         private const int width = -1;
@@ -18,7 +18,7 @@
         private IList<Bonus> inventory;
 
         public NovicePlayer(string name)
-            : base(NovicePlayer.name, healthPoints, manaPoints, playerPath, position, width, height)
+            : base(name, healthPoints, manaPoints, playerPath, position, width, height)
         {
             this.inventory = new List<Bonus>();
         }

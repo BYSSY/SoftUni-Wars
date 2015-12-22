@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
 using SoftUniWarz.Attack.PlayerAttacks;
@@ -25,7 +25,7 @@ namespace SoftUniWarz.States
             base.content = content;
             base.player = new NovicePlayer(StateManager.PlayerName);
             base.enemy = new SecondLevelEnemy();
-            base.staticElements.Add(new GUIelements("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
+            base.staticElements.Add(new GUIelement("arenaBG", new Vector2(0, 0), (int)screenSize.X, (int)screenSize.Y));
             buttons.Add(new Button(Buttons.Buttons.BinaryBtn, new Vector2(screenSize.X / 2 - 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.BookBtn, new Vector2(screenSize.X / 2, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));
             buttons.Add(new Button(Buttons.Buttons.TermBtn, new Vector2(screenSize.X /2 + 100, 650), Prefabs.standardInGameButtonSize, Prefabs.standardInGameButtonSize));

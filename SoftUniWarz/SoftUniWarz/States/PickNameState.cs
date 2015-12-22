@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
 
@@ -16,7 +16,7 @@ namespace SoftUniWarz.States
     class PickNameState : State
     {
 
-        private List<GUIelements> staticElements = new List<GUIelements>();
+        private List<GUIelement> staticElements = new List<GUIelement>();
         private List<Button> clickableElements = new List<Button>();
 
         private Keys[] lastPressedKeys = new Keys[5];
@@ -33,7 +33,7 @@ namespace SoftUniWarz.States
         public PickNameState(Vector2 screenSize)
             :base(screenSize)
         {
-            staticElements.Add(new GUIelements("NamePickBG", new Vector2(0,0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+            staticElements.Add(new GUIelement("NamePickBG", new Vector2(0,0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
             clickableElements.Add(new Button(Buttons.Buttons.Done, new Vector2(553,563), -1, -1));
         }
         public override void Draw(SpriteBatch spriteBatch)

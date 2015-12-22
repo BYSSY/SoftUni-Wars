@@ -8,16 +8,16 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace SoftUniWarz.Background
+namespace SoftUniWarz.GUIElements
 {
-    public class GUIelements
+    public class GUIelement
     {
         private Texture2D GUItexture;
         private Rectangle gUIrect;
         private string elementName;
         private Vector2 position;
 
-        public GUIelements(string elementName, Vector2 position, int width, int height)
+        public GUIelement(string elementName, Vector2 position, int width, int height)
         {
             this.ElementName = elementName;
             this.Position = position;

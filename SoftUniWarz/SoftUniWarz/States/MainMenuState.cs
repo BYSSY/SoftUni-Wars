@@ -7,20 +7,21 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Content;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.States;
 
-namespace SoftUniWarz.Background
+namespace SoftUniWarz.States
 {
     public class MainMenuState : State
     {
 
-        private List<GUIelements> staticElements = new List<GUIelements>();
+        private List<GUIelement> staticElements = new List<GUIelement>();
         private List<Button> clickableElements = new List<Button>(); 
 
         public MainMenuState(Vector2 screenSize)
             :base(screenSize)
         {
-            staticElements.Add(new GUIelements("MainMenuBG", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
+            staticElements.Add(new GUIelement("MainMenuBG", new Vector2(0, 0), Prefabs.standardBGWidth, Prefabs.standardBGHeight));
             clickableElements.Add(new Button(Buttons.Buttons.Play, new Vector2(screenSize.X / 2-150, screenSize.Y / 2-105), -1, -1));
             clickableElements.Add(new Button(Buttons.Buttons.HighScore, new Vector2(screenSize.X / 2-130, screenSize.Y / 2 -5), -1, -1));
             clickableElements.Add(new Button(Buttons.Buttons.Quit, new Vector2(screenSize.X / 2-130, screenSize.Y / 2 +75), -1, -1));

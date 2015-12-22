@@ -63,7 +63,7 @@
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="States\Levels\FinalLevel.cs" />
     <Compile Include="States\GameStates.cs" />
-    <Compile Include="Background\GUIelements.cs" />
+    <Compile Include="GUIElements\GUIelement.cs" />
     <Compile Include="Interfaces\IContentLoadable.cs" />
     <Compile Include="States\Levels\LevelOneState.cs" />
     <Compile Include="States\Levels\LevelState.cs" />

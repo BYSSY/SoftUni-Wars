@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using SoftUniWarz.Attack.PlayerAttacks;
-using SoftUniWarz.Background;
+using SoftUniWarz.GUIElements;
 using SoftUniWarz.Characters.Enemy;
 using SoftUniWarz.Buttons;
 using SoftUniWarz.Attack;
@@ -38,7 +38,7 @@ namespace SoftUniWarz.States
         protected bool isPlayerMove;
         protected bool playerHasHit;
 
-        protected List<GUIelements> staticElements;
+        protected List<GUIelement> staticElements;
         protected List<Button> buttons;
         protected Player player;
         protected Enemy enemy;
@@ -48,7 +48,7 @@ namespace SoftUniWarz.States
         public LevelState(Vector2 screenSize)
             : base(screenSize)
         {
-            staticElements = new List<GUIelements>();
+            staticElements = new List<GUIelement>();
             buttons = new List<Button>();
             isPlayerMove = true;
             playerHasHit = false;
